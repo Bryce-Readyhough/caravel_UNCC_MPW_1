@@ -39,9 +39,9 @@ A 2x2 array of nfet sonos cells with transistor sizing 420nmx150nm.
 | BL1  | mprj_io[11] |
 | SL1  | mprj_io[12] |
 
-[comment]: <> (<p align=”center”>)
-[comment]: <> (<img src="/doc/ciic_harness.png" width="75%" height="75%"> )
-[comment]: <> (</p>)
+[comment]: <> "<p align=”center”>"
+[comment]: <> "<img src="/doc/ciic_harness.png" width="75%" height="75%"> "
+[comment]: <> "</p>"
 
 # Installation and Usage
 To setup and install the repo for development:</br>
@@ -56,32 +56,43 @@ To setup and install the repo for development:</br>
 		<li>Install [SkywaterPDK](https://github.com/google/skywater-pdk) and [OpenPDK](https://github.com/RTimothyEdwards/open_pdks):</li>
 			<ol>
 				<li>Install Skywater PDK</li>
-				
-	export PDK_ROOT=(Absolute path where PDKs will be installed)
-	cd $PDK_ROOT
-	git clone https://github.com/google/skywater-pdk
-	cd skywater-pdk
-	git submodule init libraries/sky130_fd_io/latest
-	git submodule init libraries/sky130_fd_pr/latest
-	git submodule init libraries/sky130_fd_sc_hd/latest
-	git submodule init libraries/sky130_fd_sc_hdll/latest
-	git submodule init libraries/sky130_fd_sc_hs/latest
-	git submodule init libraries/sky130_fd_sc_ms/latest
-	git submodule init libraries/sky130_fd_sc_ls/latest
-	git submodule init libraries/sky130_fd_sc_lp/latest
-	git submodule init libraries/sky130_fd_sc_hvl/latest
-	git submodule update
-	make timing
-<li>Install OpenPDKs</li>
 
-	git clone https://github.com/RTimothyEdwards/open_pdks.git
-	cd open_pdks
-	./configure --with-sky130-source=$PDK_ROOT/skywater-pdk/libraries --with-sky130-local-path=$PDK_ROOT
-	cd sky130
-	make
-	make install-local
+```shell
+export PDK_ROOT=(Absolute path where PDKs will be installed)
+
+cd $PDK_ROOT
+git clone https://github.com/google/skywater-pdk -b 
+cd skywater-pdk
+git checkout v0.0.0-303-g3d7617a
+
+git submodule init libraries/sky130_fd_io/latest
+git submodule init libraries/sky130_fd_pr/latest
+git submodule init libraries/sky130_fd_sc_hd/latest
+git submodule init libraries/sky130_fd_sc_hdll/latest
+git submodule init libraries/sky130_fd_sc_hs/latest
+git submodule init libraries/sky130_fd_sc_ms/latest
+git submodule init libraries/sky130_fd_sc_ls/latest
+git submodule init libraries/sky130_fd_sc_lp/latest
+git submodule init libraries/sky130_fd_sc_hvl/latest
+git submodule update
+
+make timing
+```
+<li> Install OpenPDKs </li>
+
+```shell
+cd $PDK_ROOT
+git clone https://github.com/RTimothyEdwards/open_pdks.git -b mpw-one-a
+cd open_pdks
+
+./configure --with-sky130-source=$PDK_ROOT/skywater-pdk/libraries --with-sky130-local-path=$PDK_ROOT
+
+cd sky130
+make
+make install-local
+```
 </ol>
 </ol>
 </ol>
- 
+
 TODO: Finish Install instructions
