@@ -1,3 +1,5 @@
+
+
 # Analog Spiking Neuron Circuit - Caravel Submission
 
 This is the Google/EFabless/Skywater Caravel submission of an [Analog Spiking Neuron Circuit.](https://ieeexplore.ieee.org/document/9184447) The submission also includes a SONOS transistor array. 
@@ -5,6 +7,7 @@ This is the Google/EFabless/Skywater Caravel submission of an [Analog Spiking Ne
 ## Neuron circuit
 The circuit in the original paper is in 130nm technology and has a vdd of 300mV. Skywater pdk is hybrid 180nm/130nm node where the minimum transistor length is 150nm.
 As a result vdd needs to be higher in order to get the circuit to work properly. In simulation 700mV seems to work well. 
+
 <p align=”center”>
 <img src="/doc/neuron.png" width="75%"> 
 </p>
@@ -41,19 +44,15 @@ A 2x2 array of nfet sonos cells with transistor sizing 420nmx150nm.
 
 
 
-# Installation and Usage
-To setup and install the repo for development:</br>
-<ol>
-	<li>Install prerequisite tools:</li>
-	<ol>
-		<li>Install [Magic VLSI Layout Tool](http://opencircuitdesign.com/magic/)</li>
-			<ol>
-				<li>Note: As of the writing of this document the tool must be installed from sourcecode. The packaged version is not up to date for use with this repo.</li>
-			</ol>
-		<li>Install [KLayout VLSI Layout Tool](https://www.klayout.de/build.html)</li>
-		<li>Install [SkywaterPDK](https://github.com/google/skywater-pdk) and [OpenPDK](https://github.com/RTimothyEdwards/open_pdks):</li>
-			<ol>
-				<li>Install Skywater PDK</li>
+# Installation
+To setup and install the repo for development:
+
+1. Install prerequisite tools:
+   1. Install [Magic VLSI Layout Tool](http://opencircuitdesign.com/magic/)
+      - Note: As of 12/7/2020 you must install Magic from source code. The packaged version will not work with OpenPDKS.
+   2. Install [KLayout](https://www.klayout.de/build.html)
+   3. Install [SkywaterPDK](https://github.com/google/skywater-pdk) and [OpenPDK](https://github.com/RTimothyEdwards/open_pdks) using [OpenLane](https://github.com/efabless/openlane.git)
+      1. Clone and Install OpenLane. This will also grab and install SkywaterPDK and OpenPDK for you.
 
 ```shell
 export PDK_ROOT=(where pdks will be installed)
@@ -63,20 +62,13 @@ cd $PDK_ROOT
 git clone https://github.com/efabless/openlane.git -b mpw-one-a
 
 cd openlane
+export OPENLANE_ROOT=$(pwd)
 make
 ```
 
-​			This will automatically install the correct versions of SkywaterPDK and OpenPDK to your $PDK_ROOT directory.
-
-</ol>
-
-<li>Clone the repo</li>
+​			2. Clone and uncompress the repo
 
 ```shell
 git clone https://github.com/Bryce-Readyhough/caravel_UNCC_MPW_1.git
+make uncompress -j$nproc
 ```
-
-</ol>
-</ol>
-
-TODO: Finish Install instructions
