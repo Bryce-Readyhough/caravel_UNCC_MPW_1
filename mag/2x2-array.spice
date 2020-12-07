@@ -1,0 +1,43 @@
+* NGSPICE file created from 2x2-array.ext - technology: sky130A
+
+* Include SkyWater sky130 device models
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical__lin.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/tt.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/sonos_e/begin_of_life.pm3.spice"
+
+* .lib "/home/mhasan13/pdk/pdk-prepared/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+Vg0 WL0 gnd DC 1.0
+Vg1 WL1 gnd DC 1.0
+Vd0 BL0 gnd DC 1.0
+Vd1 BL1 gnd DC 1.0
+Vs0 SL0 gnd DC 0.0
+Vs1 SL1 gnd DC 0.0
+
+.subckt sky130_fd_bs_flash__special_sonosfet_star_ocehe0 VSUBS a_15_n11# a_n33_n99#
++ dw_n429_n439# a_n73_n11#
+X0 a_15_n11# a_n33_n99# a_n73_n11# VSUBS sky130_fd_pr__special_nfet_pass_flash w=420000u l=150000u
+.ends
+
+.subckt T-cell gate drain source body sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#
+Xsky130_fd_bs_flash__special_sonosfet_star_ocehe0_0 body source gate sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#
++ drain sky130_fd_bs_flash__special_sonosfet_star_ocehe0
+.ends
+
+.subckt x2-array WL0 WL1 BL0 SL0 BL1 SL1 body
+X1T-cell_0[0|0] WL1 BL0 SL0 body dw_n430_n464# T-cell
+X1T-cell_0[1|0] WL0 BL0 SL0 body dw_n430_n464# T-cell
+X1T-cell_0[0|1] WL1 BL1 SL1 body dw_n430_n464# T-cell
+X1T-cell_0[1|1] WL0 BL1 SL1 body dw_n430_n464# T-cell
+.ends
+
+
+* instance
+Xarray WL0 WL1 BL0 SL0 BL1 SL1 body x2-array
+
+.control
+dc Vd0 0 1.8 0.01
+plot -i(Vd0)
+.endc
+.end

@@ -1,0 +1,273 @@
+timestamp 1606535953
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use neuron-labeled neuron-labeled_0 1 0 364 0 1 678
+use pmos-diff-amp pmos-diff-amp_0 1 0 6001 0 1 1657
+use pmos-diff-amp pmos-diff-amp_1 1 0 7251 0 1 1657
+use pmos-diff-amp pmos-diff-amp_2 1 0 8477 0 1 1657
+use pmos-diff-amp pmos-diff-amp_3 1 0 9749 0 1 1657
+port "vss" 11 -928 206 -822 312 m3
+port "axon_buff" 17 10148 330 10228 372 m1
+port "a_buff" 16 10068 540 10148 582 m1
+port "u_buff" 15 10040 734 10120 776 m1
+port "v_buff" 14 10004 970 10084 1012 m1
+port "vdd_aux" 18 10464 2230 10534 2300 m1
+port "vdd" 10 -1042 2680 -936 2786 m3
+port "i_bias" 13 10218 4328 10298 4370 m1
+port "axon" 12 8422 2530 8472 2560 m1
+port "a" 2 8526 2774 8584 2824 m1
+port "vth" 6 -1070 3094 -1020 3124 m1
+port "vad" 9 -970 -600 -912 -558 m1
+port "vr" 8 -956 -350 -898 -308 m1
+port "vk" 7 -986 -122 -928 -80 m1
+port "vw" 4 -1064 3350 -1014 3380 m1
+port "vau" 3 -1064 3586 -1014 3630 m1
+port "v" 0 -598 3840 -548 3886 m1
+port "u" 1 -596 4090 -546 4120 m1
+node "vss" 8 7008.85 -928 206 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1150508 16408 52020 952 1414450 12362 0 0 0 0 0 0
+node "axon_buff" 5 597.212 10148 330 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52174 1402 59788 2732 0 0 0 0 0 0 0 0
+node "m1_10211_1497#" 0 82.815 10211 1497 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6300 384 0 0 0 0 0 0 0 0 0 0
+node "a_buff" 6 1343.92 10068 540 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 227230 4638 50800 2304 0 0 0 0 0 0 0 0
+node "m1_8939_1497#" 0 84.5642 8939 1497 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6468 392 0 0 0 0 0 0 0 0 0 0
+node "u_buff" 7 2000.96 10040 734 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 388076 7544 41896 1880 0 0 0 0 0 0 0 0
+node "m1_7717_1497#" 0 86.3134 7717 1497 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6636 400 0 0 0 0 0 0 0 0 0 0
+node "v_buff" 7 2327.5 10004 970 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 478152 9120 33076 1460 0 0 0 0 0 0 0 0
+node "m1_6473_1497#" 0 80.1912 6473 1497 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6048 372 0 0 0 0 0 0 0 0 0 0
+node "vdd_aux" 4 2092.03 10464 2230 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 574958 8382 0 0 0 0 0 0 0 0 0 0
+node "vdd" 4 3942.26 -1042 2680 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146700 2856 156060 2856 1460470 12554 0 0 0 0 0 0
+node "i_bias" 45 8451.13 10218 4328 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1252028 24360 438408 20616 0 0 0 0 0 0 0 0
+node "axon" 37 4734.8 8422 2530 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4810 278 402478 14132 220408 7662 0 0 0 0 0 0 0 0
+node "a" 102 3624.89 8526 2774 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54524 1440 505772 12388 49764 2360 0 0 0 0 0 0 0 0
+node "vth" 193 6239.53 -1070 3094 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61665 2032 1293766 24254 0 0 0 0 0 0 0 0 0 0
+node "vad" 437 6224.59 -970 -600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54480 1522 0 0 9000 380 1288448 23232 0 0 0 0 0 0 0 0 0 0
+node "vr" 276 5987.42 -956 -350 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33280 992 0 0 9800 396 1288224 23228 0 0 0 0 0 0 0 0 0 0
+node "vk" 577 6305.6 -986 -122 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73200 1990 0 0 8460 368 1265220 23224 0 0 0 0 0 0 0 0 0 0
+node "vw" 329 5991.23 -1064 3350 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40320 1168 0 0 9212 384 1292480 23304 0 0 0 0 0 0 0 0 0 0
+node "vau" 483 6213.26 -1064 3586 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60800 1680 0 0 9212 384 1289792 23256 0 0 0 0 0 0 0 0 0 0
+node "v" 1399 7843.52 -598 3840 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 229860 5288 0 0 11220 424 1144818 21166 96960 4536 0 0 0 0 0 0 0 0
+node "u" 1703 7672.97 -596 4090 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 179712 5136 0 0 6720 328 1124506 21182 107796 5036 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "v_buff" "a_buff" 390.447
+cap "vth" "a" 896.742
+cap "vss" "a_buff" 190.021
+cap "u_buff" "m1_7717_1497#" 146.588
+cap "u" "a" 89.8802
+cap "v" "a" 89.8802
+cap "axon" "vss" 27.9113
+cap "v_buff" "axon_buff" 110.958
+cap "vss" "axon_buff" 167.392
+cap "vr" "vad" 3513.72
+cap "a_buff" "m1_8939_1497#" 136.398
+cap "vss" "vk" 385.392
+cap "u_buff" "a_buff" 974.424
+cap "i_bias" "vdd_aux" 538.433
+cap "vdd_aux" "axon" 909.925
+cap "vad" "vk" 1435.49
+cap "m1_10211_1497#" "axon_buff" 318.462
+cap "vdd" "vth" 252.095
+cap "u_buff" "axon_buff" 168.466
+cap "vdd" "u" 60.4296
+cap "i_bias" "axon" 617.121
+cap "vdd_aux" "u" 174.649
+cap "vdd" "v" 70.092
+cap "i_bias" "vth" 437.348
+cap "a_buff" "axon_buff" 293.658
+cap "i_bias" "u" 4774.52
+cap "i_bias" "v" 2824.37
+cap "i_bias" "vw" 443.834
+cap "axon" "u" 67.1806
+cap "axon" "v" 67.1806
+cap "v_buff" "vss" 1554.63
+cap "i_bias" "vau" 443.834
+cap "u" "vth" 170.787
+cap "v" "vth" 181.474
+cap "vth" "vw" 3774.84
+cap "vr" "vk" 4523.14
+cap "u" "v" 3611.32
+cap "u" "vw" 172.91
+cap "v" "vw" 1372.72
+cap "m1_6473_1497#" "v_buff" 271.452
+cap "vss" "m1_7717_1497#" 10.8
+cap "m1_6473_1497#" "vss" 10.8
+cap "vau" "vth" 1394.97
+cap "vk" "axon_buff" 56.284
+cap "u_buff" "a" 11.2484
+cap "u" "vau" 1495.77
+cap "vdd_aux" "a" 176.939
+cap "vau" "v" 3624.77
+cap "vau" "vw" 3857.17
+cap "vss" "m1_8939_1497#" 10.8
+cap "i_bias" "a" 857.51
+cap "v_buff" "u_buff" 1627.46
+cap "m1_10211_1497#" "vss" 10.8
+cap "vss" "u_buff" 630.249
+cap "axon" "a" 1126.97
+subcap "vss" -6430.96
+subcap "vad" -5626.72
+subcap "vr" -5350.34
+subcap "vk" -4732.47
+cap "neuron-labeled_0/VGND" "neuron-labeled_0/vk" 41.4205
+cap "neuron-labeled_0/VGND" "vss" 132.01
+cap "vss" "neuron-labeled_0/VGND" 880.056
+cap "vk" "neuron-labeled_0/VGND" 357.955
+cap "vss" "neuron-labeled_0/a_241_n175#" 606.07
+cap "neuron-labeled_0/a_543_n176#" "vss" 384.559
+cap "neuron-labeled_0/vad" "vss" 56.652
+cap "neuron-labeled_0/VGND" "vss" -271.097
+cap "neuron-labeled_0/vr" "vss" 56.62
+cap "neuron-labeled_0/a_543_n176#" "vss" 19.804
+cap "neuron-labeled_0/VGND" "vk" 357.955
+cap "neuron-labeled_0/a_241_n175#" "vss" 420.91
+cap "neuron-labeled_0/VGND" "vk" 146.935
+cap "neuron-labeled_0/VGND" "neuron-labeled_0/a_241_n175#" 11.1056
+subcap "a_buff" -623.4
+subcap "u_buff" -1673.92
+subcap "v_buff" -2480.38
+subcap "axon_buff" -296.016
+subcap "a_buff" -1136.53
+subcap "u_buff" -1904.11
+subcap "v_buff" -2369.22
+cap "neuron-labeled_0/M3/a_n40_n106#" "neuron-labeled_0/v" 1.68927
+cap "neuron-labeled_0/axon" "neuron-labeled_0/u#" 14.35
+cap "neuron-labeled_0/vth" "neuron-labeled_0/v" -107.085
+cap "neuron-labeled_0/Cu/a_n388_n400#" "neuron-labeled_0/axon" 108.824
+cap "neuron-labeled_0/axon" "neuron-labeled_0/Ca/a_n618_n800#" 532.149
+cap "neuron-labeled_0/u#" "neuron-labeled_0/M9/a_n40_n106#" 3.96026
+cap "neuron-labeled_0/u#" "neuron-labeled_0/axon" 222.425
+cap "neuron-labeled_0/Cu/a_n388_n400#" "neuron-labeled_0/axon" 585.649
+cap "neuron-labeled_0/axon" "neuron-labeled_0/a#" 169.74
+cap "axon" "neuron-labeled_0/a#" 207.255
+cap "axon" "neuron-labeled_0/Ca/a_560_n800#" 377.987
+cap "pmos-diff-amp_0/i_bias" "pmos-diff-amp_0/in_1" -14.0217
+cap "pmos-diff-amp_0/i_bias" "pmos-diff-amp_0/vdd" 1.79577
+cap "pmos-diff-amp_0/in_1" "pmos-diff-amp_0/vdd" 1.03053
+cap "axon" "pmos-diff-amp_0/vss" -3.55271e-15
+cap "pmos-diff-amp_0/vdd" "pmos-diff-amp_1/in_1" -2.91985
+cap "pmos-diff-amp_1/in_1" "pmos-diff-amp_1/i_bias" -16.6304
+cap "pmos-diff-amp_1/in_1" "pmos-diff-amp_0/in_2" 13.5357
+cap "pmos-diff-amp_0/in_2" "pmos-diff-amp_0/vss" -24.7371
+cap "pmos-diff-amp_0/sky130_fd_pr__nfet_01v8_r0atdz_0/a_n40_n107#" "pmos-diff-amp_0/in_2" 3.30882
+cap "pmos-diff-amp_0/vdd" "pmos-diff-amp_1/i_bias" -5.91549
+cap "pmos-diff-amp_0/vdd" "axon" 15.6284
+cap "pmos-diff-amp_0/vdd" "pmos-diff-amp_0/in_2" -3.55271e-15
+subcap "m1_8939_1497#" -265.757
+subcap "axon" -5064.22
+cap "pmos-diff-amp_1/in_2" "pmos-diff-amp_1/vdd" 3.55271e-15
+cap "pmos-diff-amp_1/in_2" "pmos-diff-amp_1/sky130_fd_pr__nfet_01v8_r0atdz_0/a_n40_n107#" 3.40909
+cap "v_buff" "pmos-diff-amp_1/vss" 9.48882
+cap "pmos-diff-amp_2/in_1" "pmos-diff-amp_2/i_bias" -23.8043
+cap "pmos-diff-amp_2/sky130_fd_pr__nfet_01v8_r0atdz_0/a_n40_n107#" "pmos-diff-amp_2/in_2" 1.33399
+cap "v_buff" "pmos-diff-amp_1/sky130_fd_pr__nfet_01v8_r0atdz_0/a_n40_n107#" 5.60976
+cap "pmos-diff-amp_1/in_2" "pmos-diff-amp_2/in_1" 14.9786
+cap "pmos-diff-amp_2/i_bias" "pmos-diff-amp_1/vdd" -7.8169
+cap "axon" "pmos-diff-amp_1/vdd" 15.0811
+cap "pmos-diff-amp_2/in_1" "pmos-diff-amp_1/vdd" -4.4084
+cap "pmos-diff-amp_1/in_2" "pmos-diff-amp_1/vss" -27.9
+subcap "m1_10211_1497#" -8.71317
+subcap "u_buff" -1652.08
+subcap "v_buff" -1651.58
+subcap "vdd_aux" -993.633
+subcap "axon" -4555.41
+cap "pmos-diff-amp_3/sky130_fd_pr__nfet_01v8_r0atdz_0/a_n40_n107#" "pmos-diff-amp_3/in_2" 2.72849
+cap "pmos-diff-amp_2/vss" "v_buff" 8.05112
+cap "pmos-diff-amp_2/in_2" "pmos-diff-amp_2/vdd" -3.55271e-15
+cap "pmos-diff-amp_2/sky130_fd_pr__nfet_01v8_r0atdz_0/a_n40_n107#" "v_buff" 5.60976
+cap "pmos-diff-amp_3/in_2" "pmos-diff-amp_2/vss" 1.42109e-14
+cap "pmos-diff-amp_3/in_1" "pmos-diff-amp_2/vdd" 2.76403
+cap "pmos-diff-amp_3/in_1" "pmos-diff-amp_3/i_bias" -19.2391
+cap "pmos-diff-amp_2/sky130_fd_pr__pfet_01v8_4pknhj_0/a_40_n86#" "pmos-diff-amp_2/in_2" 1.42109e-14
+cap "pmos-diff-amp_3/in_1" "pmos-diff-amp_2/in_2" 13.1152
+cap "pmos-diff-amp_3/in_2" "pmos-diff-amp_3/sky130_fd_pr__pfet_01v8_4pknhj_0/a_40_n86#" 1.42109e-14
+cap "pmos-diff-amp_2/vss" "pmos-diff-amp_2/in_2" -28.6714
+cap "pmos-diff-amp_2/sky130_fd_pr__nfet_01v8_r0atdz_0/a_n40_n107#" "pmos-diff-amp_2/in_2" 4.61288
+cap "pmos-diff-amp_3/sky130_fd_pr__nfet_01v8_r0atdz_0/a_n40_n107#" "v_buff" 5.60976
+cap "pmos-diff-amp_3/i_bias" "pmos-diff-amp_2/vdd" -7.1831
+subcap "u_buff" -1893.32
+subcap "v_buff" -2120.12
+subcap "vdd_aux" -1747.2
+cap "pmos-diff-amp_3/in_2" "pmos-diff-amp_3/vss" -30.7286
+cap "pmos-diff-amp_3/in_2" "pmos-diff-amp_3/sky130_fd_pr__pfet_01v8_4pknhj_0/a_40_n86#" 1.42109e-14
+cap "pmos-diff-amp_3/in_2" "pmos-diff-amp_3/vdd" 3.55271e-15
+cap "pmos-diff-amp_3/in_2" "pmos-diff-amp_3/sky130_fd_pr__nfet_01v8_r0atdz_0/a_n40_n107#" 2.72849
+cap "v_buff" "pmos-diff-amp_3/vss" 1.4377
+subcap "vdd" -3366.12
+subcap "vth" -4957.95
+subcap "vw" -5389.99
+cap "neuron-labeled_0/VPWR" "vdd" 150.834
+cap "neuron-labeled_0/M3/a_n40_n106#" "neuron-labeled_0/v" 6.67572
+cap "neuron-labeled_0/vth" "neuron-labeled_0/VPWR" 70.353
+cap "neuron-labeled_0/VPWR" "neuron-labeled_0/vth" 281.505
+cap "vth" "neuron-labeled_0/VPWR" 255.847
+cap "neuron-labeled_0/vau" "neuron-labeled_0/u#" 109.364
+cap "neuron-labeled_0/vw" "neuron-labeled_0/VPWR" 57.108
+cap "neuron-labeled_0/VPWR" "neuron-labeled_0/u#" 87.2256
+cap "neuron-labeled_0/vau" "neuron-labeled_0/VPWR" 57.108
+cap "neuron-labeled_0/u#" "neuron-labeled_0/a#" 70.6488
+cap "neuron-labeled_0/vau" "neuron-labeled_0/vw" -4.12462
+cap "neuron-labeled_0/a#" "neuron-labeled_0/Ca/a_560_n800#" 78.5145
+cap "neuron-labeled_0/VPWR" "vth" 138.397
+cap "pmos-diff-amp_0/in_1" "pmos-diff-amp_0/vdd" 1.03053
+cap "axon" "pmos-diff-amp_0/vdd" 47.5583
+cap "pmos-diff-amp_0/i_bias" "pmos-diff-amp_0/vdd" 1.79577
+cap "axon" "pmos-diff-amp_0/vdd" 184.378
+cap "pmos-diff-amp_1/i_bias" "pmos-diff-amp_0/vdd" -5.91549
+cap "pmos-diff-amp_0/vdd" "pmos-diff-amp_1/in_1" -2.91985
+subcap "axon" -4108.02
+subcap "a" -3302.61
+cap "axon" "pmos-diff-amp_1/vdd" 15.0811
+cap "pmos-diff-amp_1/vdd" "pmos-diff-amp_2/i_bias" -7.8169
+cap "pmos-diff-amp_1/vdd" "pmos-diff-amp_2/in_1" -4.4084
+subcap "vdd_aux" -918.02
+subcap "axon" -4794.64
+cap "pmos-diff-amp_3/i_bias" "pmos-diff-amp_2/vdd" -7.1831
+cap "pmos-diff-amp_3/in_1" "pmos-diff-amp_2/vdd" 2.76403
+subcap "vdd_aux" -1594.06
+subcap "vw" -6107.06
+subcap "vau" -5581.97
+subcap "v" -6996.15
+subcap "u" -7240.31
+subcap "i_bias" -8398.92
+merge "pmos-diff-amp_1/out" "pmos-diff-amp_1/in_2" -559.343 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -125682 -2330 0 0 0 0 0 0 0 0 0 0
+merge "pmos-diff-amp_1/in_2" "m1_7717_1497#"
+merge "m1_7717_1497#" "u_buff"
+merge "pmos-diff-amp_3/vss" "pmos-diff-amp_2/vss" -2407.96 0 0 0 0 0 0 0 0 0 0 -469875 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -763700 -12096 0 0 1855054 -1122 0 0 0 0 0 0
+merge "pmos-diff-amp_2/vss" "pmos-diff-amp_1/vss"
+merge "pmos-diff-amp_1/vss" "pmos-diff-amp_0/vss"
+merge "pmos-diff-amp_0/vss" "neuron-labeled_0/VGND"
+merge "neuron-labeled_0/VGND" "VSUBS"
+merge "VSUBS" "vss"
+merge "neuron-labeled_0/vw" "vw" -540.437 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -54108 -278 0 0 -97690 0 1371889 -5473 0 0 0 0 0 0 0 0 0 0
+merge "pmos-diff-amp_0/out" "pmos-diff-amp_0/in_2" -1655.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -360710 -6934 0 0 0 0 0 0 0 0 0 0
+merge "pmos-diff-amp_0/in_2" "m1_6473_1497#"
+merge "m1_6473_1497#" "v_buff"
+merge "pmos-diff-amp_3/i_bias" "pmos-diff-amp_2/i_bias" -435.237 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -176965 -1064 0 0 0 0 0 0 0 0 0 0
+merge "pmos-diff-amp_2/i_bias" "pmos-diff-amp_1/i_bias"
+merge "pmos-diff-amp_1/i_bias" "pmos-diff-amp_0/i_bias"
+merge "pmos-diff-amp_0/i_bias" "i_bias"
+merge "pmos-diff-amp_3/out" "pmos-diff-amp_3/in_2" -93.9693 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10601 -492 0 0 0 0 0 0 0 0 0 0
+merge "pmos-diff-amp_3/in_2" "m1_10211_1497#"
+merge "m1_10211_1497#" "axon_buff"
+merge "pmos-diff-amp_3/vdd" "pmos-diff-amp_2/vdd" -1757.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -519020 -6928 0 0 0 0 0 0 0 0 0 0
+merge "pmos-diff-amp_2/vdd" "pmos-diff-amp_1/vdd"
+merge "pmos-diff-amp_1/vdd" "pmos-diff-amp_0/vdd"
+merge "pmos-diff-amp_0/vdd" "vdd_aux"
+merge "pmos-diff-amp_2/in_1" "neuron-labeled_0/a#" -1507.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464328 -312 -242440 -3692 0 0 0 0 0 0 0 0 0 0
+merge "neuron-labeled_0/a#" "a"
+merge "neuron-labeled_0/vad" "vad" -59.6534 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 527 -222 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "neuron-labeled_0/VPWR" "vdd" -1546.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -87600 -2856 0 0 -106964 -1126 0 0 0 0 0 0
+merge "pmos-diff-amp_1/in_1" "neuron-labeled_0/u#" -733.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64030 -234 0 0 0 0 -104278 -2108 0 0 0 0 0 0 0 0 0 0
+merge "neuron-labeled_0/u#" "u"
+merge "pmos-diff-amp_0/in_1" "neuron-labeled_0/v" -1218.56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -126196 -1228 0 0 -11220 -424 -107288 -2158 0 0 0 0 0 0 0 0 0 0
+merge "neuron-labeled_0/v" "v"
+merge "pmos-diff-amp_3/in_1" "neuron-labeled_0/axon" -2981.76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90348 -278 1307227 -11871 811722 -2904 0 0 0 0 0 0 0 0
+merge "neuron-labeled_0/axon" "axon"
+merge "neuron-labeled_0/vau" "vau" -683.988 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10000 -288 0 0 0 0 -151200 -2812 0 0 0 0 0 0 0 0 0 0
+merge "neuron-labeled_0/vth" "vth" -611.588 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -94464 0 1606874 -8560 0 0 0 0 0 0 0 0 0 0
+merge "pmos-diff-amp_2/out" "pmos-diff-amp_2/in_2" -82.2751 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26069 -484 0 0 0 0 0 0 0 0 0 0
+merge "pmos-diff-amp_2/in_2" "m1_8939_1497#"
+merge "m1_8939_1497#" "a_buff"
+merge "neuron-labeled_0/vk" "vk" -2725.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23520 -236 0 0 0 0 -605990 -11128 0 0 0 0 0 0 0 0 0 0
+merge "neuron-labeled_0/vr" "vr" -1380.04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8840 -264 0 0 0 0 -303408 -5530 0 0 0 0 0 0 0 0 0 0

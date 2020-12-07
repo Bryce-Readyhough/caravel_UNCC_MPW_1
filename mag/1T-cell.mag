@@ -1,0 +1,54 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1606190511
+<< pwell >>
+rect 202 140 646 680
+<< psubdiff >>
+rect 410 632 446 656
+rect 410 570 446 594
+<< psubdiffcont >>
+rect 410 594 446 632
+<< locali >>
+rect 410 632 446 648
+rect 410 578 446 594
+<< viali >>
+rect 410 594 446 632
+<< metal1 >>
+rect 404 640 452 644
+rect -182 632 722 640
+rect -182 594 410 632
+rect 446 594 722 632
+rect -182 588 722 594
+rect 774 588 1044 640
+rect 404 582 452 588
+rect 196 446 202 498
+rect 254 446 386 498
+rect 474 444 594 496
+rect 646 444 652 496
+rect -182 348 1044 400
+<< via1 >>
+rect 722 588 774 640
+rect 202 446 254 498
+rect 594 444 646 496
+<< metal2 >>
+rect 202 498 254 1020
+rect 202 -134 254 446
+rect 594 496 646 1024
+rect 594 -142 646 444
+rect 722 640 774 1024
+rect 722 -138 774 588
+use sky130_fd_bs_flash__special_sonosfet_star_ocehe0  sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0
+timestamp 1606190511
+transform 1 0 429 0 1 439
+box -429 -439 429 439
+<< labels >>
+flabel metal1 -164 362 -138 382 0 FreeSans 800 0 0 0 gate
+port 0 nsew
+flabel metal2 212 -82 238 -62 0 FreeSans 800 0 0 0 drain
+port 1 nsew
+flabel metal2 608 -86 634 -66 0 FreeSans 800 0 0 0 source
+port 2 nsew
+flabel metal1 -158 602 -132 622 0 FreeSans 800 0 0 0 body
+port 4 nsew
+<< end >>

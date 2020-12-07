@@ -1,0 +1,46 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1605923309
+<< nmos >>
+rect -15 -80 15 80
+<< ndiff >>
+rect -73 68 -15 80
+rect -73 -68 -61 68
+rect -27 -68 -15 68
+rect -73 -80 -15 -68
+rect 15 68 73 80
+rect 15 -68 27 68
+rect 61 -68 73 68
+rect 15 -80 73 -68
+<< ndiffc >>
+rect -61 -68 -27 68
+rect 27 -68 61 68
+<< poly >>
+rect -33 152 33 168
+rect -33 118 -17 152
+rect 17 118 33 152
+rect -33 102 33 118
+rect -15 80 15 102
+rect -15 -102 15 -80
+rect -33 -118 33 -102
+rect -33 -152 -17 -118
+rect 17 -152 33 -118
+rect -33 -168 33 -152
+<< polycont >>
+rect -17 118 17 152
+rect -17 -152 17 -118
+<< locali >>
+rect -33 118 -17 152
+rect 17 118 33 152
+rect -61 68 -27 84
+rect -61 -84 -27 -68
+rect 27 68 61 84
+rect 27 -84 61 -68
+rect -33 -152 -17 -118
+rect 17 -152 33 -118
+<< properties >>
+string gencell sky130_fd_pr__nfet_01v8
+string parameters w 0.80 l 0.150 m 1 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt} full_metal 0
+string library sky130
+<< end >>

@@ -1,0 +1,259 @@
+* NGSPICE file created from chip-w-opamp.ext - technology: sky130A
+
+* Include SkyWater sky130 device models
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical__lin.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/tt.spice"
+
+* .lib "/home/mhasan13/pdk/pdk-prepared/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+* DC source for current measure
+Vdd vdd gnd DC 0.7V
+Vgnd vss gnd DC 0.0V
+Vth vth gnd DC 0.1V
+Vk vk gnd DC 0.15V
+Vw vw gnd DC 0.18V
+Vr vr gnd DC 0.25V
+Vau vau gnd DC 0.7V
+Vad vad gnd DC 0.0V
+
+Vdd_aux vdd_aux gnd DC 1.8V
+Ibias i_bias gnd DC 1n
+
+Vsel sel gnd DC 1.8V
+Vsyn0 vsyn0 gnd DC 0.7V
+Vsyn1 vsyn1 gnd DC 0.425V
+
+
+* Vdd VPWR gnd DC 0.7V
+* Vgnd VGND gnd DC 0.0V
+* Vth vth gnd DC 0.1V
+* Vk vk gnd DC 0.15V
+* Vw vw gnd DC 0.01V
+* Vr vr gnd DC 0.37V
+* Vau vau gnd DC 0.08V
+* Vad vad gnd DC 0.25V
+
+Idc vdd i_in DC 10p
+
+* NGSPICE file created from chip-w-opamp.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_owy61o VSUBS a_n73_n61# w_n109_n123# a_15_n61# a_n33_54#
+X0 a_15_n61# a_n33_54# a_n73_n61# w_n109_n123# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_63vi9a VSUBS a_15_n11# a_n33_n99# a_n73_n11#
+X0 a_15_n11# a_n33_n99# a_n73_n11# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt one-way VSUBS li_12_16# w_n37_405# li_100_394#
+Xsky130_fd_pr__pfet_01v8_owy61o_0 VSUBS li_12_16# w_n37_405# li_100_394# li_100_394#
++ sky130_fd_pr__pfet_01v8_owy61o
+Xsky130_fd_pr__nfet_01v8_63vi9a_0 VSUBS li_100_394# li_12_16# li_12_16# sky130_fd_pr__nfet_01v8_63vi9a
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_8mr83b VSUBS a_n73_n42# a_n15_n68# a_15_n42#
+X0 a_15_n42# a_n15_n68# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_ykwexw VSUBS a_n73_n42# w_n109_n104# a_n15_n68# a_15_n42#
+X0 a_15_n42# a_n15_n68# a_n73_n42# w_n109_n104# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt inverter in out vdd vss
+Xsky130_fd_pr__nfet_01v8_8mr83b_0 vss vss in out sky130_fd_pr__nfet_01v8_8mr83b
+Xsky130_fd_pr__pfet_01v8_ykwexw_0 vss vdd vdd in out sky130_fd_pr__pfet_01v8_ykwexw
+.ends
+
+* .subckt sky130_fd_bs_flash__special_sonosfet_star_ocehe0 VSUBS a_15_n11# a_n33_n99#
+* + dw_n429_n439# a_n73_n11#
+* X0 a_15_n11# a_n33_n99# a_n73_n11# VSUBS sky130_fd_bs_flash__special_sonosfet_star w=420000u l=150000u
+* .ends
+* 
+* .subckt T-cell gate drain source body sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#
+* Xsky130_fd_bs_flash__special_sonosfet_star_ocehe0_0 body source gate sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#
+* + drain sky130_fd_bs_flash__special_sonosfet_star_ocehe0
+* .ends
+* 
+* .subckt x2-array WL0 WL1 BL0 SL0 BL1 SL1 body body BL0 SL0 SL1 BL1 SL0
+* X1T-cell_0[0|0] WL1 BL0 SL0 body dw_n430_n464# T-cell
+* X1T-cell_0[1|0] WL0 BL0 SL0 body dw_n430_n464# T-cell
+* X1T-cell_0[0|1] WL1 BL1 SL1 body dw_n430_n464# T-cell
+* X1T-cell_0[1|1] WL0 BL1 SL1 body dw_n430_n464# T-cell
+* .ends
+
+.subckt sky130_fd_pr__nfet_01v8_r0atdz VSUBS a_n40_n107# a_n98_n81# a_40_n81#
+X0 a_40_n81# a_n40_n107# a_n98_n81# VSUBS sky130_fd_pr__nfet_01v8 w=500000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_4pknhj VSUBS a_n98_n86# w_n134_n148# a_40_n86# a_n40_n112#
+X0 a_40_n86# a_n40_n112# a_n98_n86# w_n134_n148# sky130_fd_pr__pfet_01v8 w=500000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_4ujh9u VSUBS w_n144_n198# a_n50_n162# a_n108_n136#
++ a_50_n136#
+X0 a_50_n136# a_n50_n162# a_n108_n136# w_n144_n198# sky130_fd_pr__pfet_01v8 w=1e+06u l=500000u
+.ends
+
+.subckt pmos-diff-amp in_1 in_2 out i_bias vdd vss
+Xsky130_fd_pr__nfet_01v8_r0atdz_0 vss m1_91_n137# m1_91_n137# vss sky130_fd_pr__nfet_01v8_r0atdz
+Xsky130_fd_pr__nfet_01v8_r0atdz_1 vss m1_91_n137# vss out sky130_fd_pr__nfet_01v8_r0atdz
+Xsky130_fd_pr__pfet_01v8_4pknhj_0 vss m1_91_n137# vdd li_184_186# in_1 sky130_fd_pr__pfet_01v8_4pknhj
+Xsky130_fd_pr__pfet_01v8_4ujh9u_0 vss vdd i_bias li_184_186# vdd sky130_fd_pr__pfet_01v8_4ujh9u
+Xsky130_fd_pr__pfet_01v8_4pknhj_1 vss li_184_186# vdd out in_2 sky130_fd_pr__pfet_01v8_4pknhj
+Xsky130_fd_pr__pfet_01v8_4ujh9u_1 vss vdd i_bias vdd i_bias sky130_fd_pr__pfet_01v8_4ujh9u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_dlksd1 VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_s3efqo VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lca7f7 VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_u061qr VSUBS a_n40_n106# a_n98_n80# w_n134_n142# a_40_n80#
+X0 a_40_n80# a_n40_n106# a_n98_n80# w_n134_n142# sky130_fd_pr__pfet_01v8 w=800000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_h2n75u VSUBS a_n40_n106# a_n98_n80# w_n134_n142# a_40_n80#
+X0 a_40_n80# a_n40_n106# a_n98_n80# w_n134_n142# sky130_fd_pr__pfet_01v8 w=800000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_zt2j7p VSUBS a_n98_n120# a_n40_n146# a_40_n120# w_n134_n182#
+X0 a_40_n120# a_n40_n146# a_n98_n120# w_n134_n182# sky130_fd_pr__pfet_01v8 w=1.2e+06u l=400000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_ckptud VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_2vaynq VSUBS a_n40_n106# a_n98_n80# w_n134_n142# a_40_n80#
+X0 a_40_n80# a_n40_n106# a_n98_n80# w_n134_n142# sky130_fd_pr__pfet_01v8 w=800000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_wpylm8 VSUBS a_n388_n400# a_n330_n426# a_330_n400#
+X0 a_330_n400# a_n330_n426# a_n388_n400# VSUBS sky130_fd_pr__nfet_01v8 w=4e+06u l=3.3e+06u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_9i6r5e VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_9hqhhq VSUBS a_n498_n500# a_n440_n526# a_440_n500#
+X0 a_440_n500# a_n440_n526# a_n498_n500# VSUBS sky130_fd_pr__nfet_01v8 w=5e+06u l=4.4e+06u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_h43ndc VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_6z4qh8 VSUBS a_n40_n106# a_n98_n80# w_n134_n142# a_40_n80#
+X0 a_40_n80# a_n40_n106# a_n98_n80# w_n134_n142# sky130_fd_pr__pfet_01v8 w=800000u l=400000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_tb02ql VSUBS a_n618_n800# a_n560_n826# a_560_n800#
+X0 a_560_n800# a_n560_n826# a_n618_n800# VSUBS sky130_fd_pr__nfet_01v8 w=8e+06u l=5.6e+06u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_zgaw3c VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+.ends
+
+.subckt neuron-labeled VPWR VGND vth vk vw vr vau vad v u# a# axon
+XM10 VGND VGND vad a# sky130_fd_pr__nfet_01v8_dlksd1
+XM11 VGND v a# VGND sky130_fd_pr__nfet_01v8_s3efqo
+XM1 VGND a_35_1497# v vth sky130_fd_pr__nfet_01v8_lca7f7
+XM2 VGND a_35_1497# VPWR VPWR a_35_1497# sky130_fd_pr__pfet_01v8_u061qr
+XM3 VGND a_35_1497# VPWR VPWR v sky130_fd_pr__pfet_01v8_h2n75u
+XM4 VGND VPWR a_35_1497# axon VPWR sky130_fd_pr__pfet_01v8_zt2j7p
+XM5 VGND VGND a_35_1497# axon sky130_fd_pr__nfet_01v8_ckptud
+XM6 VGND vw axon VPWR u# sky130_fd_pr__pfet_01v8_2vaynq
+XCu VGND VGND u# VGND sky130_fd_pr__nfet_01v8_wpylm8
+XM7 VGND VGND vr u# sky130_fd_pr__nfet_01v8_9i6r5e
+XCv VGND VGND v VGND sky130_fd_pr__nfet_01v8_9hqhhq
+XM8 VGND v u# VGND sky130_fd_pr__nfet_01v8_h43ndc
+XM9 VGND vau axon VPWR a# sky130_fd_pr__pfet_01v8_6z4qh8
+XCa VGND VGND a# VGND sky130_fd_pr__nfet_01v8_tb02ql
+XMk VGND v vk VGND sky130_fd_pr__nfet_01v8_zgaw3c
+.ends
+
+.subckt neuron-labeled-extended-opamp v u a vau vw vth vk vr vad vdd vss axon i_bias
++ v_buff u_buff a_buff axon_buff vdd_aux vss vdd v vss
+Xpmos-diff-amp_0 v v_buff v_buff i_bias vdd_aux vss pmos-diff-amp
+Xpmos-diff-amp_1 u u_buff u_buff i_bias vdd_aux vss pmos-diff-amp
+Xpmos-diff-amp_2 a a_buff a_buff i_bias vdd_aux vss pmos-diff-amp
+Xpmos-diff-amp_3 axon axon_buff axon_buff i_bias vdd_aux vss pmos-diff-amp
+Xneuron-labeled_0 vdd vss vth vk vw vr vau vad v u a axon neuron-labeled
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_5mkfxl VSUBS a_n73_n42# a_15_n42# a_n33_n130#
+X0 a_15_n42# a_n33_n130# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_pa2hmj VSUBS a_n33_n177# a_15_n80# w_n109_n180# a_n73_n80#
+X0 a_15_n80# a_n33_n177# a_n73_n80# w_n109_n180# sky130_fd_pr__pfet_01v8 w=800000u l=150000u
+.ends
+
+.subckt pass-gate clk clk_bar v_in v_out v_newll v_sub v_out
+Xsky130_fd_pr__nfet_01v8_5mkfxl_0 v_sub v_out v_in clk sky130_fd_pr__nfet_01v8_5mkfxl
+Xsky130_fd_pr__pfet_01v8_pa2hmj_0 v_sub clk_bar v_out v_newll v_in sky130_fd_pr__pfet_01v8_pa2hmj
+.ends
+
+.subckt pass-gate-inv-2 in_1 in_2 clk clk_bar out vdd vss vss vdd out in_1 clk vss
++ vss
+Xinverter_0 clk clk_bar vdd vss inverter
+Xpass-gate_0 clk clk_bar in_1 out vdd vss out pass-gate
+Xpass-gate_1 clk_bar clk in_2 out vdd vss out pass-gate
+.ends
+
+.subckt chip-w-opamp i_bias vad vr vk vth vw vau vsyn0 vsyn1 vdd vss vdd_aux sel v_syn
++ u_syn a_syn axon_syn v_buff u_buff a_buff axon_buff WL0 WL1 BL0 SL0 BL1 SL1 i_in
+Xone-way_0 vss inverter_0/out vdd neuron-labeled-extended-opamp_0/v one-way
+Xone-way_1 vss inverter_1/out vdd neuron-labeled-extended-opamp_1/v one-way
+Xinverter_0 vsyn0 inverter_0/out vdd vss inverter
+Xinverter_1 vsyn1 inverter_1/out vdd vss inverter
+* X2x2-array_0 WL0 WL1 BL0 SL0 BL1 SL1 vss vss BL0 SL0 SL1 BL1 SL0 x2-array
+Xneuron-labeled-extended-opamp_0 neuron-labeled-extended-opamp_0/v neuron-labeled-extended-opamp_0/u
++ neuron-labeled-extended-opamp_0/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_0/axon
++ i_bias pass-gate-inv-2_0/in_2 pass-gate-inv-2_1/in_2 pass-gate-inv-2_2/in_2 pass-gate-inv-2_3/in_2
++ vdd_aux vss vdd neuron-labeled-extended-opamp_0/v vss neuron-labeled-extended-opamp
+Xneuron-labeled-extended-opamp_1 neuron-labeled-extended-opamp_1/v neuron-labeled-extended-opamp_1/u
++ neuron-labeled-extended-opamp_1/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_1/axon
++ i_bias pass-gate-inv-2_0/in_1 pass-gate-inv-2_1/in_1 pass-gate-inv-2_2/in_1 pass-gate-inv-2_3/in_1
++ vdd_aux vss vdd neuron-labeled-extended-opamp_1/v vss neuron-labeled-extended-opamp
+Xneuron-labeled-extended-opamp_2 i_in neuron-labeled-extended-opamp_2/u neuron-labeled-extended-opamp_2/a
++ vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_2/axon i_bias v_buff
++ u_buff a_buff axon_buff vdd_aux vss vdd i_in vss neuron-labeled-extended-opamp
+Xpass-gate-inv-2_0 pass-gate-inv-2_0/in_1 pass-gate-inv-2_0/in_2 sel pass-gate-inv-2_0/clk_bar
++ v_syn vdd_aux vss vss vdd_aux v_syn pass-gate-inv-2_0/in_1 sel vss vss pass-gate-inv-2
+Xpass-gate-inv-2_1 pass-gate-inv-2_1/in_1 pass-gate-inv-2_1/in_2 sel pass-gate-inv-2_1/clk_bar
++ u_syn vdd_aux vss vss vdd_aux u_syn pass-gate-inv-2_1/in_1 sel vss vss pass-gate-inv-2
+Xpass-gate-inv-2_2 pass-gate-inv-2_2/in_1 pass-gate-inv-2_2/in_2 sel pass-gate-inv-2_2/clk_bar
++ a_syn vdd_aux vss vss vdd_aux a_syn pass-gate-inv-2_2/in_1 sel vss vss pass-gate-inv-2
+Xpass-gate-inv-2_3 pass-gate-inv-2_3/in_1 pass-gate-inv-2_3/in_2 sel pass-gate-inv-2_3/clk_bar
++ axon_syn vdd_aux vss vss vdd_aux axon_syn pass-gate-inv-2_3/in_1 sel vss vss pass-gate-inv-2
+.ends
+
+
+
+
+
+* instantiate the neuron for sim
+Xneuron i_bias vad vr vk vth vw vau vsyn0 vsyn1 vdd vss vdd_aux sel v_syn
++ u_syn a_syn axon_syn v_buff u_buff a_buff axon_buff WL0 WL1 BL0 SL0 BL1 SL1 i_in chip-w-opamp
+
+.IC V(i_in)=0 V("xneuron.neuron-labeled-extended-opamp_2/u")=0 V("xneuron.neuron-labeled-extended-opamp_2/a")=0
+
+.control
+* Sweep tran
+tran 1u 20m uic
+plot v(i_in) v(v_buff)
+plot v("xneuron.neuron-labeled-extended-opamp_1/v") v(v_syn)
+.endc
+.end
+

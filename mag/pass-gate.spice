@@ -1,0 +1,15 @@
+* NGSPICE file created from pass-gate.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_5mkfxl VSUBS a_n73_n42# a_15_n42# a_n33_n130#
+X0 a_15_n42# a_n33_n130# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_pa2hmj VSUBS a_n33_n177# a_15_n80# w_n109_n180# a_n73_n80#
+X0 a_15_n80# a_n33_n177# a_n73_n80# w_n109_n180# sky130_fd_pr__pfet_01v8 w=800000u l=150000u
+.ends
+
+.subckt pass-gate clk clk_bar v_in v_out v_newll v_sub
+Xsky130_fd_pr__nfet_01v8_5mkfxl_0 v_sub v_out v_in clk sky130_fd_pr__nfet_01v8_5mkfxl
+Xsky130_fd_pr__pfet_01v8_pa2hmj_0 v_sub clk_bar v_out v_newll v_in sky130_fd_pr__pfet_01v8_pa2hmj
+.ends
+

@@ -1,0 +1,100 @@
+timestamp 1606604430
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use inverter inverter_0 1 0 -332 0 1 446
+use pass-gate pass-gate_1 1 0 210 0 -1 1385
+use pass-gate pass-gate_0 1 0 210 0 1 218
+port "vdd" 5 732 -86 744 -68 m3
+port "vss" 6 862 -46 874 -28 m2
+port "in_1" 0 -652 344 -640 362 m1
+port "in_2" 1 -644 1400 -632 1418 m1
+port "out" 4 804 780 816 798 li
+port "clk" 2 -440 74 -428 92 li
+port "clk_bar" 3 -76 462 -64 480 li
+node "vdd" 1 817.571 732 -86 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 144262 4156 0 0 0 0 0 0
+node "m2_536_685#" 0 75.8684 536 685 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7761 354 0 0 0 0 0 0 0 0
+node "m2_536_834#" 0 76.6298 536 834 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7623 358 0 0 0 0 0 0 0 0
+node "vss" 6 1031.78 862 -46 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117250 4790 0 0 0 0 0 0 0 0
+node "in_1" 2 342.167 -652 344 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41526 1646 0 0 0 0 0 0 0 0 0 0
+node "m1_n129_664#" 0 77.49 -129 664 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7448 378 0 0 0 0 0 0 0 0 0 0
+node "in_2" 2 355.52 -644 1400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40446 1606 0 0 0 0 0 0 0 0 0 0
+node "out" 531 1137.2 804 780 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 81840 3860 0 0 0 0 0 0 0 0 0 0 0 0
+node "clk" 529 1552.68 -440 74 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120264 4672 30440 904 0 0 0 0 0 0 0 0 0 0
+node "clk_bar" 388 799.508 -76 462 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56224 2760 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n382_614#" 5261 813.408 -382 614 nw 0 0 0 0 271136 2424 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -150 0 ppd 0 0 0 0 0 0 0 0 0 0 49152 1216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m2_536_834#" "m2_536_685#" 75
+cap "m1_n129_664#" "clk" 15.0169
+cap "vss" "m2_536_685#" 20.2604
+cap "clk" "clk_bar" 259.492
+cap "vdd" "out" 62.224
+cap "m1_n129_664#" "w_n382_614#" 4.8412
+cap "w_n382_614#" "clk_bar" 11.4996
+cap "m1_n129_664#" "in_1" 14.0035
+cap "vdd" "vss" 148.84
+cap "clk" "in_1" 56.095
+cap "clk_bar" "out" 9.42857
+cap "clk" "in_2" 55.6407
+cap "vss" "m2_536_834#" 20.4255
+subcap "vss" -769.667
+subcap "in_2" -216.249
+subcap "out" -589.521
+cap "pass-gate_0/v_in" "inverter_0/vdd" 85.1258
+cap "pass-gate_1/v_in" "inverter_0/vdd" 6.72909
+cap "pass-gate_0/v_in" "pass-gate_1/v_in" 110.214
+cap "pass-gate_1/v_out" "inverter_0/vdd" 79.605
+cap "inverter_0/vss" "inverter_0/vdd" 4.95437
+cap "pass-gate_0/v_in" "pass-gate_1/v_out" 20.9714
+cap "pass-gate_1/v_out" "pass-gate_1/v_in" 20.2027
+cap "pass-gate_0/v_in" "inverter_0/vss" 185.435
+cap "inverter_0/vss" "pass-gate_1/v_out" 29.4762
+cap "inverter_0/out" "inverter_0/vdd" 96.7356
+cap "pass-gate_0/v_in" "inverter_0/out" 92.022
+cap "pass-gate_1/v_in" "inverter_0/out" 46.852
+cap "pass-gate_1/v_out" "inverter_0/out" 34.1873
+cap "inverter_0/in" "inverter_0/vdd" 155.567
+cap "inverter_0/in" "pass-gate_1/v_in" 64.0473
+cap "pass-gate_0/v_in" "inverter_0/in" 72.2025
+cap "inverter_0/in" "pass-gate_1/v_out" 31.9853
+cap "inverter_0/vss" "inverter_0/in" 267.32
+cap "inverter_0/in" "inverter_0/out" 50.2989
+subcap "vdd" -1163.73
+subcap "m2_536_685#" -422.027
+subcap "m2_536_834#" -422.788
+subcap "out" -708.81
+cap "pass-gate_1/v_out" "pass-gate_1/v_newll" 12.9775
+cap "pass-gate_0/sky130_fd_pr__pfet_01v8_pa2hmj_0/a_n33_n177#" "pass-gate_1/v_out" 3.70408
+cap "pass-gate_1/sky130_fd_pr__pfet_01v8_pa2hmj_0/a_n33_n177#" "pass-gate_1/v_out" 3.70408
+cap "pass-gate_0/sky130_fd_pr__pfet_01v8_pa2hmj_0/a_n73_n80#" "pass-gate_1/v_out" 1.51213
+cap "pass-gate_1/v_newll" "pass-gate_1/v_sub" 38.3944
+cap "pass-gate_1/sky130_fd_pr__pfet_01v8_pa2hmj_0/a_n73_n80#" "pass-gate_1/v_out" 1.51213
+cap "pass-gate_1/clk_bar" "pass-gate_1/v_in" 3.55271e-15
+cap "pass-gate_1/clk" "pass-gate_1/clk_bar" -0.875718
+cap "pass-gate_1/v_sub" "pass-gate_1/v_out" 10.0681
+cap "pass-gate_1/clk" "pass-gate_1/v_out" 7.79167
+cap "pass-gate_1/v_newll" "pass-gate_1/v_sub" 25.96
+merge "pass-gate_0/v_sub" "pass-gate_1/v_sub" -132.052 0 0 0 0 0 0 0 0 0 0 33312 -428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11502 -668 0 0 0 0 0 0 0 0
+merge "pass-gate_1/v_sub" "vss"
+merge "vss" "inverter_0/vss"
+merge "inverter_0/vss" "VSUBS"
+merge "pass-gate_1/v_in" "in_2" -127.167 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -137692 -168 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate_0/clk" "pass-gate_1/clk_bar" -133.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5830 -438 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate_1/clk_bar" "inverter_0/in"
+merge "inverter_0/in" "clk"
+merge "pass-gate_0/v_newll" "pass-gate_1/v_newll" -419.065 0 0 0 0 -26887 -3098 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2016 -184 -22611 -696 13934 -646 0 0 0 0 0 0
+merge "pass-gate_1/v_newll" "inverter_0/vdd"
+merge "inverter_0/vdd" "w_n382_614#"
+merge "w_n382_614#" "m1_n129_664#"
+merge "m1_n129_664#" "m2_536_834#"
+merge "m2_536_834#" "vdd"
+merge "vdd" "m2_536_685#"
+merge "pass-gate_0/sky130_fd_pr__pfet_01v8_pa2hmj_0/a_15_n80#" "pass-gate_0/v_out" -132.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70165 -712 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate_0/v_out" "pass-gate_1/v_out"
+merge "pass-gate_1/v_out" "out"
+merge "pass-gate_0/clk_bar" "pass-gate_1/clk" -161.473 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -41376 -448 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate_1/clk" "inverter_0/out"
+merge "inverter_0/out" "clk_bar"
+merge "pass-gate_0/v_in" "in_1" -101.214 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1458 -162 0 0 0 0 0 0 0 0 0 0

@@ -1,0 +1,513 @@
+timestamp 1606278851
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use neuron-labeled-extended neuron-labeled-extended_0 1 0 630 0 1 623
+use inverter inverter_0 1 0 -1166 0 1 2098
+use one-way one-way_0 1 0 -618 0 1 1859
+use neuron-labeled-extended neuron-labeled-extended_1 1 0 631 0 1 6446
+use inverter inverter_1 1 0 -1150 0 1 7804
+use one-way one-way_1 1 0 -543 0 1 7572
+use neuron-labeled-extended neuron-labeled-extended_2 1 0 630 0 1 12267
+use pass-gate-inv-2 pass-gate-inv-2_2 1 0 18580 0 1 -3752
+use pass-gate-inv-2 pass-gate-inv-2_3 1 0 18580 0 1 -5566
+use pass-gate-inv-2 pass-gate-inv-2_1 1 0 18582 0 1 -1922
+use pass-gate-inv-2 pass-gate-inv-2_0 1 0 18582 0 1 -156
+port "vad" 5 8374 17148 8436 17230 m2
+port "vr" 4 7956 17138 8018 17220 m2
+port "vk" 3 7536 17148 7598 17230 m2
+port "vss" 19 -2270 16950 -2248 16992 m2
+port "axon" 9 11212 17160 11234 17202 m2
+port "a" 8 10810 17158 10872 17240 m2
+port "vdd" 17 -3176 17008 -3154 17050 m2
+port "vth" 2 7106 17118 7168 17200 m2
+port "vw" 1 6688 17108 6750 17190 m2
+port "vau" 20 6252 17166 6290 17216 m2
+port "v" 6 9694 17180 9756 17262 m2
+port "u" 7 10196 17180 10258 17262 m2
+port "axon#" 14 21302 17782 21324 17824 m2
+port "a#" 13 20830 17764 20852 17806 m2
+port "u#" 12 20408 17732 20430 17774 m2
+port "sel" 10 17558 17744 17580 17786 m2
+port "v#" 11 19944 17708 19966 17750 m2
+port "syn1" 16 -4618 17220 -4596 17262 m2
+port "syn0" 15 -4166 17140 -4144 17182 m2
+node "m1_5364_1738#" 41 9080.95 5364 1738 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 801950 25790 523575 16240 0 0 0 0 0 0 0 0
+node "m1_5319_3057#" 35 9904.95 5319 3057 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 986620 25932 812012 19056 0 0 0 0 0 0 0 0
+node "m1_5396_4435#" 31 10732.6 5396 4435 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1084836 25792 1212176 21870 0 0 0 0 0 0 0 0
+node "m1_5375_4679#" 31 10849.9 5375 4679 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1136088 25904 1213300 22280 0 0 0 0 0 0 0 0
+node "m1_5324_7561#" 53 11681.4 5324 7561 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 806582 26074 904410 27958 0 0 0 0 0 0 0 0
+node "m1_5419_8880#" 43 12451.7 5419 8880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 974052 25924 1312790 30702 0 0 0 0 0 0 0 0
+node "m1_5166_10258#" 38 13349.4 5166 10258 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1091304 26328 1854496 33340 0 0 0 0 0 0 0 0
+node "m1_5429_10502#" 38 13378.1 5429 10502 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1111848 25840 1859550 34030 0 0 0 0 0 0 0 0
+node "vad" 11 14718.1 8374 17148 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1010016 18708 2691856 48292 0 0 0 0 0 0 0 0
+node "vr" 9 13936.1 7956 17138 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 863520 16092 2692848 48308 0 0 0 0 0 0 0 0
+node "vk" 8 13270.1 7536 17148 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 737660 14072 2644764 48304 0 0 0 0 0 0 0 0
+node "vss" 0 30308.2 -2270 16950 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6097961 67068 6055414 54228 0 0 0 0 0 0 0 0
+node "axon" 19 4440.19 11212 17160 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 383760 11938 259220 8106 0 0 0 0 0 0 0 0
+node "a" 12 3727.02 10810 17158 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 465088 10988 226352 5436 0 0 0 0 0 0 0 0
+node "vdd" 2 32937.6 -3176 17008 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6861352 73938 5940006 50362 296324 5824 0 0 0 0 0 0
+node "vth" 7 12377 7106 17118 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 568260 10992 2644520 48300 0 0 0 0 0 0 0 0
+node "vw" 5 11687.8 6688 17108 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 448448 8680 2691856 48292 0 0 0 0 0 0 0 0
+node "vau" 4 11114.1 6252 17166 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 347424 6876 2695664 48360 0 0 0 0 0 0 0 0
+node "v" 6 2737.96 9694 17180 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 499520 9144 145488 2822 0 0 0 0 0 0 0 0
+node "u" 7 2838.18 10196 17180 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 532620 9904 112420 2264 0 0 0 0 0 0 0 0
+node "axon#" 582 12466.5 21302 17782 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76160 3888 14496 776 1047008 52416 0 0 0 0 0 0 0 0
+node "a#" 422 12142.7 20830 17764 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55120 2836 15856 844 1045808 52356 0 0 0 0 0 0 0 0
+node "u#" 250 11739.8 20408 17732 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32560 1708 19136 1008 1037328 51932 0 0 0 0 0 0 0 0
+node "sel" 427 11899.3 17558 17744 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70200 3208 74164 3316 1237368 49588 0 0 0 0 0 0 0 0
+node "v#" 186 11428.3 19944 17708 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24240 1292 12256 664 1028208 51476 0 0 0 0 0 0 0 0
+node "li_n980_2052#" 116 257.462 -980 2052 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16716 880 0 0 0 0 0 0 0 0 0 0 0 0
+node "syn1" 76 13187.5 -4618 17220 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79808 1608 332976 5968 2846408 49308 0 0 0 0 0 0 0 0
+node "li_n1025_2408#" 102 319.453 -1025 2408 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27246 1070 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n502_2065#" 362 1109.58 -502 2065 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 106680 3676 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n964_7758#" 133 293.382 -964 7758 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19278 1002 0 0 0 0 0 0 0 0 0 0 0 0
+node "syn0" 79 12715.8 -4166 17140 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84680 1692 277760 5016 2792120 48372 0 0 0 0 0 0 0 0
+node "li_n1000_8122#" 124 337.387 -1000 8122 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26418 1138 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n425_7790#" 367 1125.32 -425 7790 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108240 3728 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_5375_4679#" "vr" 168.732
+cap "m1_5364_1738#" "sel" 118.732
+cap "m1_5419_8880#" "m1_5375_4679#" 93.0174
+cap "m1_5375_4679#" "m1_5429_10502#" 2593.14
+cap "m1_5324_7561#" "m1_5166_10258#" 200.836
+cap "u" "v" 1782.02
+cap "axon" "vau" 121.698
+cap "a" "vw" 143.647
+cap "vau" "vdd" 227.263
+cap "vw" "vth" 5622.41
+cap "m1_5319_3057#" "vau" 143.647
+cap "m1_5396_4435#" "vw" 328.205
+cap "vau" "vss" 226.218
+cap "m1_5324_7561#" "m1_5375_4679#" 79.1385
+cap "m1_5375_4679#" "m1_5166_10258#" 277.611
+cap "vdd" "syn1" 287.921
+cap "a" "vth" 142.111
+cap "vss" "syn1" 287.921
+cap "axon" "vw" 121.698
+cap "m1_5419_8880#" "sel" 69.225
+cap "m1_5429_10502#" "sel" 69.225
+cap "li_n980_2052#" "li_n1025_2408#" 41.828
+cap "vw" "vdd" 227.263
+cap "m1_5396_4435#" "vth" 169.112
+cap "m1_5364_1738#" "vau" 121.698
+cap "m1_5319_3057#" "vw" 143.647
+cap "vw" "vss" 226.218
+cap "vau" "vk" 506.196
+cap "a#" "axon#" 28.72
+cap "li_n502_2065#" "li_n980_2052#" 11.9625
+cap "li_n1000_8122#" "li_n964_7758#" 47.0404
+cap "a" "axon" 408.696
+cap "vad" "vau" 512.467
+cap "syn0" "li_n964_7758#" 5.17164
+cap "li_n1000_8122#" "li_n425_7790#" 8.33168
+cap "axon" "vth" 120.302
+cap "m1_5324_7561#" "sel" 69.225
+cap "m1_5166_10258#" "sel" 69.225
+cap "vth" "vdd" 225.191
+cap "m1_5396_4435#" "vdd" 227.263
+cap "m1_5319_3057#" "vth" 142.111
+cap "m1_5396_4435#" "m1_5319_3057#" 236.665
+cap "vth" "vss" 224.152
+cap "m1_5364_1738#" "vw" 121.698
+cap "m1_5396_4435#" "vss" 67.5356
+cap "vau" "vr" 512.467
+cap "vw" "vk" 506.196
+cap "m1_5419_8880#" "vau" 143.647
+cap "m1_5429_10502#" "vau" 276.517
+cap "vad" "vw" 512.467
+cap "m1_5375_4679#" "sel" 125.847
+cap "a" "vk" 142.111
+cap "vau" "u" 273.931
+cap "m1_5319_3057#" "vdd" 200.325
+cap "m1_5364_1738#" "vth" 120.302
+cap "a" "vad" 143.647
+cap "m1_5396_4435#" "m1_5364_1738#" 200.836
+cap "vth" "vk" 4098.97
+cap "vdd" "vss" 2013.01
+cap "a#" "u#" 3383.65
+cap "m1_5319_3057#" "vss" 74.3606
+cap "m1_5396_4435#" "vk" 169.112
+cap "vw" "vr" 512.467
+cap "vad" "vth" 507.336
+cap "li_n1025_2408#" "vdd" 39.0888
+cap "m1_5396_4435#" "vad" 170.822
+cap "m1_5324_7561#" "vau" 121.698
+cap "m1_5419_8880#" "vw" 143.647
+cap "m1_5166_10258#" "vau" 511.198
+cap "m1_5429_10502#" "vw" 168.732
+cap "axon" "vk" 120.302
+cap "a" "vr" 143.647
+cap "vau" "v" 509.686
+cap "vw" "u" 168.732
+cap "m1_5364_1738#" "vdd" 493.184
+cap "li_n502_2065#" "li_n1025_2408#" 6.6
+cap "axon" "vad" 121.698
+cap "m1_5319_3057#" "m1_5364_1738#" 182.695
+cap "vdd" "vk" 225.191
+cap "vth" "vr" 507.336
+cap "axon#" "u#" 28.72
+cap "m1_5319_3057#" "vk" 142.111
+cap "m1_5396_4435#" "vr" 170.822
+cap "vss" "vk" 224.152
+cap "vad" "vdd" 227.263
+cap "m1_5419_8880#" "vth" 142.111
+cap "m1_5429_10502#" "vth" 167.035
+cap "m1_5419_8880#" "m1_5396_4435#" 93.0174
+cap "m1_5396_4435#" "m1_5429_10502#" 108.879
+cap "m1_5319_3057#" "vad" 143.647
+cap "m1_5375_4679#" "vau" 283.745
+cap "m1_5324_7561#" "vw" 121.698
+cap "m1_5166_10258#" "vw" 326.149
+cap "vad" "vss" 226.218
+cap "axon" "vr" 121.698
+cap "vth" "u" 167.035
+cap "vw" "v" 329.383
+cap "vdd" "vr" 227.263
+cap "m1_5364_1738#" "vk" 120.302
+cap "m1_5319_3057#" "vr" 143.647
+cap "v#" "a#" 28.72
+cap "vss" "vr" 226.218
+cap "m1_5419_8880#" "vdd" 200.325
+cap "m1_5429_10502#" "vdd" 225.191
+cap "m1_5324_7561#" "vth" 120.302
+cap "m1_5166_10258#" "vth" 169.112
+cap "m1_5364_1738#" "vad" 121.698
+cap "m1_5319_3057#" "m1_5429_10502#" 235.128
+cap "m1_5396_4435#" "m1_5166_10258#" 2377.7
+cap "m1_5324_7561#" "m1_5396_4435#" 79.1385
+cap "m1_5419_8880#" "m1_5319_3057#" 2577.19
+cap "m1_5375_4679#" "vw" 168.732
+cap "m1_5419_8880#" "vss" 74.3606
+cap "m1_5429_10502#" "vss" 84.02
+cap "vad" "vk" 1285.07
+cap "vth" "v" 169.112
+cap "m1_5364_1738#" "vr" 121.698
+cap "v#" "axon#" 28.72
+cap "m1_5324_7561#" "vdd" 178.566
+cap "m1_5166_10258#" "vdd" 227.263
+cap "m1_5375_4679#" "vth" 167.035
+cap "vk" "vr" 7068.59
+cap "m1_5324_7561#" "m1_5319_3057#" 79.1385
+cap "m1_5419_8880#" "m1_5364_1738#" 182.695
+cap "m1_5364_1738#" "m1_5429_10502#" 199.441
+cap "m1_5319_3057#" "m1_5166_10258#" 236.665
+cap "m1_5375_4679#" "m1_5396_4435#" 2444.79
+cap "m1_5324_7561#" "vss" 50.6912
+cap "syn0" "syn1" 3697.48
+cap "m1_5419_8880#" "vk" 142.111
+cap "m1_5429_10502#" "vk" 167.035
+cap "vad" "vr" 6702.06
+cap "m1_5419_8880#" "vad" 143.647
+cap "vad" "m1_5429_10502#" 168.732
+cap "u" "vk" 167.035
+cap "vad" "u" 168.732
+cap "m1_5375_4679#" "vdd" 225.191
+cap "m1_5324_7561#" "m1_5364_1738#" 1772.62
+cap "m1_5364_1738#" "m1_5166_10258#" 200.836
+cap "m1_5375_4679#" "m1_5319_3057#" 235.128
+cap "m1_5166_10258#" "vk" 169.112
+cap "m1_5429_10502#" "vr" 168.732
+cap "m1_5324_7561#" "vk" 120.302
+cap "m1_5419_8880#" "vr" 143.647
+cap "m1_5396_4435#" "sel" 140.581
+cap "m1_5324_7561#" "vad" 121.698
+cap "m1_5419_8880#" "m1_5429_10502#" 235.128
+cap "vad" "m1_5166_10258#" 170.822
+cap "v" "vk" 169.112
+cap "u" "vr" 168.732
+cap "vad" "v" 170.822
+cap "v#" "u#" 28.72
+cap "vau" "vw" 4979.35
+cap "li_n980_2052#" "syn1" 5.02174
+cap "m1_5375_4679#" "m1_5364_1738#" 199.441
+cap "m1_5375_4679#" "vk" 167.035
+cap "m1_5324_7561#" "vr" 121.698
+cap "m1_5166_10258#" "vr" 170.822
+cap "sel" "vdd" 209.867
+cap "m1_5319_3057#" "sel" 141.765
+cap "m1_5429_10502#" "m1_5166_10258#" 2308.08
+cap "m1_5375_4679#" "vad" 168.732
+cap "m1_5419_8880#" "m1_5324_7561#" 182.695
+cap "m1_5324_7561#" "m1_5429_10502#" 199.441
+cap "m1_5419_8880#" "m1_5166_10258#" 236.665
+cap "sel" "vss" 162.187
+cap "li_n964_7758#" "li_n425_7790#" 4.125
+cap "syn0" "vdd" 287.921
+cap "a" "vau" 143.647
+cap "syn0" "vss" 287.921
+cap "v" "vr" 170.822
+cap "vau" "vth" 801.465
+cap "m1_5396_4435#" "vau" 491.277
+cap "pass-gate-inv-2_3/clk" "pass-gate-inv-2_3/v_in" -3.55271e-15
+cap "pass-gate-inv-2_2/clk" "pass-gate-inv-2_3/clk_bar" 14.5131
+cap "pass-gate-inv-2_3/v_out" "pass-gate-inv-2_2/VGND" 31.3
+cap "pass-gate-inv-2_2/clk" "pass-gate-inv-2_3/pass-gate_1/sky130_fd_pr__nfet_01v8_5mkfxl_0/a_n33_n130#" 7.16279
+cap "pass-gate-inv-2_2/VPWR" "pass-gate-inv-2_2/clk" 5.66794
+cap "pass-gate-inv-2_2/clk_bar" "pass-gate-inv-2_2/clk" -5.68434e-14
+cap "pass-gate-inv-2_2/clk" "pass-gate-inv-2_2/v_in" 4.26326e-14
+cap "pass-gate-inv-2_2/v_out" "pass-gate-inv-2_2/VGND" 31.3
+cap "pass-gate-inv-2_2/m3_706_n156#" "pass-gate-inv-2_1/clk" 3.64525
+cap "pass-gate-inv-2_1/v_in" "pass-gate-inv-2_1/clk" 7.10543e-15
+cap "pass-gate-inv-2_2/pass-gate_1/clk" "pass-gate-inv-2_1/clk" 14.0955
+cap "pass-gate-inv-2_2/pass-gate_1/v_sub" "pass-gate-inv-2_2/m3_706_n156#" 1.42109e-14
+cap "neuron-labeled-extended_0/vr" "neuron-labeled-extended_0/vk" -21.0124
+cap "neuron-labeled-extended_0/vad" "neuron-labeled-extended_0/vk" -6.72619
+cap "neuron-labeled-extended_0/vr" "neuron-labeled-extended_0/vad" -38.4
+cap "pass-gate-inv-2_1/pass-gate_1/clk_bar" "pass-gate-inv-2_1/pass-gate_0/clk_bar" 16.5988
+cap "pass-gate-inv-2_1/pass-gate_1/v_sub" "pass-gate-inv-2_1/VPWR" -6.66134e-16
+cap "pass-gate-inv-2_1/VPWR" "pass-gate-inv-2_1/pass-gate_1/clk_bar" 7.10543e-15
+cap "pass-gate-inv-2_1/pass-gate_1/clk_bar" "pass-gate-inv-2_0/v_in" -1.42109e-14
+cap "pass-gate-inv-2_0/v_in" "pass-gate-inv-2_1/v_in2" 6.64908
+cap "pass-gate-inv-2_1/pass-gate_1/v_out" "pass-gate-inv-2_1/pass-gate_1/v_sub" 31.3
+subcap "li_n980_2052#" -556.27
+subcap "li_n502_2065#" -1086.92
+subcap "li_n502_2065#" -1188.97
+cap "neuron-labeled-extended_0/vk" "neuron-labeled-extended_0/neuron-labeled_0/VGND" 294.277
+cap "neuron-labeled-extended_0/vss" "neuron-labeled-extended_0/neuron-labeled_0/VGND" 386.157
+cap "neuron-labeled-extended_0/vk" "neuron-labeled-extended_0/vss" -7.616
+cap "neuron-labeled-extended_0/neuron-labeled_0/VGND" "neuron-labeled-extended_0/vss" -89.505
+subcap "m1_5364_1738#" -9016.47
+subcap "m1_5364_1738#" -8888.12
+cap "neuron-labeled-extended_0/vk" "neuron-labeled-extended_0/vr" -43.8362
+cap "neuron-labeled-extended_0/vad" "neuron-labeled-extended_0/vr" -11.2062
+cap "neuron-labeled-extended_0/vk" "neuron-labeled-extended_0/vad" -6.72619
+cap "pass-gate-inv-2_0/clk_bar" "pass-gate-inv-2_0/clk" 5.68434e-14
+cap "pass-gate-inv-2_0/clk" "pass-gate-inv-2_0/VPWR" 0.138889
+cap "pass-gate-inv-2_0/v_out" "pass-gate-inv-2_0/pass-gate_1/v_sub" 31.3
+subcap "li_n502_2065#" -951.234
+cap "inverter_0/out" "inverter_0/VPWR" 4.93697
+cap "inverter_0/out" "one-way_0/li_100_166#" -4.93669
+cap "inverter_0/out" "inverter_0/in" 1.69508
+cap "inverter_0/VPWR" "one-way_0/li_100_166#" 3.9825
+cap "neuron-labeled-extended_0/neuron-labeled_0/vth" "neuron-labeled-extended_0/neuron-labeled_0/VPWR" 5.91743
+cap "one-way_0/li_12_16#" "neuron-labeled-extended_0/neuron-labeled_0/v" 12.2404
+cap "neuron-labeled-extended_0/neuron-labeled_0/vth" "neuron-labeled-extended_0/neuron-labeled_0/v" 8.74008
+cap "one-way_0/w_n37_405#" "neuron-labeled-extended_0/neuron-labeled_0/v" 3.09737
+subcap "m1_5364_1738#" -8960.41
+subcap "m1_5319_3057#" -9786.69
+subcap "m1_5364_1738#" -8904.58
+subcap "m1_5319_3057#" -9479.66
+cap "neuron-labeled-extended_0/vdd" "neuron-labeled-extended_0/v" -8.604
+cap "neuron-labeled-extended_0/vdd" "neuron-labeled-extended_0/li_n98_3088#" -8.15587
+cap "neuron-labeled-extended_0/v" "neuron-labeled-extended_0/neuron-labeled_0/VPWR" 107.942
+cap "neuron-labeled-extended_0/vdd" "neuron-labeled-extended_0/neuron-labeled_0/VPWR" 482.078
+cap "neuron-labeled-extended_0/li_n98_3088#" "neuron-labeled-extended_0/neuron-labeled_0/VPWR" 349.633
+cap "neuron-labeled-extended_0/neuron-labeled_0/VPWR" "neuron-labeled-extended_0/vdd" -77.355
+subcap "m1_5319_3057#" -9900.74
+subcap "m1_5396_4435#" -10572
+subcap "m1_5375_4679#" -10873
+subcap "m1_5319_3057#" -9889.43
+subcap "m1_5396_4435#" -10287.2
+subcap "m1_5375_4679#" -10920.9
+cap "neuron-labeled-extended_0/a_2187_2908#" "neuron-labeled-extended_0/a_1778_2913#" -36.5217
+cap "neuron-labeled-extended_0/a_2187_2908#" "neuron-labeled-extended_0/li_n98_3088#" -8.65385
+cap "neuron-labeled-extended_0/u" "neuron-labeled-extended_0/a_2187_2908#" -10.9508
+cap "neuron-labeled-extended_0/a_1778_2913#" "neuron-labeled-extended_0/li_n98_3088#" -27.3214
+cap "neuron-labeled-extended_0/v" "neuron-labeled-extended_0/a_2187_2908#" -55.2273
+cap "neuron-labeled-extended_0/v" "neuron-labeled-extended_0/a_1778_2913#" -14.1361
+cap "neuron-labeled-extended_0/u" "neuron-labeled-extended_0/v" -28.4659
+subcap "m1_5396_4435#" -10733.9
+subcap "m1_5375_4679#" -10690.1
+subcap "m1_5396_4435#" -10736.6
+subcap "m1_5375_4679#" -10405.5
+cap "neuron-labeled-extended_0/a_2187_2908#" "neuron-labeled-extended_0/u" -10.9508
+cap "neuron-labeled-extended_0/u" "neuron-labeled-extended_0/v" -28.4659
+cap "neuron-labeled-extended_1/vk" "neuron-labeled-extended_1/vad" -6.51162
+cap "neuron-labeled-extended_1/vr" "neuron-labeled-extended_1/vad" -15.9423
+cap "neuron-labeled-extended_1/vss" "neuron-labeled-extended_1/neuron-labeled_0/VGND" 625.802
+cap "neuron-labeled-extended_1/vss" "neuron-labeled-extended_1/vk" -7.616
+cap "neuron-labeled-extended_1/vk" "neuron-labeled-extended_1/neuron-labeled_0/VGND" 293.048
+cap "neuron-labeled-extended_1/vss" "neuron-labeled-extended_1/neuron-labeled_0/VGND" -249.398
+subcap "m1_5324_7561#" -11806.6
+subcap "m1_5324_7561#" -11674
+cap "neuron-labeled-extended_1/vk" "neuron-labeled-extended_1/vr" -34.8868
+cap "neuron-labeled-extended_1/vk" "neuron-labeled-extended_1/vad" -6.51162
+cap "neuron-labeled-extended_1/vr" "neuron-labeled-extended_1/vad" -15.9423
+subcap "li_n425_7790#" -1163.83
+cap "inverter_1/VPWR" "one-way_1/li_100_166#" -0.972293
+cap "inverter_1/VPWR" "inverter_1/out" 4.63023
+cap "one-way_1/li_100_166#" "inverter_1/out" 7.06192
+cap "inverter_1/in" "inverter_1/out" 1.79166
+cap "neuron-labeled-extended_1/neuron-labeled_0/v" "one-way_1/li_12_16#" 7.06192
+cap "neuron-labeled-extended_1/neuron-labeled_0/vth" "neuron-labeled-extended_1/neuron-labeled_0/VPWR" 5.89939
+cap "neuron-labeled-extended_1/neuron-labeled_0/v" "neuron-labeled-extended_1/neuron-labeled_0/vth" 8.74008
+cap "one-way_1/w_n37_405#" "neuron-labeled-extended_1/neuron-labeled_0/v" 16.6873
+subcap "m1_5324_7561#" -11474.9
+subcap "m1_5419_8880#" -12469
+subcap "m1_5324_7561#" -11320.8
+subcap "m1_5419_8880#" -12523.5
+cap "neuron-labeled-extended_1/neuron-labeled_0/VPWR" "neuron-labeled-extended_1/neuron-labeled_0/vth" 350.837
+cap "neuron-labeled-extended_1/neuron-labeled_0/VPWR" "neuron-labeled-extended_1/neuron-labeled_0/v" 107.942
+cap "neuron-labeled-extended_1/neuron-labeled_0/VPWR" "neuron-labeled-extended_1/vdd" 480.933
+cap "neuron-labeled-extended_1/neuron-labeled_0/vth" "neuron-labeled-extended_1/vdd" -8.12175
+cap "neuron-labeled-extended_1/vdd" "neuron-labeled-extended_1/neuron-labeled_0/v" -8.568
+cap "neuron-labeled-extended_1/vdd" "neuron-labeled-extended_1/neuron-labeled_0/VPWR" -77.76
+subcap "m1_5419_8880#" -12160.4
+subcap "m1_5166_10258#" -13374.3
+subcap "m1_5429_10502#" -13461.5
+subcap "m1_5419_8880#" -12127.2
+subcap "m1_5166_10258#" -13408.6
+subcap "m1_5429_10502#" -13576.2
+cap "neuron-labeled-extended_1/v" "neuron-labeled-extended_1/a_2187_2908#" -39.4173
+cap "neuron-labeled-extended_1/v" "neuron-labeled-extended_1/a_1778_2913#" -6.52058
+cap "neuron-labeled-extended_1/a_2187_2908#" "neuron-labeled-extended_1/a_1778_2913#" -33.0086
+cap "neuron-labeled-extended_1/a_2187_2908#" "neuron-labeled-extended_1/li_n98_3088#" -10.3033
+cap "neuron-labeled-extended_1/a_1778_2913#" "neuron-labeled-extended_1/li_n98_3088#" -31.8099
+cap "neuron-labeled-extended_1/u" "neuron-labeled-extended_1/a_2187_2908#" -7.75862
+subcap "m1_5166_10258#" -13148.3
+subcap "m1_5429_10502#" -13177.8
+subcap "m1_5166_10258#" -12903.5
+subcap "m1_5429_10502#" -12933.7
+cap "neuron-labeled-extended_1/u" "neuron-labeled-extended_1/v" -46.0227
+cap "neuron-labeled-extended_1/u" "neuron-labeled-extended_1/a_2187_2908#" -7.75862
+cap "neuron-labeled-extended_1/v" "neuron-labeled-extended_1/a_2187_2908#" -39.4173
+cap "neuron-labeled-extended_1/v" "neuron-labeled-extended_1/a_1778_2913#" -6.52058
+cap "neuron-labeled-extended_2/neuron-labeled_0/VGND" "neuron-labeled-extended_2/vss" 364.503
+cap "neuron-labeled-extended_2/vk" "neuron-labeled-extended_2/vss" -7.616
+cap "neuron-labeled-extended_2/vk" "neuron-labeled-extended_2/neuron-labeled_0/VGND" 294.412
+cap "neuron-labeled-extended_2/neuron-labeled_0/VGND" "neuron-labeled-extended_2/vk" 0.0993506
+cap "neuron-labeled-extended_2/vss" "neuron-labeled-extended_2/neuron-labeled_0/VGND" -262.922
+cap "neuron-labeled-extended_2/vk" "neuron-labeled-extended_2/vad" -14.1667
+cap "neuron-labeled-extended_2/vad" "neuron-labeled-extended_2/vr" -30.6
+cap "neuron-labeled-extended_2/vk" "neuron-labeled-extended_2/vr" -33.75
+cap "neuron-labeled-extended_2/v" "neuron-labeled-extended_2/vdd" -8.604
+cap "neuron-labeled-extended_2/v" "neuron-labeled-extended_2/neuron-labeled_0/VPWR" 107.942
+cap "neuron-labeled-extended_2/li_n98_3088#" "neuron-labeled-extended_2/vdd" -8.15587
+cap "neuron-labeled-extended_2/li_n98_3088#" "neuron-labeled-extended_2/neuron-labeled_0/VPWR" 355.512
+cap "neuron-labeled-extended_2/vdd" "neuron-labeled-extended_2/neuron-labeled_0/VPWR" 482.048
+cap "neuron-labeled-extended_2/vdd" "neuron-labeled-extended_2/neuron-labeled_0/VPWR" -77.355
+cap "neuron-labeled-extended_2/a_1778_2913#" "neuron-labeled-extended_2/v" -7.89267
+cap "neuron-labeled-extended_2/a_1778_2913#" "neuron-labeled-extended_2/li_n98_3088#" -25.3929
+cap "neuron-labeled-extended_2/a_1778_2913#" "neuron-labeled-extended_2/a_2187_2908#" -20.5435
+cap "neuron-labeled-extended_2/li_n98_3088#" "neuron-labeled-extended_2/a_2187_2908#" -3.98077
+subcap "syn0" -12705.4
+subcap "vss" -30217.9
+subcap "vdd" -32830
+cap "neuron-labeled-extended_2/v" "neuron-labeled-extended_2/a_2187_2908#" -75
+cap "neuron-labeled-extended_2/v" "neuron-labeled-extended_2/a_1778_2913#" -7.89267
+cap "neuron-labeled-extended_2/a_2187_2908#" "neuron-labeled-extended_2/a_1778_2913#" -20.5435
+cap "neuron-labeled-extended_2/a_2187_2908#" "neuron-labeled-extended_2/li_n98_3088#" -3.98077
+cap "neuron-labeled-extended_2/u" "neuron-labeled-extended_2/v" -37.5
+cap "neuron-labeled-extended_2/u" "neuron-labeled-extended_2/a_2187_2908#" -12.5665
+subcap "vk" -13235.3
+subcap "vth" -12333.4
+subcap "vw" -11650.1
+subcap "vad" -14694.6
+subcap "vr" -13910.5
+subcap "syn1" -13124.7
+subcap "syn0" -12657
+subcap "vau" -11071.1
+subcap "vk" -13222.1
+subcap "vth" -12319.7
+subcap "vw" -11636.7
+subcap "vad" -14667.9
+subcap "vr" -13883.6
+subcap "v" -2660.75
+subcap "u" -2769.42
+subcap "axon" -4389.22
+subcap "a" -3665.38
+subcap "sel" -11872.6
+subcap "u#" -11698.7
+subcap "v#" -11388.1
+subcap "axon#" -12427.1
+subcap "a#" -12103.3
+merge "neuron-labeled-extended_2/vr" "neuron-labeled-extended_1/vr" -471.041 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -161664 -1404 -8280 -364 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_1/vr" "neuron-labeled-extended_0/vr"
+merge "neuron-labeled-extended_0/vr" "vr"
+merge "neuron-labeled-extended_2/neuron-labeled_0/VGND" "neuron-labeled-extended_2/VSUBS" -1301.55 0 0 0 0 0 0 0 0 -35684 0 -59010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -86725 0 -491643 -3178 -10900 -418 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_2/VSUBS" "neuron-labeled-extended_1/neuron-labeled_0/VGND"
+merge "neuron-labeled-extended_1/neuron-labeled_0/VGND" "one-way_1/VSUBS"
+merge "one-way_1/VSUBS" "inverter_1/GND"
+merge "inverter_1/GND" "neuron-labeled-extended_1/VSUBS"
+merge "neuron-labeled-extended_1/VSUBS" "neuron-labeled-extended_0/neuron-labeled_0/VGND"
+merge "neuron-labeled-extended_0/neuron-labeled_0/VGND" "one-way_0/VSUBS"
+merge "one-way_0/VSUBS" "inverter_0/GND"
+merge "inverter_0/GND" "pass-gate-inv-2_1/VGND"
+merge "pass-gate-inv-2_1/VGND" "pass-gate-inv-2_3/pass-gate_1/v_sub"
+merge "pass-gate-inv-2_3/pass-gate_1/v_sub" "pass-gate-inv-2_3/VGND"
+merge "pass-gate-inv-2_3/VGND" "vss"
+merge "vss" "pass-gate-inv-2_2/VGND"
+merge "pass-gate-inv-2_2/VGND" "pass-gate-inv-2_2/pass-gate_1/v_sub"
+merge "pass-gate-inv-2_2/pass-gate_1/v_sub" "pass-gate-inv-2_0/VSUBS"
+merge "pass-gate-inv-2_0/VSUBS" "neuron-labeled-extended_0/VSUBS"
+merge "neuron-labeled-extended_0/VSUBS" "pass-gate-inv-2_1/VSUBS"
+merge "pass-gate-inv-2_1/VSUBS" "pass-gate-inv-2_2/VSUBS"
+merge "pass-gate-inv-2_2/VSUBS" "pass-gate-inv-2_3/VSUBS"
+merge "pass-gate-inv-2_3/VSUBS" "VSUBS"
+merge "neuron-labeled-extended_0/neuron-labeled_0/v" "one-way_0/li_100_166#" -164.995 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8632 -508 0 0 0 0 0 0 0 0 0 0 0 0
+merge "one-way_0/li_100_166#" "li_n502_2065#"
+merge "neuron-labeled-extended_2/vad" "neuron-labeled-extended_1/vad" -403.116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -51459 -1444 -7360 -344 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_1/vad" "neuron-labeled-extended_0/vad"
+merge "neuron-labeled-extended_0/vad" "vad"
+merge "neuron-labeled-extended_2/a_1778_2913#" "neuron-labeled-extended_1/a_1778_2913#" -519.174 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -216767 -1412 -10248 -412 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_1/a_1778_2913#" "neuron-labeled-extended_0/a_1778_2913#"
+merge "neuron-labeled-extended_0/a_1778_2913#" "vw"
+merge "pass-gate-inv-2_1/pass-gate_1/v_out" "pass-gate-inv-2_1/v_out" -142.108 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10291 -402 0 0 -2112 -196 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_1/v_out" "u#"
+merge "neuron-labeled-extended_1/v" "pass-gate-inv-2_0/v_in2" -270.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4554 -1332 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_0/v_in2" "m1_5166_10258#"
+merge "neuron-labeled-extended_2/li_n98_3088#" "neuron-labeled-extended_1/li_n98_3088#" -382.661 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -889 -1372 -13420 -464 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_1/li_n98_3088#" "neuron-labeled-extended_0/li_n98_3088#"
+merge "neuron-labeled-extended_0/li_n98_3088#" "vth"
+merge "neuron-labeled-extended_1/neuron-labeled_0/v" "one-way_1/li_100_166#" -577.609 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -453530 -512 0 0 0 0 0 0 0 0 0 0 0 0
+merge "one-way_1/li_100_166#" "li_n425_7790#"
+merge "one-way_0/li_12_16#" "inverter_0/out" -51.8492 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33136 -300 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/out" "li_n980_2052#"
+merge "neuron-labeled-extended_2/a_2187_2908#" "neuron-labeled-extended_1/a_2187_2908#" -537.511 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59367 -2224 -4712 -200 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_1/a_2187_2908#" "neuron-labeled-extended_0/a_2187_2908#"
+merge "neuron-labeled-extended_0/a_2187_2908#" "vau"
+merge "neuron-labeled-extended_1/li_4284_1115#" "pass-gate-inv-2_3/v_in2" -334.045 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -163838 -1110 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_3/v_in2" "m1_5324_7561#"
+merge "neuron-labeled-extended_2/neuron-labeled_0/VPWR" "neuron-labeled-extended_1/neuron-labeled_0/VPWR" -2984.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -186 -638 -1155094 -8361 -14700 -494 -5256 -290 0 0 0 0 0 0
+merge "neuron-labeled-extended_1/neuron-labeled_0/VPWR" "one-way_1/w_n37_405#"
+merge "one-way_1/w_n37_405#" "inverter_1/VPWR"
+merge "inverter_1/VPWR" "li_n1000_8122#"
+merge "li_n1000_8122#" "neuron-labeled-extended_0/neuron-labeled_0/VPWR"
+merge "neuron-labeled-extended_0/neuron-labeled_0/VPWR" "one-way_0/w_n37_405#"
+merge "one-way_0/w_n37_405#" "inverter_0/VPWR"
+merge "inverter_0/VPWR" "li_n1025_2408#"
+merge "li_n1025_2408#" "pass-gate-inv-2_0/VPWR"
+merge "pass-gate-inv-2_0/VPWR" "pass-gate-inv-2_1/VPWR"
+merge "pass-gate-inv-2_1/VPWR" "pass-gate-inv-2_1/m3_706_n156#"
+merge "pass-gate-inv-2_1/m3_706_n156#" "pass-gate-inv-2_3/m3_706_n156#"
+merge "pass-gate-inv-2_3/m3_706_n156#" "pass-gate-inv-2_3/VPWR"
+merge "pass-gate-inv-2_3/VPWR" "vdd"
+merge "vdd" "pass-gate-inv-2_2/m3_706_n156#"
+merge "pass-gate-inv-2_2/m3_706_n156#" "pass-gate-inv-2_2/VPWR"
+merge "pass-gate-inv-2_2/VPWR" "pass-gate-inv-2_1/pass-gate_1/v_newll"
+merge "neuron-labeled-extended_2/vk" "neuron-labeled-extended_1/vk" -509.642 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -124293 -1688 -8662 -386 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_1/vk" "neuron-labeled-extended_0/vk"
+merge "neuron-labeled-extended_0/vk" "vk"
+merge "neuron-labeled-extended_1/li_3628_2434#" "pass-gate-inv-2_2/v_in2" -212.276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36424 -920 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_2/v_in2" "m1_5419_8880#"
+merge "pass-gate-inv-2_1/pass-gate_1/clk_bar" "pass-gate-inv-2_0/clk" -16.7808 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 321738 -800 0 0 19086 -500 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_0/clk" "pass-gate-inv-2_1/clk"
+merge "pass-gate-inv-2_1/clk" "pass-gate-inv-2_2/clk"
+merge "pass-gate-inv-2_2/clk" "pass-gate-inv-2_3/clk"
+merge "pass-gate-inv-2_3/clk" "sel"
+merge "neuron-labeled-extended_0/u" "pass-gate-inv-2_1/v_in" -182.328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6495 -910 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_1/v_in" "m1_5375_4679#"
+merge "neuron-labeled-extended_1/u" "pass-gate-inv-2_1/v_in2" -192.845 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -31762 -840 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_1/v_in2" "m1_5429_10502#"
+merge "inverter_0/in" "syn1" -592.295 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -509350 -212 0 0 -7992 -290 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_2/li_4284_1115#" "axon" -156.627 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2080 -522 -3198 -242 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_2/u" "u" -144.02 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22990 -440 -6478 -322 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_2/v" "v" -213.292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5112 -680 -8036 -360 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_2/pass-gate_1/v_out" "pass-gate-inv-2_2/v_out" -171.416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8909 -510 0 0 -2040 -188 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_2/v_out" "a#"
+merge "pass-gate-inv-2_0/VGND" "pass-gate-inv-2_1/pass-gate_1/v_sub" -60.0168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18031 -246 0 0 0 0 0 0 0 0
+merge "one-way_1/li_12_16#" "inverter_1/out" -84.7266 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1218 -304 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_1/out" "li_n964_7758#"
+merge "neuron-labeled-extended_0/v" "pass-gate-inv-2_0/v_in" -165.465 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4146 -794 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_0/v_in" "m1_5396_4435#"
+merge "inverter_1/in" "syn0" 66.6307 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 214642 -228 0 0 -6572 -324 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_3/v_out" "axon#" -201.468 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8120 -562 0 0 -2040 -188 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_0/li_4284_1115#" "pass-gate-inv-2_3/v_in" -169.114 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2225 -832 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_3/v_in" "m1_5364_1738#"
+merge "pass-gate-inv-2_0/v_out" "v#" -204.684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8360 -570 0 0 -1980 -192 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended_0/li_3628_2434#" "pass-gate-inv-2_2/v_in" -194.235 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3315 -958 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_2/v_in" "m1_5319_3057#"
+merge "neuron-labeled-extended_2/li_3628_2434#" "a" -174.748 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -65511 -344 -5166 -290 0 0 0 0 0 0 0 0

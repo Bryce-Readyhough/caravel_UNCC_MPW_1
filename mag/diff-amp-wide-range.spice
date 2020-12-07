@@ -1,0 +1,57 @@
+* NGSPICE file created from diff-amp-wide-range.ext - technology: sky130A
+
+* Include SkyWater sky130 device models
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical__lin.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/tt.spice"
+
+* Vdd vdd gnd DC 0.7
+* Vgnd vss gnd DC 0.0
+* Ibias vdd i_bias DC 1n
+* Vref in_2 out DC 0.0
+* Vin in_1 gnd DC 0.2 
+
+Vdd vdd gnd DC 0.7
+Vgnd vss gnd DC -0.7
+Ibias vdd i_bias DC 1n
+Vshort in_2 out DC 0.0
+Vin in_1 gnd DC PULSE(0 0.7 100p 1u 1u 10u 20u)
+
+.subckt sky130_fd_pr__pfet_01v8_hymyl3 VSUBS a_n50_n112# a_50_n86# w_n144_n148# a_n108_n86#
+X0 a_50_n86# a_n50_n112# a_n108_n86# w_n144_n148# sky130_fd_pr__pfet_01v8 w=500000u l=500000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_2qpbu2 VSUBS a_n108_n131# a_n50_n157# a_50_n131#
+X0 a_50_n131# a_n50_n157# a_n108_n131# VSUBS sky130_fd_pr__nfet_01v8 w=1e+06u l=500000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_hhwku0 VSUBS a_n50_n107# a_50_n81# a_n108_n81#
+X0 a_50_n81# a_n50_n107# a_n108_n81# VSUBS sky130_fd_pr__nfet_01v8 w=500000u l=500000u
+.ends
+
+.subckt diff-amp-wide-range in_1 in_2 i_bias vdd vss out
+Xsky130_fd_pr__pfet_01v8_hymyl3_0 vss li_4_338# li_4_338# vdd vdd sky130_fd_pr__pfet_01v8_hymyl3
+Xsky130_fd_pr__pfet_01v8_hymyl3_1 vss li_324_180# vdd vdd li_324_180# sky130_fd_pr__pfet_01v8_hymyl3
+Xsky130_fd_pr__pfet_01v8_hymyl3_2 vss li_324_180# vdd vdd a_843_58# sky130_fd_pr__pfet_01v8_hymyl3
+Xsky130_fd_pr__pfet_01v8_hymyl3_3 vss li_4_338# vdd vdd out sky130_fd_pr__pfet_01v8_hymyl3
+Xsky130_fd_pr__nfet_01v8_2qpbu2_0 vss vss i_bias li_176_12# sky130_fd_pr__nfet_01v8_2qpbu2
+Xsky130_fd_pr__nfet_01v8_2qpbu2_1 vss i_bias i_bias vss sky130_fd_pr__nfet_01v8_2qpbu2
+Xsky130_fd_pr__nfet_01v8_hhwku0_0 vss in_1 li_4_338# li_176_12# sky130_fd_pr__nfet_01v8_hhwku0
+Xsky130_fd_pr__nfet_01v8_hhwku0_1 vss in_2 li_176_12# li_324_180# sky130_fd_pr__nfet_01v8_hhwku0
+Xsky130_fd_pr__nfet_01v8_hhwku0_2 vss a_843_58# vss a_843_58# sky130_fd_pr__nfet_01v8_hhwku0
+Xsky130_fd_pr__nfet_01v8_hhwku0_3 vss a_843_58# vss out sky130_fd_pr__nfet_01v8_hhwku0
+.ends
+
+*instantiate
+Xdiff in_1 in_2 i_bias vdd vss out diff-amp-wide-range
+
+.control
+* dc Vin 0 0.7 0.01
+* plot  v(in_1) v(out)
+
+tran 100n 50u
+plot v(in_1) v(out)
+.endc
+.end
+
+

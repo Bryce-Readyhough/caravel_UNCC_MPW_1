@@ -1,0 +1,237 @@
+* NGSPICE file created from neuron-labeled.ext - technology: sky130A
+
+
+* Include SkyWater sky130 device models
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical__lin.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/tt.spice"
+
+* .lib "/home/mhasan13/pdk/pdk-prepared/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+* DC source for current measure
+Vdd VPWR gnd DC 0.7V
+Vgnd VGND gnd DC 0.0V
+Vth vth gnd DC 0.1V
+Vk vk gnd DC 0.15V
+Vw vw gnd DC 0.18V
+Vr vr gnd DC 0.25V
+Vau vau gnd DC 0.7V
+Vad vad gnd DC 0.0V
+
+* Vdd VPWR gnd DC 0.7V
+* Vgnd VGND gnd DC 0.0V
+* Vth vth gnd DC 0.1V
+* Vk vk gnd DC 0.15V
+* Vw vw gnd DC 0.01V
+* Vr vr gnd DC 0.37V
+* Vau vau gnd DC 0.08V
+* Vad vad gnd DC 0.25V
+
+Idc VPWR v DC 10p
+
+.subckt sky130_fd_pr__nfet_01v8_dlksd1 VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+C0 a_n98_n42# a_40_n42# 0.03fF
+C1 a_40_n42# VSUBS 0.02fF
+C2 a_n98_n42# VSUBS 0.02fF
+C3 a_n40_n68# VSUBS 0.08fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_s3efqo VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+C0 a_n98_n42# a_40_n42# 0.03fF
+C1 a_40_n42# VSUBS 0.02fF
+C2 a_n98_n42# VSUBS 0.02fF
+C3 a_n40_n68# VSUBS 0.08fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lca7f7 VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+C0 a_n98_n42# a_40_n42# 0.03fF
+C1 a_40_n42# VSUBS 0.02fF
+C2 a_n98_n42# VSUBS 0.02fF
+C3 a_n40_n68# VSUBS 0.08fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_u061qr VSUBS a_n40_n106# a_n98_n80# w_n134_n142# a_40_n80#
+X0 a_40_n80# a_n40_n106# a_n98_n80# w_n134_n142# sky130_fd_pr__pfet_01v8 w=800000u l=400000u
+C0 w_n134_n142# a_40_n80# 0.00fF
+C1 a_n98_n80# w_n134_n142# 0.00fF
+C2 a_n98_n80# a_40_n80# 0.05fF
+C3 a_40_n80# VSUBS 0.02fF
+C4 a_n98_n80# VSUBS 0.02fF
+C5 a_n40_n106# VSUBS 0.08fF
+C6 w_n134_n142# VSUBS 0.23fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_h2n75u VSUBS a_n40_n106# a_n98_n80# w_n134_n142# a_40_n80#
+X0 a_40_n80# a_n40_n106# a_n98_n80# w_n134_n142# sky130_fd_pr__pfet_01v8 w=800000u l=400000u
+C0 w_n134_n142# a_40_n80# 0.00fF
+C1 a_n98_n80# w_n134_n142# 0.00fF
+C2 a_n98_n80# a_40_n80# 0.05fF
+C3 a_40_n80# VSUBS 0.02fF
+C4 a_n98_n80# VSUBS 0.02fF
+C5 a_n40_n106# VSUBS 0.08fF
+C6 w_n134_n142# VSUBS 0.23fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_zt2j7p VSUBS a_n98_n120# a_n40_n146# a_40_n120# w_n134_n182#
+X0 a_40_n120# a_n40_n146# a_n98_n120# w_n134_n182# sky130_fd_pr__pfet_01v8 w=1.2e+06u l=400000u
+C0 w_n134_n182# a_40_n120# 0.00fF
+C1 a_n98_n120# w_n134_n182# 0.00fF
+C2 a_n98_n120# a_40_n120# 0.08fF
+C3 a_40_n120# VSUBS 0.02fF
+C4 a_n98_n120# VSUBS 0.02fF
+C5 a_n40_n146# VSUBS 0.08fF
+C6 w_n134_n182# VSUBS 0.29fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_ckptud VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+C0 a_n98_n42# a_40_n42# 0.03fF
+C1 a_40_n42# VSUBS 0.02fF
+C2 a_n98_n42# VSUBS 0.02fF
+C3 a_n40_n68# VSUBS 0.08fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_2vaynq VSUBS a_n40_n106# a_n98_n80# w_n134_n142# a_40_n80#
+X0 a_40_n80# a_n40_n106# a_n98_n80# w_n134_n142# sky130_fd_pr__pfet_01v8 w=800000u l=400000u
+C0 w_n134_n142# a_40_n80# 0.00fF
+C1 a_n98_n80# w_n134_n142# 0.00fF
+C2 a_n98_n80# a_40_n80# 0.05fF
+C3 a_40_n80# VSUBS 0.02fF
+C4 a_n98_n80# VSUBS 0.02fF
+C5 a_n40_n106# VSUBS 0.08fF
+C6 w_n134_n142# VSUBS 0.23fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_wpylm8 VSUBS a_n388_n400# a_n330_n426# a_330_n400#
+X0 a_330_n400# a_n330_n426# a_n388_n400# VSUBS sky130_fd_pr__nfet_01v8 w=4e+06u l=3.3e+06u
+C0 a_330_n400# VSUBS 0.02fF
+C1 a_n388_n400# VSUBS 0.02fF
+C2 a_n330_n426# VSUBS 0.48fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_9i6r5e VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+C0 a_n98_n42# a_40_n42# 0.03fF
+C1 a_40_n42# VSUBS 0.02fF
+C2 a_n98_n42# VSUBS 0.02fF
+C3 a_n40_n68# VSUBS 0.08fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_9hqhhq VSUBS a_n498_n500# a_n440_n526# a_440_n500#
+X0 a_440_n500# a_n440_n526# a_n498_n500# VSUBS sky130_fd_pr__nfet_01v8 w=5e+06u l=4.4e+06u
+C0 a_440_n500# VSUBS 0.02fF
+C1 a_n498_n500# VSUBS 0.02fF
+C2 a_n440_n526# VSUBS 0.63fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_h43ndc VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+C0 a_n98_n42# a_40_n42# 0.03fF
+C1 a_40_n42# VSUBS 0.02fF
+C2 a_n98_n42# VSUBS 0.02fF
+C3 a_n40_n68# VSUBS 0.08fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_6z4qh8 VSUBS a_n40_n106# a_n98_n80# w_n134_n142# a_40_n80#
+X0 a_40_n80# a_n40_n106# a_n98_n80# w_n134_n142# sky130_fd_pr__pfet_01v8 w=800000u l=400000u
+C0 w_n134_n142# a_40_n80# 0.00fF
+C1 a_n98_n80# w_n134_n142# 0.00fF
+C2 a_n98_n80# a_40_n80# 0.05fF
+C3 a_40_n80# VSUBS 0.02fF
+C4 a_n98_n80# VSUBS 0.02fF
+C5 a_n40_n106# VSUBS 0.08fF
+C6 w_n134_n142# VSUBS 0.23fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_tb02ql VSUBS a_n618_n800# a_n560_n826# a_560_n800#
+X0 a_560_n800# a_n560_n826# a_n618_n800# VSUBS sky130_fd_pr__nfet_01v8 w=8e+06u l=5.6e+06u
+C0 a_560_n800# VSUBS 0.02fF
+C1 a_n618_n800# VSUBS 0.02fF
+C2 a_n560_n826# VSUBS 0.80fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_zgaw3c VSUBS a_n98_n42# a_n40_n68# a_40_n42#
+X0 a_40_n42# a_n40_n68# a_n98_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=400000u
+C0 a_n98_n42# a_40_n42# 0.03fF
+C1 a_40_n42# VSUBS 0.02fF
+C2 a_n98_n42# VSUBS 0.02fF
+C3 a_n40_n68# VSUBS 0.08fF
+.ends
+
+.subckt neuron-labeled VPWR VGND vth vk vw vr vau vad v u# a# axon
+XM10 VGND VGND vad a# sky130_fd_pr__nfet_01v8_dlksd1
+XM11 VGND v a# VGND sky130_fd_pr__nfet_01v8_s3efqo
+XM1 VGND a_35_1497# v vth sky130_fd_pr__nfet_01v8_lca7f7
+XM2 VGND a_35_1497# VPWR VPWR a_35_1497# sky130_fd_pr__pfet_01v8_u061qr
+XM3 VGND a_35_1497# VPWR VPWR v sky130_fd_pr__pfet_01v8_h2n75u
+XM4 VGND VPWR a_35_1497# axon VPWR sky130_fd_pr__pfet_01v8_zt2j7p
+XM5 VGND VGND a_35_1497# axon sky130_fd_pr__nfet_01v8_ckptud
+XM6 VGND vw axon VPWR u# sky130_fd_pr__pfet_01v8_2vaynq
+XCu VGND VGND u# VGND sky130_fd_pr__nfet_01v8_wpylm8
+XM7 VGND VGND vr u# sky130_fd_pr__nfet_01v8_9i6r5e
+XCv VGND VGND v VGND sky130_fd_pr__nfet_01v8_9hqhhq
+XM8 VGND v u# VGND sky130_fd_pr__nfet_01v8_h43ndc
+XM9 VGND vau axon VPWR a# sky130_fd_pr__pfet_01v8_6z4qh8
+XCa VGND VGND a# VGND sky130_fd_pr__nfet_01v8_tb02ql
+XMk VGND v vk VGND sky130_fd_pr__nfet_01v8_zgaw3c
+C0 axon vth 0.01fF
+C1 axon u# 0.17fF
+C2 a_35_1497# v 0.28fF
+C3 a# u# 0.92fF
+C4 axon a# 0.04fF
+C5 vw u# 0.01fF
+C6 a# vk 0.01fF
+C7 VPWR vth 0.01fF
+C8 axon vw 0.06fF
+C9 VPWR u# 0.00fF
+C10 vau u# 0.01fF
+C11 a_35_1497# vr 0.01fF
+C12 axon VPWR 0.12fF
+C13 a# VPWR 0.03fF
+C14 v vth 0.38fF
+C15 VPWR vw 0.10fF
+C16 v u# 0.04fF
+C17 vau vw 0.06fF
+C18 axon v 0.01fF
+C19 a_35_1497# vth 0.06fF
+C20 vau VPWR 0.10fF
+C21 v a# 0.04fF
+C22 a_35_1497# u# 0.02fF
+C23 v vk 0.01fF
+C24 axon a_35_1497# 0.10fF
+C25 vr u# 0.07fF
+C26 v VPWR 0.05fF
+C27 a_35_1497# vw 0.00fF
+C28 a# vr 0.04fF
+C29 a_35_1497# VPWR 0.30fF
+C30 a# vad 0.07fF
+C31 u# VGND 1.68fF
+C32 vk VGND 0.30fF
+C33 a# VGND -4.64fF
+C34 vau VGND 0.13fF
+C35 vr VGND 0.64fF
+C36 vw VGND 0.13fF
+C37 axon VGND -1.65fF
+C38 a_35_1497# VGND -0.93fF
+C39 VPWR VGND -5.28fF
+C40 vth VGND 0.48fF
+C41 v VGND 3.40fF
+C42 vad VGND -0.24fF
+.ends
+
+* instantiate the neuron for sim
+Xneuron VPWR VGND vth vk vw vr vau vad v u# a# axon neuron-labeled
+
+.IC V(v)=0 V(u#)=0 V(a#)=0
+
+.control
+* Sweep tran
+tran 1u 20m uic
+plot v(v)
+.endc
+.end
+
+

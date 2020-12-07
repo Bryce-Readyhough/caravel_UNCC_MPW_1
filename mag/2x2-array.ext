@@ -1,0 +1,140 @@
+timestamp 1606190940
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use 1T-cell 1T-cell_0[0:1:772][0:1:814] 1 0 182 0 1 142
+port "SL1" 5 1558 2656 1582 2674 m2
+port "BL1" 4 1172 2834 1196 2852 m2
+port "SL0" 3 788 2628 812 2646 m2
+port "BL0" 2 396 2808 420 2826 m2
+port "WL1" 1 -918 508 -894 526 m1
+port "WL0" 0 -922 1320 -898 1338 m1
+port "body" 7 -926 1556 -902 1574 m1
+node "SL1" 9 1523.21 1558 2656 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 201032 7836 0 0 0 0 0 0 0 0
+node "BL1" 9 1513.7 1172 2834 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 199888 7792 0 0 0 0 0 0 0 0
+node "SL0" 9 1500.74 788 2628 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 198328 7732 0 0 0 0 0 0 0 0
+node "BL0" 9 1494.69 396 2808 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 197600 7704 0 0 0 0 0 0 0 0
+node "WL1" 10 1671.76 -918 508 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 206024 8028 0 0 0 0 0 0 0 0 0 0
+node "WL0" 9 1665.55 -922 1320 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 205296 8000 0 0 0 0 0 0 0 0 0 0
+node "body" 9 1665.55 -926 1556 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 205296 8000 0 0 0 0 0 0 0 0 0 0
+node "w_152_162#" 3317 0 152 162 pw 0 0 2867984 6780 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "dw_n430_n464#" 86113 9362.5 -430 -464 dnw 8143872 11416 0 0 3120832 21824 0 0 848336 22928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 389776 22928 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "BL1" "dw_n430_n464#" 140.913
+cap "WL1" "SL0" 68.8584
+cap "body" "SL0" 68.8584
+cap "SL1" "WL1" 68.8584
+cap "SL1" "body" 68.8584
+cap "WL0" "body" 942.128
+cap "WL1" "BL0" 68.8584
+cap "WL1" "dw_n430_n464#" 164.313
+cap "body" "BL0" 68.8584
+cap "body" "dw_n430_n464#" 164.313
+cap "WL0" "SL0" 68.8584
+cap "SL0" "BL0" 558.824
+cap "BL1" "WL1" 68.8584
+cap "SL0" "dw_n430_n464#" 140.913
+cap "BL1" "body" 68.8584
+cap "SL1" "WL0" 68.8584
+cap "BL1" "SL0" 581.402
+cap "SL1" "dw_n430_n464#" 140.913
+cap "SL1" "BL1" 565.294
+cap "WL0" "BL0" 68.8584
+cap "WL0" "dw_n430_n464#" 164.313
+cap "dw_n430_n464#" "BL0" 140.913
+cap "BL1" "WL0" 68.8584
+subcap "WL1" -1391.85
+cap "1T-cell_0[0,0]/drain" "1T-cell_0[0,0]/gate" -41.532
+cap "1T-cell_0[0,0]/drain" "1T-cell_0[0,0]/source" -37.936
+cap "1T-cell_0[0,0]/gate" "1T-cell_0[0,0]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" -25.2
+subcap "w_152_162#" -179.772
+cap "1T-cell_0[0,1]/gate" "1T-cell_0[0,1]/drain" -58.728
+cap "1T-cell_0[0,1]/gate" "1T-cell_0[0,0]/source" -58.728
+cap "1T-cell_0[0,0]/source" "1T-cell_0[0,0]/drain" -76.7647
+cap "1T-cell_0[0,1]/source" "1T-cell_0[0,1]/drain" -76.7647
+cap "1T-cell_0[0,1]/gate" "1T-cell_0[0,0]/drain" 96.464
+cap "1T-cell_0[0,1]/body" "1T-cell_0[0,1]/drain" 1
+cap "1T-cell_0[0,0]/source" "1T-cell_0[0,1]/drain" -79.5732
+cap "1T-cell_0[0,1]/source" "1T-cell_0[0,1]/gate" -58.728
+subcap "WL1" -1451.68
+subcap "WL0" -1208.57
+subcap "body" -944.082
+cap "1T-cell_0[1,0]/drain" "1T-cell_0[1,0]/source" -101.744
+cap "1T-cell_0[1,0]/drain" "1T-cell_0[1,0]/gate" -47.4816
+cap "1T-cell_0[1,0]/drain" "1T-cell_0[0,0]/body" -47.4816
+cap "1T-cell_0[0,0]/gate" "1T-cell_0[0,0]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" -25.2
+cap "1T-cell_0[1,0]/gate" "1T-cell_0[0,0]/body" -103.404
+cap "1T-cell_0[1,0]/drain" "1T-cell_0[0,0]/gate" -27.6496
+cap "1T-cell_0[1,1]/source" "1T-cell_0[1,1]/gate" -68.8584
+cap "1T-cell_0[0,1]/body" "1T-cell_0[1,1]/gate" -335.106
+cap "1T-cell_0[1,0]/source" "1T-cell_0[1,1]/drain" -213.415
+cap "1T-cell_0[1,0]/drain" "1T-cell_0[1,1]/gate" 92.2832
+cap "1T-cell_0[1,1]/source" "1T-cell_0[1,1]/drain" -205.882
+cap "1T-cell_0[0,1]/body" "1T-cell_0[1,1]/drain" -68.8584
+cap "1T-cell_0[1,1]/drain" "1T-cell_0[0,1]/gate" -35.0904
+cap "1T-cell_0[0,1]/body" "1T-cell_0[1,0]/source" -68.8584
+cap "1T-cell_0[1,0]/source" "1T-cell_0[0,1]/gate" -35.0904
+cap "1T-cell_0[1,1]/gate" "1T-cell_0[1,1]/drain" -68.8584
+cap "1T-cell_0[1,0]/drain" "1T-cell_0[1,0]/source" -205.882
+cap "1T-cell_0[1,1]/source" "1T-cell_0[0,1]/body" -68.8584
+cap "1T-cell_0[1,1]/source" "1T-cell_0[0,1]/gate" -35.0904
+cap "1T-cell_0[1,0]/source" "1T-cell_0[1,1]/gate" -68.8584
+cap "1T-cell_0[1,0]/drain" "1T-cell_0[0,1]/body" 92.2832
+cap "1T-cell_0[1,0]/drain" "1T-cell_0[0,1]/gate" 106.219
+cap "1T-cell_0[1,1]/gate" "1T-cell_0[1,1]/body" -39.734
+subcap "SL0" -1631.74
+subcap "BL0" -1307.59
+cap "1T-cell_0[1,0]/source" "1T-cell_0[1,0]/drain" -3.34302
+subcap "SL1" -1164.75
+subcap "BL1" -1155.25
+subcap "SL0" -1142.28
+subcap "BL0" -1286.56
+cap "1T-cell_0[1,1]/drain" "1T-cell_0[1,0]/source" -7.0122
+cap "1T-cell_0[1,1]/drain" "1T-cell_0[1,1]/source" -6.76471
+cap "1T-cell_0[1,0]/drain" "1T-cell_0[1,0]/source" -6.76471
+cap "1T-cell_0[1,1]/drain" "1T-cell_0[1,1]/body" 1
+merge "1T-cell_0[0,1]/gate" "1T-cell_0[0,0]/gate" -884.207 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -135364 -4100 0 0 0 0 0 0 0 0 0 0
+merge "1T-cell_0[0,0]/gate" "WL1"
+merge "1T-cell_0[1,1]/body" "1T-cell_0[0,1]/body" -662.456 0 0 -448560 -7334 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 273914 -4100 0 0 0 0 0 0 0 0 0 0
+merge "1T-cell_0[0,1]/body" "1T-cell_0[1,0]/body"
+merge "1T-cell_0[1,0]/body" "1T-cell_0[0,0]/body"
+merge "1T-cell_0[0,0]/body" "w_152_162#"
+merge "w_152_162#" "VSUBS"
+merge "VSUBS" "body"
+merge "1T-cell_0[1,1]/source" "1T-cell_0[0,1]/source" -614.242 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 356400 -4064 0 0 0 0 0 0 0 0
+merge "1T-cell_0[0,1]/source" "SL1"
+merge "1T-cell_0[1,0]/source" "1T-cell_0[0,0]/source" -519.994 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 578160 -4064 0 0 0 0 0 0 0 0
+merge "1T-cell_0[0,0]/source" "SL0"
+merge "1T-cell_0[1,1]/drain" "1T-cell_0[0,1]/drain" -804.285 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102336 -4040 0 0 0 0 0 0 0 0
+merge "1T-cell_0[0,1]/drain" "BL1"
+merge "1T-cell_0[1,0]/drain" "1T-cell_0[0,0]/drain" -846.925 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102336 -4040 0 0 0 0 0 0 0 0
+merge "1T-cell_0[0,0]/drain" "BL0"
+merge "1T-cell_0[1,1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" "1T-cell_0[1,0]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" 0 -2569560 -6644 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "1T-cell_0[1,0]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" "1T-cell_0[0,1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#"
+merge "1T-cell_0[0,1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" "1T-cell_0[0,0]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#"
+merge "1T-cell_0[0,0]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" "dw_n430_n464#"
+merge "1T-cell_0[1,1]/gate" "1T-cell_0[1,0]/gate" -908.032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -103896 -4100 0 0 0 0 0 0 0 0 0 0
+merge "1T-cell_0[1,0]/gate" "WL0"
+cap "1T-cell_0[0:0,0:1]/body" "1T-cell_0[0:0,0:1]/source" -228.947
+cap "1T-cell_0[0:0,0:1]/drain" "1T-cell_0[0:0,0:1]/source" -50
+cap "1T-cell_0[0:0,0:0]/body" "1T-cell_0[1:1,1:1]/drain" 86
+cap "1T-cell_0[0:0,0:0]/source" "1T-cell_0[1:1,1:1]/drain" 52.439
+cap "1T-cell_0[0:1,0:0]/source" "1T-cell_0[0:1,1:1]/drain" 183.035
+cap "1T-cell_0[0:1,1:1]/drain" "1T-cell_0[0:1,0:0]/body" 288.5
+cap "1T-cell_0[0:1,0:0]/gate" "1T-cell_0[0:1,0:0]/body" -108.67
+cap "1T-cell_0[1:1,0:0]/body" "1T-cell_0[0:0,1:1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n73_n11#" 86
+cap "1T-cell_0[0:0,1:1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n73_n11#" "1T-cell_0[1:1,0:0]/source" 53.0488
+merge "1T-cell_0[0,1]/body" "1T-cell_0[1,1]/body" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "1T-cell_0[1,1]/body" "1T-cell_0[1,0]/body"
+merge "1T-cell_0[1,0]/body" "VSUBS"
+merge "1T-cell_0[1:1,0:1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" "1T-cell_0[0:0,0:1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" 0 -54912 -1844 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "1T-cell_0[1:1,1:1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" "1T-cell_0[0:0,0:0]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" 0 -5504 -300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "1T-cell_0[1:1,0:1]/body" "1T-cell_0[0:0,0:1]/body" -171.691 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18096 -800 0 0 0 0 0 0 0 0
+merge "1T-cell_0[0:1,1:1]/body" "1T-cell_0[0:1,0:0]/body" -222.805 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23608 -1012 0 0 0 0 0 0 0 0 0 0
+merge "1T-cell_0[0:1,1:1]/gate" "1T-cell_0[0:1,0:0]/gate" -222.805 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23608 -1012 0 0 0 0 0 0 0 0 0 0
+merge "1T-cell_0[0:1,1:1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" "1T-cell_0[0:1,0:0]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" 0 -75508 -1928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "1T-cell_0[1:1,0:1]/source" "1T-cell_0[0:0,0:1]/source" -173.419 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18304 -808 0 0 0 0 0 0 0 0
+merge "1T-cell_0[1:1,0:1]/drain" "1T-cell_0[0:0,0:1]/drain" -168.234 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17680 -784 0 0 0 0 0 0 0 0
+merge "1T-cell_0[0:0,1:1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" "1T-cell_0[1:1,0:0]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#" 0 -5504 -300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

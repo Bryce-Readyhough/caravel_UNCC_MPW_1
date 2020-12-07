@@ -1,0 +1,90 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1606604430
+<< nwell >>
+rect -382 614 534 910
+<< psubdiff >>
+rect -150 0 362 96
+<< locali >>
+rect -153 1291 35 1333
+rect -458 1096 -224 1102
+rect -458 1016 -320 1096
+rect -240 1016 -224 1096
+rect -458 1006 -224 1016
+rect -458 -49 -408 1006
+rect -153 981 -111 1291
+rect 322 1167 833 1207
+rect -58 1034 -48 1084
+rect 2 1034 12 1084
+rect -153 939 11 981
+rect -31 563 11 939
+rect -91 521 33 563
+rect -91 443 -49 521
+rect -119 442 -49 443
+rect -146 400 -49 442
+rect 294 447 386 498
+rect 793 447 833 1167
+rect 294 407 833 447
+rect 294 338 386 407
+rect -35 -49 15 309
+rect -458 -99 15 -49
+<< viali >>
+rect -320 1016 -240 1096
+rect -48 1034 2 1084
+<< metal1 >>
+rect -653 1384 96 1438
+rect -338 1096 -224 1106
+rect -338 1016 -320 1096
+rect -240 1084 14 1096
+rect -240 1034 -48 1084
+rect 2 1034 14 1084
+rect -240 1016 14 1034
+rect -338 1006 -224 1016
+rect -96 720 -40 764
+rect -129 664 -40 720
+rect -669 324 100 378
+<< metal2 >>
+rect 849 1555 899 1683
+rect 613 1505 899 1555
+rect 536 908 603 929
+rect 536 834 620 908
+rect 536 688 620 778
+rect 536 685 603 688
+rect 849 98 899 1505
+rect 579 48 899 98
+rect 849 -156 899 48
+<< metal3 >>
+rect 706 921 778 1683
+rect 621 851 778 921
+rect 706 754 778 851
+rect 624 682 778 754
+rect 706 -156 778 682
+use pass-gate  pass-gate_0
+timestamp 1605929851
+transform 1 0 210 0 1 218
+box -210 -218 503 586
+use pass-gate  pass-gate_1
+timestamp 1605929851
+transform 1 0 210 0 -1 1385
+box -210 -218 503 586
+use inverter  inverter_0
+timestamp 1606603647
+transform 1 0 -332 0 1 446
+box -126 -478 242 448
+<< labels >>
+flabel metal1 -652 344 -640 362 0 FreeSans 800 0 0 0 in_1
+port 0 nsew
+flabel metal1 -644 1400 -632 1418 0 FreeSans 800 0 0 0 in_2
+port 1 nsew
+flabel locali -440 74 -428 92 0 FreeSans 800 0 0 0 clk
+port 2 nsew
+flabel locali -76 462 -64 480 0 FreeSans 800 0 0 0 clk_bar
+port 3 nsew
+flabel locali 804 780 816 798 0 FreeSans 800 0 0 0 out
+port 4 nsew
+flabel metal3 732 -86 744 -68 0 FreeSans 800 0 0 0 vdd
+port 5 nsew
+flabel metal2 862 -46 874 -28 0 FreeSans 800 0 0 0 vss
+port 6 nsew
+<< end >>

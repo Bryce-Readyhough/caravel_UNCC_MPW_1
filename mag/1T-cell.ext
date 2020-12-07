@@ -1,0 +1,31 @@
+timestamp 1606190511
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use sky130_fd_bs_flash__special_sonosfet_star_ocehe0 sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0 1 0 429 0 1 439
+port "gate" 0 -164 362 -138 382 m1
+port "source" 2 608 -86 634 -66 m2
+port "drain" 1 212 -82 238 -62 m2
+port "body" 4 -158 602 -132 622 m1
+node "gate" 3 928.113 -164 362 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63752 2556 0 0 0 0 0 0 0 0 0 0
+node "source" 3 1478.45 608 -86 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9256 460 60632 2436 0 0 0 0 0 0 0 0
+node "drain" 3 722.056 212 -82 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9880 484 60008 2412 0 0 0 0 0 0 0 0
+substrate "body" 0 0 -158 602 m1 0 0 239760 1968 0 0 0 0 0 0 3096 244 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2520 212 64232 2576 60424 2428 0 0 0 0 0 0 0 0
+cap "drain" "gate" 254.728
+cap "gate" "source" 250.904
+cap "drain" "source" 195.274
+subcap "gate" -258.926
+subcap "source" -915.212
+subcap "drain" -159.561
+cap "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n73_n11#" "body" 15.4398
+cap "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_15_n11#" "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n73_n11#" -25.5682
+cap "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n73_n11#" "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n33_n99#" 39.2003
+cap "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_15_n11#" "body" 16.5775
+cap "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n33_n99#" "body" 6.31915
+cap "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_15_n11#" "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n33_n99#" 40.1786
+merge "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_15_n11#" "source" -23.0864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1144 -148 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n73_n11#" "drain" -23.974 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1248 -152 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/VSUBS" "body" -1055.84 0 0 -239760 -1968 0 0 0 0 0 0 -3096 -244 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2520 -212 -64232 -2576 -60424 -2428 0 0 0 0 0 0 0 0
+merge "sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n33_n99#" "gate" -15.3508 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2668 -208 0 0 0 0 0 0 0 0 0 0

@@ -1,0 +1,13 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1606172204
+use 2x2-cell  2x2-cell_0
+timestamp 1606172153
+transform 1 0 -19510 0 1 12905
+box -322 -293 2004 2401
+use testing  testing_0
+timestamp 1606105668
+transform 1 0 1068 0 1 1027
+box -1068 -1027 9031 28477
+<< end >>

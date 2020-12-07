@@ -1,0 +1,31 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1606105257
+<< nwell >>
+rect -37 405 183 688
+<< nsubdiff >>
+rect 22 601 132 626
+rect 22 553 49 601
+rect 107 553 132 601
+rect 22 526 132 553
+<< nsubdiffcont >>
+rect 49 553 107 601
+<< locali >>
+rect 29 601 121 618
+rect 29 553 49 601
+rect 107 553 121 601
+rect 29 534 121 553
+rect 100 394 134 475
+rect 12 168 46 314
+rect 100 166 134 312
+rect 12 16 46 162
+use sky130_fd_pr__nfet_01v8_63vi9a  sky130_fd_pr__nfet_01v8_63vi9a_0
+timestamp 1606105257
+transform 1 0 73 0 1 99
+box -73 -99 73 99
+use sky130_fd_pr__pfet_01v8_owy61o  sky130_fd_pr__pfet_01v8_owy61o_0
+timestamp 1606105257
+transform 1 0 73 0 1 371
+box -109 -123 109 123
+<< end >>

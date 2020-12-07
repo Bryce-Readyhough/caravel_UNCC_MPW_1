@@ -1,0 +1,43 @@
+* NGSPICE file created from 1T-cell.ext - technology: sky130A
+
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical__lin.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/tt.spice"
+
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/parameters/invariant.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/sonos_e/begin_of_life/typical.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/sonos_e/begin_of_life.pm3.spice" 
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/sonos_e/begin_of_life.spice"
+.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/all.spice"
+
+
+* .lib "/home/mhasan13/pdk/pdk-prepared/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+* .lib "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/sonos_e/begin_of_life.pm3.spice"
+
+Vg gate gnd DC 1.0
+Vd drain gnd DC 1.0
+Vs source gnd DC 0.0
+Vb body gnd DC 0.0
+
+.subckt sky130_fd_bs_flash__special_sonosfet_star_ocehe0 VSUBS a_15_n11# a_n33_n99#
++ a_n73_n11#
+X0 a_15_n11# a_n33_n99# a_n73_n11# VSUBS sky130_fd_bs_flash__special_sonosfet_star w=420000u l=150000u
+.ends
+
+.subckt T-cell gate drain source body
+Xsky130_fd_bs_flash__special_sonosfet_star_ocehe0_0 body source gate drain sky130_fd_bs_flash__special_sonosfet_star_ocehe0
+.ends
+
+* instantiate
+Xsonos gate drain source body T-cell
+
+.control
+dc Vd 0 1.8 0.01
+plot -i(Vd)
+.endc
+.end
+
+
+
+
+

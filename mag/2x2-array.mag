@@ -1,0 +1,74 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1606190940
+<< dnwell >>
+rect -430 -464 2462 2352
+<< nwell >>
+rect -510 2146 2542 2432
+rect -510 -258 -224 2146
+rect 2256 -258 2542 2146
+rect -510 -544 2542 -258
+<< pwell >>
+rect 152 162 1918 1786
+<< nsubdiff >>
+rect -473 2375 2505 2395
+rect -473 2341 -393 2375
+rect 2425 2341 2505 2375
+rect -473 2321 2505 2341
+rect -473 2315 -399 2321
+rect -473 -427 -453 2315
+rect -419 -427 -399 2315
+rect -473 -433 -399 -427
+rect 2431 2315 2505 2321
+rect 2431 -427 2451 2315
+rect 2485 -427 2505 2315
+rect 2431 -433 2505 -427
+rect -473 -453 2505 -433
+rect -473 -487 -393 -453
+rect 2425 -487 2505 -453
+rect -473 -507 2505 -487
+<< nsubdiffcont >>
+rect -393 2341 2425 2375
+rect -453 -427 -419 2315
+rect 2451 -427 2485 2315
+rect -393 -487 2425 -453
+<< locali >>
+rect -453 2341 -393 2375
+rect 2425 2341 2485 2375
+rect -453 2315 -419 2341
+rect -453 -453 -419 -427
+rect 2451 2315 2485 2341
+rect 2451 -453 2485 -427
+rect -453 -487 -393 -453
+rect 2425 -487 2485 -453
+<< metal1 >>
+rect -968 1544 2980 1596
+rect -956 1304 2992 1356
+rect -938 490 3024 542
+<< metal2 >>
+rect 384 -840 436 2960
+rect 776 -840 828 2974
+rect 1156 -848 1208 2996
+rect 1548 -870 1600 2996
+use 1T-cell  1T-cell_0
+array 0 1 772 0 1 814
+timestamp 1606190511
+transform 1 0 182 0 1 142
+box -182 -142 1044 1024
+<< labels >>
+flabel metal1 -922 1320 -898 1338 0 FreeSans 800 0 0 0 WL0
+port 0 nsew
+flabel metal1 -918 508 -894 526 0 FreeSans 800 0 0 0 WL1
+port 1 nsew
+flabel metal2 396 2808 420 2826 0 FreeSans 800 0 0 0 BL0
+port 2 nsew
+flabel metal2 788 2628 812 2646 0 FreeSans 800 0 0 0 SL0
+port 3 nsew
+flabel metal2 1172 2834 1196 2852 0 FreeSans 800 0 0 0 BL1
+port 4 nsew
+flabel metal2 1558 2656 1582 2674 0 FreeSans 800 0 0 0 SL1
+port 5 nsew
+flabel metal1 -926 1556 -902 1574 0 FreeSans 800 0 0 0 body
+port 7 nsew
+<< end >>

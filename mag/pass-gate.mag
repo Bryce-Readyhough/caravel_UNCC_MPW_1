@@ -1,0 +1,114 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1605929851
+<< nwell >>
+rect -52 396 308 586
+<< psubdiff >>
+rect 140 -126 288 -70
+rect 140 -162 194 -126
+rect 230 -162 288 -126
+rect 140 -218 288 -162
+<< nsubdiff >>
+rect 174 518 262 544
+rect 174 482 200 518
+rect 236 482 262 518
+rect 174 454 262 482
+<< psubdiffcont >>
+rect 194 -162 230 -126
+<< nsubdiffcont >>
+rect 200 482 236 518
+<< locali >>
+rect 186 518 335 534
+rect -95 467 152 509
+rect 110 384 152 467
+rect 186 482 200 518
+rect 236 482 335 518
+rect 186 464 335 482
+rect -210 308 -4 344
+rect 84 116 176 280
+rect -210 54 20 90
+rect 112 -53 154 24
+rect -144 -95 -137 -53
+rect -95 -95 154 -53
+rect 190 -120 240 -104
+rect 182 -126 311 -120
+rect 182 -162 194 -126
+rect 230 -162 311 -126
+rect 182 -170 311 -162
+rect 190 -186 240 -170
+<< viali >>
+rect -137 467 -95 509
+rect 335 464 405 534
+rect -137 -95 -95 -53
+rect 311 -170 361 -120
+<< metal1 >>
+rect 329 540 411 546
+rect 329 534 341 540
+rect -143 509 -89 521
+rect -143 467 -137 509
+rect -95 467 -89 509
+rect -143 455 -89 467
+rect 329 464 335 534
+rect 329 458 341 464
+rect 411 458 417 540
+rect -137 -45 -95 455
+rect 329 452 411 458
+rect -144 -53 -88 -45
+rect -144 -95 -137 -53
+rect -95 -95 -88 -53
+rect -144 -110 -88 -95
+rect 305 -114 367 -108
+rect 305 -182 367 -176
+<< via1 >>
+rect 341 534 411 540
+rect 341 464 405 534
+rect 405 464 411 534
+rect 341 458 411 464
+rect 305 -120 367 -114
+rect 305 -170 311 -120
+rect 311 -170 361 -120
+rect 361 -170 367 -120
+rect 305 -176 367 -170
+<< metal2 >>
+rect 326 540 422 552
+rect 326 458 341 540
+rect 411 458 422 540
+rect 326 446 422 458
+rect 298 -114 374 -106
+rect 298 -176 305 -114
+rect 367 -120 374 -114
+rect 367 -170 503 -120
+rect 367 -176 374 -170
+rect 298 -188 374 -176
+<< via2 >>
+rect 341 458 411 540
+<< metal3 >>
+rect 326 540 422 552
+rect 326 458 341 540
+rect 411 534 422 540
+rect 411 464 503 534
+rect 411 458 422 464
+rect 326 446 422 458
+use sky130_fd_pr__nfet_01v8_5mkfxl  sky130_fd_pr__nfet_01v8_5mkfxl_0
+timestamp 1605923309
+transform 0 1 130 -1 0 73
+box -73 -130 73 130
+use sky130_fd_pr__pfet_01v8_pa2hmj  sky130_fd_pr__pfet_01v8_pa2hmj_0
+timestamp 1605923309
+transform 0 1 128 -1 0 327
+box -109 -180 109 180
+<< labels >>
+flabel locali -201 61 -189 79 0 FreeSans 640 0 0 0 clk
+port 0 nsew
+flabel locali -202 316 -190 334 0 FreeSans 640 0 0 0 clk_bar
+port 1 nsew
+flabel metal1 -123 153 -111 171 0 FreeSans 640 0 0 0 v_in
+port 2 nsew
+flabel locali 118 179 130 197 0 FreeSans 640 0 0 0 v_out
+port 3 nsew
+flabel metal3 457 488 469 506 0 FreeSans 640 0 0 0 v_newll
+port 4 nsew
+flabel metal2 451 -155 463 -137 0 FreeSans 640 0 0 0 v_sub
+port 5 nsew
+<< end >>

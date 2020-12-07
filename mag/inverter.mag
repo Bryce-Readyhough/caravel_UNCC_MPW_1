@@ -1,0 +1,92 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1606603647
+<< nwell >>
+rect -16 0 232 448
+<< psubdiff >>
+rect 66 -380 192 -350
+rect 66 -430 100 -380
+rect 152 -430 192 -380
+rect 66 -478 192 -430
+<< nsubdiff >>
+rect 40 368 168 404
+rect 40 314 76 368
+rect 134 314 168 368
+rect 40 280 168 314
+<< psubdiffcont >>
+rect 100 -430 152 -380
+<< nsubdiffcont >>
+rect 76 314 134 368
+<< poly >>
+rect -126 -2 -42 12
+rect 94 -2 124 75
+rect -126 -6 124 -2
+rect -126 -42 -102 -6
+rect -58 -42 124 -6
+rect -126 -58 -42 -42
+rect 94 -66 124 -42
+<< polycont >>
+rect -102 -42 -58 -6
+<< locali >>
+rect 54 368 160 386
+rect 54 314 76 368
+rect 134 314 160 368
+rect 54 266 160 314
+rect -22 224 -9 266
+rect 31 224 85 266
+rect 125 224 183 266
+rect 48 134 82 224
+rect -126 -6 -42 12
+rect -126 -42 -102 -6
+rect -58 -42 -42 -6
+rect -126 -58 -42 -42
+rect 136 -4 170 64
+rect 136 -46 228 -4
+rect 136 -92 170 -46
+rect 48 -234 82 -172
+rect -10 -276 -6 -234
+rect 34 -276 88 -234
+rect 128 -276 186 -234
+rect 84 -380 164 -276
+rect 84 -430 100 -380
+rect 152 -430 164 -380
+rect 84 -452 164 -430
+<< viali >>
+rect -9 224 31 266
+rect 85 224 125 266
+rect 183 224 223 266
+rect -6 -276 34 -234
+rect 88 -276 128 -234
+rect 186 -276 226 -234
+<< metal1 >>
+rect -35 266 239 274
+rect -35 224 -9 266
+rect 31 224 85 266
+rect 125 224 183 266
+rect 223 224 239 266
+rect -35 218 239 224
+rect -32 -234 242 -226
+rect -32 -276 -6 -234
+rect 34 -276 88 -234
+rect 128 -276 186 -234
+rect 226 -276 242 -234
+rect -32 -282 242 -276
+use sky130_fd_pr__nfet_01v8_8mr83b  sky130_fd_pr__nfet_01v8_8mr83b_0
+timestamp 1604286783
+transform 1 0 109 0 1 -130
+box -73 -68 73 68
+use sky130_fd_pr__pfet_01v8_ykwexw  sky130_fd_pr__pfet_01v8_ykwexw_0
+timestamp 1604286783
+transform 1 0 109 0 1 104
+box -109 -104 109 104
+<< labels >>
+flabel locali -120 -4 -114 2 0 FreeSans 800 0 0 0 in
+port 0 nsew
+flabel locali 204 -24 210 -18 0 FreeSans 800 0 0 0 out
+port 1 nsew
+flabel metal1 -32 264 -26 270 0 FreeSans 800 0 0 0 vdd
+port 2 nsew
+flabel metal1 -28 -240 -22 -234 0 FreeSans 800 0 0 0 vss
+port 3 nsew
+<< end >>
