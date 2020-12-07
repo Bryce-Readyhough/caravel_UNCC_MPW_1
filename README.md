@@ -39,9 +39,7 @@ A 2x2 array of nfet sonos cells with transistor sizing 420nmx150nm.
 | BL1  | mprj_io[11] |
 | SL1  | mprj_io[12] |
 
-[comment]: <> "<p align=”center”>"
-[comment]: <> "<img src="/doc/ciic_harness.png" width="75%" height="75%"> "
-[comment]: <> "</p>"
+
 
 # Installation and Usage
 To setup and install the repo for development:</br>
@@ -58,40 +56,26 @@ To setup and install the repo for development:</br>
 				<li>Install Skywater PDK</li>
 
 ```shell
-export PDK_ROOT=(Absolute path where PDKs will be installed)
+export PDK_ROOT=(where pdks will be installed)
 
 cd $PDK_ROOT
-git clone https://github.com/google/skywater-pdk -b 
-cd skywater-pdk
-git checkout v0.0.0-303-g3d7617a
 
-git submodule init libraries/sky130_fd_io/latest
-git submodule init libraries/sky130_fd_pr/latest
-git submodule init libraries/sky130_fd_sc_hd/latest
-git submodule init libraries/sky130_fd_sc_hdll/latest
-git submodule init libraries/sky130_fd_sc_hs/latest
-git submodule init libraries/sky130_fd_sc_ms/latest
-git submodule init libraries/sky130_fd_sc_ls/latest
-git submodule init libraries/sky130_fd_sc_lp/latest
-git submodule init libraries/sky130_fd_sc_hvl/latest
-git submodule update
+git clone https://github.com/efabless/openlane.git -b mpw-one-a
 
-make timing
+cd openlane
+make
 ```
-<li> Install OpenPDKs </li>
+
+​			This will automatically install the correct versions of SkywaterPDK and OpenPDK to your $PDK_ROOT directory.
+
+</ol>
+
+<li>Clone the repo</li>
 
 ```shell
-cd $PDK_ROOT
-git clone https://github.com/RTimothyEdwards/open_pdks.git -b mpw-one-a
-cd open_pdks
-
-./configure --with-sky130-source=$PDK_ROOT/skywater-pdk/libraries --with-sky130-local-path=$PDK_ROOT
-
-cd sky130
-make
-make install-local
+git clone https://github.com/Bryce-Readyhough/caravel_UNCC_MPW_1.git
 ```
-</ol>
+
 </ol>
 </ol>
 
