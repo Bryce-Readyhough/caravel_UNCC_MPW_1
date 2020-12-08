@@ -26,6 +26,12 @@ As a result vdd needs to be higher in order to get the circuit to work properly.
 | vsyn1  | mprj_io[21] | axon_syn  | mprj_io[30] |
 |        |             | i_in      | mprj_io[31] |
 
+### extracted netlist simulation 
+Spiking pattern at v_buff for i_in = 10pA DC 
+<p align=”center”>
+<img src="/doc/sample_sim.png" width="75%"> 
+</p>
+
 ## SONOS array
 A 2x2 array of nfet sonos cells with transistor sizing 420nmx150nm.
 <p align=”center”>
