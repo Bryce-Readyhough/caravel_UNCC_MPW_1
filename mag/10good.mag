@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1607535698
+timestamp 1607536219
 << metal1 >>
 rect 36077 24683 36179 24689
 rect 36077 24624 36087 24683
@@ -522,18 +522,18 @@ rect 8923 20087 10466 20137
 rect 18759 20110 20417 20186
 rect 28739 20130 30397 20206
 rect 8944 20078 10466 20087
-use 9good  9good_1
-timestamp 1607535698
-transform 1 0 19934 0 1 3
-box -3 -1 19911 23259
-use 9good  9good_0
-timestamp 1607535698
-transform 1 0 2 0 1 1
-box -3 -1 19911 23259
 use Sw-1  Sw-1_0
-timestamp 1607535698
+timestamp 1607536219
 transform 1 0 38534 0 1 22730
 box -70 45 891 509
+use 9good  9good_0
+timestamp 1607536219
+transform 1 0 2 0 1 1
+box -3 -1 19911 23259
+use 9good  9good_1
+timestamp 1607536219
+transform 1 0 19934 0 1 3
+box -3 -1 19911 23259
 << labels >>
 rlabel metal4 -339 21054 -292 21094 1 GND
 rlabel metal2 -349 20793 -302 20833 1 VDD

@@ -397,26 +397,26 @@ rect -1011 178 3620 328
 rect 3926 178 4928 328
 rect -1011 141 4928 178
 rect 3878 138 4120 141
-use pmos-diff-amp  pmos-diff-amp_3
+use neuron-labeled  neuron-labeled_0
+timestamp 1604452313
+transform 1 0 364 0 1 678
+box -364 -678 3630 2294
+use pmos-diff-amp  pmos-diff-amp_0
 timestamp 1606516043
-transform 1 0 9749 0 1 1657
-box -231 -477 703 691
-use pmos-diff-amp  pmos-diff-amp_2
-timestamp 1606516043
-transform 1 0 8477 0 1 1657
+transform 1 0 6001 0 1 1657
 box -231 -477 703 691
 use pmos-diff-amp  pmos-diff-amp_1
 timestamp 1606516043
 transform 1 0 7251 0 1 1657
 box -231 -477 703 691
-use pmos-diff-amp  pmos-diff-amp_0
+use pmos-diff-amp  pmos-diff-amp_2
 timestamp 1606516043
-transform 1 0 6001 0 1 1657
+transform 1 0 8477 0 1 1657
 box -231 -477 703 691
-use neuron-labeled  neuron-labeled_0
-timestamp 1604452313
-transform 1 0 364 0 1 678
-box -364 -678 3630 2294
+use pmos-diff-amp  pmos-diff-amp_3
+timestamp 1606516043
+transform 1 0 9749 0 1 1657
+box -231 -477 703 691
 << labels >>
 flabel metal1 -598 3840 -548 3886 0 FreeSans 800 0 0 0 v
 port 0 nsew

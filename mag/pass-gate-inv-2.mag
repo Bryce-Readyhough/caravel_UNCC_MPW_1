@@ -60,18 +60,18 @@ rect 621 851 778 921
 rect 706 754 778 851
 rect 624 682 778 754
 rect 706 -156 778 682
-use inverter  inverter_0
-timestamp 1606603647
-transform 1 0 -332 0 1 446
-box -126 -478 242 448
-use pass-gate  pass-gate_1
-timestamp 1605929851
-transform 1 0 210 0 -1 1385
-box -210 -218 503 586
 use pass-gate  pass-gate_0
 timestamp 1605929851
 transform 1 0 210 0 1 218
 box -210 -218 503 586
+use pass-gate  pass-gate_1
+timestamp 1605929851
+transform 1 0 210 0 -1 1385
+box -210 -218 503 586
+use inverter  inverter_0
+timestamp 1606603647
+transform 1 0 -332 0 1 446
+box -126 -478 242 448
 << labels >>
 flabel metal1 -652 344 -640 362 0 FreeSans 800 0 0 0 in_1
 port 0 nsew
