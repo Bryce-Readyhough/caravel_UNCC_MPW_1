@@ -1,0 +1,55 @@
+**.subckt SW_2
+XM1 net1 net2 GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM2 net2 D0 GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM3 net3 net2 net5 GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM4 net4 net1 net3 GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM5 VDD net2 net1 VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM6 VDD D0 net2 VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM7 net4 net2 net3 net4 sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM8 net3 net1 net5 net3 sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM9 net6 net7 GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM10 net7 D0 GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM11 net8 net7 net10 GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM12 net9 net6 net8 GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM13 VDD net7 net6 VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM14 VDD D0 net7 VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM15 net9 net7 net8 net9 sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM16 net8 net6 net10 net8 sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM17 net11 net12 GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM18 net12 D1 GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM19 Y net12 net3 GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM20 net8 net11 Y GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM21 VDD net12 net11 VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM22 VDD D1 net12 VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM23 net8 net12 Y net8 sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM24 Y net11 net3 Y sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XR5 net5 net4 __UNCONNECTED_PIN__ sky130_fd_pr__res_generic_po W=1 L=1 mult=1 m=1
+XR4 net4 net10 __UNCONNECTED_PIN__ sky130_fd_pr__res_generic_po W=1 L=1 mult=1 m=1
+XR6 net10 net9 __UNCONNECTED_PIN__ sky130_fd_pr__res_generic_po W=1 L=1 mult=1 m=1
+XR1 net9 VREF __UNCONNECTED_PIN__ sky130_fd_pr__res_generic_po W=1 L=1 mult=1 m=1
+**.ends
+.end

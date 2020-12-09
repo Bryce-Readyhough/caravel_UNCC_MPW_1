@@ -1,0 +1,19 @@
+**.subckt SW
+XM1 net1 net2 GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM2 net2 D_IN GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM3 Y net2 B GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29' ps='W + 2 * 0.29'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM4 A net1 Y GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29' ps='W + 2 * 0.29'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM5 VDD net2 net1 VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM6 VDD D_IN net2 VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29'
++ ps='W + 2 * 0.29' nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM7 A net2 Y A sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29' ps='W + 2 * 0.29'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM8 Y net1 B Y sky130_fd_pr__pfet_01v8 W=1 L=0.15 ad='W * 0.29' pd='W + 2 * 0.29' as='W * 0.29' ps='W + 2 * 0.29'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+**.ends
+.end

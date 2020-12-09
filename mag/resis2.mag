@@ -1,0 +1,30 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1606546872
+<< locali >>
+rect 10 430 78 468
+rect 4 362 14 430
+rect 74 362 84 430
+rect 2 54 12 126
+rect 74 54 84 126
+rect 8 30 78 54
+rect 12 18 74 30
+<< viali >>
+rect 14 362 74 430
+rect 12 54 74 126
+<< metal1 >>
+rect 14 438 74 440
+rect -4 430 98 438
+rect -4 362 14 430
+rect 74 362 98 430
+rect -4 348 98 362
+rect -4 126 94 144
+rect -4 54 12 126
+rect 74 54 94 126
+rect -4 40 94 54
+use sky130_fd_pr__res_generic_po_7fj43g  sky130_fd_pr__res_generic_po_7fj43g_0
+timestamp 1606546522
+transform 1 0 43 0 1 242
+box -33 -244 33 244
+<< end >>

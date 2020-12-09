@@ -1,0 +1,33 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1606705886
+<< locali >>
+rect -6 424 60 462
+rect -12 386 -2 424
+rect 56 386 66 424
+rect -12 382 66 386
+rect -6 376 60 382
+rect -6 88 60 98
+rect -14 44 -4 88
+rect 56 44 66 88
+rect -6 22 60 44
+<< viali >>
+rect -2 386 56 424
+rect -4 44 56 88
+<< metal1 >>
+rect -2 430 56 434
+rect -14 424 68 430
+rect -14 386 -2 424
+rect 56 386 68 424
+rect -14 364 68 386
+rect -18 88 70 108
+rect -18 44 -4 88
+rect 56 44 70 88
+rect -18 36 70 44
+rect -4 34 56 36
+use sky130_fd_pr__res_generic_po_51v87m  sky130_fd_pr__res_generic_po_51v87m_0
+timestamp 1606705886
+transform 1 0 27 0 1 234
+box -33 -244 33 244
+<< end >>

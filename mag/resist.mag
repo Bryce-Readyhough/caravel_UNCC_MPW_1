@@ -1,0 +1,30 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1606544095
+<< locali >>
+rect 0 536 66 542
+rect -4 494 6 536
+rect 60 494 70 536
+rect 0 438 66 494
+rect 0 -6 66 50
+rect -4 -48 6 -6
+rect 60 -48 70 -6
+rect 0 -54 66 -48
+<< viali >>
+rect 6 494 60 536
+rect 6 -48 60 -6
+<< metal1 >>
+rect -6 536 74 568
+rect -6 494 6 536
+rect 60 494 74 536
+rect -6 478 74 494
+rect -6 -6 74 8
+rect -6 -48 6 -6
+rect 60 -48 74 -6
+rect -6 -82 74 -48
+use sky130_fd_pr__res_generic_po_sml6kw  sky130_fd_pr__res_generic_po_sml6kw_0
+timestamp 1606544095
+transform 1 0 33 0 1 244
+box -33 -244 33 244
+<< end >>

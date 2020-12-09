@@ -1,0 +1,21 @@
+magic
+tech sky130A
+timestamp 1606533971
+<< metal1 >>
+rect 946 218 965 365
+rect 946 188 1311 218
+rect 926 -242 1305 -230
+rect 945 -260 1305 -242
+use Sw-1  Sw-1_0
+timestamp 1606533971
+transform 1 0 68 0 1 -40
+box -70 45 891 509
+use Sw-1  Sw-1_1
+timestamp 1606533971
+transform 1 0 64 0 1 -638
+box -70 45 891 509
+use Sw-1  Sw-1_2
+timestamp 1606533971
+transform 1 0 1213 0 1 -295
+box -70 45 891 509
+<< end >>

@@ -1,0 +1,49 @@
+* NGSPICE file created from Sw-1.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_j74adr VSUBS a_109_249# a_109_337# a_21_289#
+X0 a_109_337# a_21_289# a_109_249# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_htftno VSUBS w_n187_n133# a_n184_n57# a_n87_n9# a_n87_n97#
+X0 a_n87_n9# a_n184_n57# a_n87_n97# w_n187_n133# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_h5gdbm VSUBS a_n101_295# a_n13_343# a_n13_255#
+X0 a_n13_343# a_n101_295# a_n13_255# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_dma3uj VSUBS a_n57_109# a_31_157# a_31_69#
+X0 a_31_157# a_n57_109# a_31_69# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_hf7xew VSUBS w_n109_n123# a_n106_n47# a_n9_1# a_n9_n87#
+X0 a_n9_1# a_n106_n47# a_n9_n87# w_n109_n123# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_b4l3oq VSUBS a_n11_n3# a_n11_n91# w_n111_n127# a_n108_n51#
+X0 a_n11_n3# a_n108_n51# a_n11_n91# w_n111_n127# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_k0ujpa VSUBS a_n151_n105# a_n151_n17# w_n251_n141#
++ a_n248_n65#
+X0 a_n151_n17# a_n248_n65# a_n151_n105# w_n251_n141# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lz0viw VSUBS a_n55_313# a_n25_343# a_n25_255#
+X0 a_n25_343# a_n55_313# a_n25_255# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+
+* Top level circuit Sw-1
+
+Xsky130_fd_pr__nfet_01v8_j74adr_0 VSUBS VSUBS li_29_719# D_IN sky130_fd_pr__nfet_01v8_j74adr
+Xsky130_fd_pr__pfet_01v8_htftno_0 VSUBS w_928_594# li_29_719# w_928_594# w_1442_592#
++ sky130_fd_pr__pfet_01v8_htftno
+Xsky130_fd_pr__nfet_01v8_h5gdbm_0 VSUBS li_29_719# w_1442_592# B sky130_fd_pr__nfet_01v8_h5gdbm
+Xsky130_fd_pr__nfet_01v8_dma3uj_0 VSUBS li_29_719# li_126_470# VSUBS sky130_fd_pr__nfet_01v8_dma3uj
+Xsky130_fd_pr__pfet_01v8_hf7xew_0 VSUBS VDD li_29_719# VDD li_126_470# sky130_fd_pr__pfet_01v8_hf7xew
+Xsky130_fd_pr__pfet_01v8_b4l3oq_0 VSUBS VDD li_29_719# VDD D_IN sky130_fd_pr__pfet_01v8_b4l3oq
+Xsky130_fd_pr__pfet_01v8_k0ujpa_0 VSUBS B w_1442_592# w_1442_592# li_126_470# sky130_fd_pr__pfet_01v8_k0ujpa
+Xsky130_fd_pr__nfet_01v8_lz0viw_0 VSUBS li_126_470# w_928_594# w_1442_592# sky130_fd_pr__nfet_01v8_lz0viw
+.end
+
