@@ -1,14 +1,10 @@
-# 10-bit Digital to Analog Converter - Caravel Submission 
+# Analog Spiking Neuron Circuit and 10-bit Digital to Analog Converter - Caravel Submission 
 
-Part of the megaproject area contains a 10-bit Potentiometric Digital to Analog Converter with an external 3.3 Volt rail voltage, 1.8 Volt digital voltage control, controlled digitally through the RISC-V logic analyzer. This work is built off of Ashutosh Sharma's work and ports the device from the OSU180 to Skywater130 with several minor improvements, Sharma's repository is listed below. The fundamental idea is to divide the reference voltage into N different voltages between the range of V_ref+ and V_ref- for the N-bit Digital to Analog converter. The design contained here uses a string of polysilicon resistors in series to create a string DAC. The resistors are connected to digital switches in order to achieve an exact voltage at the output. The device was built through hierarchical sub-circuits and sub-layouts starting off at 2-bit, then 3-bit and so forth, incrementally reaching 10-bit. With a full scale of 3.3 V and a 10 bit resolution, additional work will be done in the future to increase resolution and power, and reduce latency. 
-
-Reference: https://github.com/xzlashutosh/avsddac_3v3
-
-# Analog Spiking Neuron Circuit - Caravel Submission
+## Analog Spiking Neuron Circuit
 
 This is the Google/EFabless/Skywater Caravel submission of an [Analog Spiking Neuron Circuit.](https://ieeexplore.ieee.org/document/9184447) The submission also includes a SONOS transistor array. 
 
-## Neuron circuit
+### Neuron circuit
 The circuit in the original paper is in 130nm technology and has a vdd of 300mV. Skywater pdk is hybrid 180nm/130nm node where the minimum transistor length is 150nm.
 As a result vdd needs to be higher in order to get the circuit to work properly. In simulation 700mV seems to work well. 
 
@@ -16,7 +12,7 @@ As a result vdd needs to be higher in order to get the circuit to work properly.
 <img src="/doc/neuron.png" width="75%"> 
 </p>
 
-### pinout
+#### Pinout
 | node   | pad         | node      | pad         |
 |--------|-------------|-----------|-------------|
 | i_bias | mprj_io[13]  | v_buff    | mprj_io[22] |
@@ -30,19 +26,19 @@ As a result vdd needs to be higher in order to get the circuit to work properly.
 | vsyn1  | mprj_io[21] | axon_syn  | mprj_io[30] |
 |        |             | i_in      | mprj_io[31] |
 
-### extracted netlist simulation 
+#### Extracted Netlist Simulation 
 Spiking pattern at v_buff for i_in = 10pA DC 
 <p align=”center”>
 <img src="/doc/sample_sim.png" width="75%"> 
 </p>
 
-## SONOS array
+### SONOS array
 A 2x2 array of nfet sonos cells with transistor sizing 420nmx150nm.
 <p align=”center”>
 <img src="/doc/sonos.png" width="75%"> 
 </p>
 
-### pinout
+#### Pinout
 | node | pad         |
 |------|-------------|
 | WL0  | mprj_io[7]  |
@@ -54,7 +50,34 @@ A 2x2 array of nfet sonos cells with transistor sizing 420nmx150nm.
 
 
 
+## 10-bit Digital to Analog Converter
+
+The mega project area also contains a 10-bit Potentiometric Digital to Analog Converter built off of [Ashutosh Sharma's design.](https://github.com/xzlashutosh/avsddac_3v3) The design uses a 3.3V rail voltage, and 1.8V digital input voltage. The DAC's inputs are controlled by the Caravel harness' built in RISC-V core. [Ashutosh Sharma's design](https://github.com/xzlashutosh/avsddac_3v3) used the OSU180 process, for the caravel submission it was ported to the Sky130 process. 
+
+The design uses a string of polysilicon resistors in series to create a string DAC. The resistors are connected to digital switches in order to achieve an exact voltage at the output. The device was built through hierarchical sub-circuits and sub-layouts starting off at 2-bit, then 3-bit and so forth, incrementally reaching 10-bit. With a full scale of 3.3 V and a 10 bit resolution. 
+
+## Pinout
+
+| Node          | Pad           |
+| :------------ | ------------- |
+| Analog_Out    | analog_io[25] |
+| Digital_In[0] | io_in[0]      |
+| Digital_In[1] | io_in[1]      |
+| Digital_In[2] | io_in[2]      |
+| Digital_In[3] | io_in[3]      |
+| Digital_In[4] | io_in[4]      |
+| Digital_In[5] | io_in[5]      |
+| Digital_In[6] | io_in[6]      |
+| Digital_In[7] | io_in[7]      |
+| Digital_In[8] | io_in[8]      |
+| Digital_In[9] | io_in[9]      |
+| VDD           | vdda1         |
+| Gnd           | vssa1         |
+
+
+
 # Installation
+
 To setup and install the repo for development:
 
 1. Install prerequisite tools:
@@ -62,7 +85,7 @@ To setup and install the repo for development:
       - Note: As of 12/7/2020 you must install Magic from source code. The packaged version will not work with OpenPDKS.
    2. Install [KLayout](https://www.klayout.de/build.html)
    3. Install [SkywaterPDK](https://github.com/google/skywater-pdk) and [OpenPDK](https://github.com/RTimothyEdwards/open_pdks) using [OpenLane](https://github.com/efabless/openlane.git)
-      1. Clone and Install OpenLane. This will also grab and install SkywaterPDK and OpenPDK for you.
+      1. Clone and Install OpenLane. This will also grab and install SkywaterPDK and OpenPDK for you:
 
 ```shell
 export PDK_ROOT=(where pdks will be installed)
@@ -76,7 +99,7 @@ export OPENLANE_ROOT=$(pwd)
 make
 ```
 
-​			2. Clone and uncompress the repo
+​			2. Clone and uncompress the repo:
 
 ```shell
 git clone https://github.com/Bryce-Readyhough/caravel_UNCC_MPW_1.git
