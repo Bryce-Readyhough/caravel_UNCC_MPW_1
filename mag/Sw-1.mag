@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1607400580
+timestamp 1607535698
 << nwell >>
 rect 10 760 664 822
 rect 10 758 248 760
@@ -31,10 +31,10 @@ rect 36 274 1214 312
 rect 36 272 492 274
 rect 686 272 1214 274
 << psubdiff >>
-rect 256 482 352 506
-rect 256 436 280 482
-rect 328 436 352 482
-rect 256 412 352 436
+rect 260 448 366 458
+rect 260 406 292 448
+rect 336 406 366 448
+rect 260 398 366 406
 << nsubdiff >>
 rect 966 910 1076 938
 rect 966 866 998 910
@@ -49,7 +49,7 @@ rect 254 690 284 734
 rect 328 690 356 734
 rect 254 660 356 690
 << psubdiffcont >>
-rect 280 436 328 482
+rect 292 406 336 448
 << nsubdiffcont >>
 rect 998 866 1046 910
 rect 1530 850 1578 894
@@ -96,17 +96,15 @@ rect 1044 602 1104 676
 rect 126 522 140 564
 rect 178 522 190 564
 rect 126 470 190 522
-rect 264 482 346 500
-rect 264 436 280 482
-rect 328 436 346 482
+rect 276 406 292 448
+rect 336 406 352 448
 rect 414 444 448 584
 rect 502 546 712 592
 rect 502 466 574 546
-rect 264 420 346 436
+rect 424 414 448 444
 rect 120 368 180 386
 rect 120 332 196 368
-rect 298 332 342 420
-rect 424 414 448 444
+rect 298 332 342 406
 rect 414 396 448 414
 rect 678 404 712 546
 rect 762 552 1104 602
@@ -151,7 +149,6 @@ rect 272 802 326 844
 rect 1178 764 1236 822
 rect 412 584 450 626
 rect 140 522 178 564
-rect 280 436 328 482
 rect 1230 380 1268 422
 rect 1702 752 1740 794
 rect 1456 608 1494 650
@@ -285,13 +282,13 @@ use sky130_fd_pr__pfet_01v8_hf7xew  sky130_fd_pr__pfet_01v8_hf7xew_0
 timestamp 1606234862
 transform 1 0 125 0 1 719
 box -109 -123 137 95
-use sky130_fd_pr__nfet_01v8_raze6j  sky130_fd_pr__nfet_01v8_raze6j_0
-timestamp 1606234862
-transform 1 0 121 0 1 120
-box 0 0 1 1
 use sky130_fd_pr__nfet_01v8_p8bhg1  sky130_fd_pr__nfet_01v8_p8bhg1_0
 timestamp 1606234862
 transform 1 0 73 0 1 99
+box 0 0 1 1
+use sky130_fd_pr__nfet_01v8_raze6j  sky130_fd_pr__nfet_01v8_raze6j_0
+timestamp 1606234862
+transform 1 0 121 0 1 120
 box 0 0 1 1
 use sky130_fd_pr__nfet_01v8_j74adr  sky130_fd_pr__nfet_01v8_j74adr_0
 timestamp 1606234862

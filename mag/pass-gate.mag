@@ -90,14 +90,14 @@ rect 411 534 422 540
 rect 411 464 503 534
 rect 411 458 422 464
 rect 326 446 422 458
-use sky130_fd_pr__nfet_01v8_5mkfxl  sky130_fd_pr__nfet_01v8_5mkfxl_0
-timestamp 1605923309
-transform 0 1 130 -1 0 73
-box -73 -130 73 130
 use sky130_fd_pr__pfet_01v8_pa2hmj  sky130_fd_pr__pfet_01v8_pa2hmj_0
 timestamp 1605923309
 transform 0 1 128 -1 0 327
 box -109 -180 109 180
+use sky130_fd_pr__nfet_01v8_5mkfxl  sky130_fd_pr__nfet_01v8_5mkfxl_0
+timestamp 1605923309
+transform 0 1 130 -1 0 73
+box -73 -130 73 130
 << labels >>
 flabel locali -201 61 -189 79 0 FreeSans 640 0 0 0 clk
 port 0 nsew
