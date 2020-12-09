@@ -1,4 +1,8 @@
+# 10-bit Digital to Analog Converter - Caravel Submission 
 
+Part of the megaproject area contains a 10-bit Potentiometric Digital to Analog Converter with an external 3.3 Volt rail voltage, 1.8 Volt digital voltage control, controlled digitally through the RISC-V logic analyzer. This work is built off of Ashutosh Sharma's work and ports the device from the OSU180 to Skywater130 with several minor improvements, Sharma's repository is listed below. The fundamental idea is to divide the reference voltage into N different voltages between the range of V_ref+ and V_ref- for the N-bit Digital to Analog converter. The design contained here uses a string of polysilicon resistors in series to create a string DAC. The resistors are connected to digital switches in order to achieve an exact voltage at the output. The device was built through hierarchical sub-circuits and sub-layouts starting off at 2-bit, then 3-bit and so forth, incrementally reaching 10-bit. With a full scale of 3.3 V and a 10 bit resolution, additional work will be done in the future to increase resolution and power, and reduce latency. 
+
+Reference: https://github.com/xzlashutosh/avsddac_3v3
 
 # Analog Spiking Neuron Circuit - Caravel Submission
 
