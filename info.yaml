@@ -1,11 +1,11 @@
 --- 
 project: 
-  description: "A template SoC for Google sponsored Open MPW shuttles for SKY130."
+  description: "A 10 bit DAC and an analog neural network neuron."
   foundry: "SkyWater"
   git_url: "https://github.com/efabless/caravel.git"
-  organization: "Efabless"
-  organization_url: "http://efabless.com"
-  owner: "Tim Edwards"
+  organization: " "
+  organization_url: " "
+  owner: "Bryce Readyhough, Munir Hasan, Michael Stetzler"
   process: "SKY130"
   project_name: "Caravel"
   tags: 
