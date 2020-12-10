@@ -74,7 +74,17 @@ The design uses a string of polysilicon resistors in series to create a string D
 | VDD           | vdda1         |
 | Gnd           | vssa1         |
 
+#### Simplified DAC Architecture 
+String of resistors and switches that make up potentiometric DAC.
+<p align=”center”>
+<img src="/doc/circuit_DAC.png" width="75%"> 
+</p>
 
+#### Abstracted DAC Block Diagram 
+Simple block representing all inputs and outputs of DAC.
+<p align=”center”>
+<img src="/doc/abstract_block_diagram.png" width="75%"> 
+</p>
 
 # Installation
 
