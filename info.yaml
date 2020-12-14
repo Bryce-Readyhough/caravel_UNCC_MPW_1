@@ -5,7 +5,7 @@ project:
   git_url: "https://github.com/Bryce-Readyhough/caravel_UNCC_MPW_1.git"
   organization: " "
   organization_url: " "
-  owner: "Bryce Readyhough, Munir Hasan, Michael Stetzler"
+  owner: "Bryce Readyhough, MD Munir Hasan, Michael Stetzler"
   process: "SKY130"
   project_name: "Caravel"
   tags: 
