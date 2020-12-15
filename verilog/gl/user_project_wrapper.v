@@ -6,6 +6,7 @@ module user_project_wrapper(user_clock2, vccd1, vccd2, vdda1, vdda2, vssa1, vssa
   input io_in[36:0];
   inout vssa1;
   inout vdda1;
+  inout vdda2;
   inout analog_io[30:0];
   
   10good 10good_0();
