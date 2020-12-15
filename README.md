@@ -13,11 +13,11 @@ As a result vdd needs to be higher in order to get the circuit to work properly.
 </p>
 
 #### Pinout
-| node   | pad         | node      | pad         |
-|--------|-------------|-----------|-------------|
-| i_bias | mprj_io[13]  | v_buff    | mprj_io[22] |
-| vad    | mprj_io[14]  | u_buff    | mprj_io[23] |
-| vr     | mprj_io[15]  | a_buff    | mprj_io[24] |
+| node   | pad         | node      | pad         | node        | pad         |
+|--------|-------------|-----------|-------------|-------------|-------------|
+| i_bias | mprj_io[13]  | v_buff    | mprj_io[22] | vdd        |   vdda1     |
+| vad    | mprj_io[14]  | u_buff    | mprj_io[23] | vss        |   vssa1     |
+| vr     | mprj_io[15]  | a_buff    | mprj_io[24] | vdd_aux    |   vdda2     |
 | vk     | mprj_io[16] | axon_buff | mprj_io[25] |
 | vth    | mprj_io[17] | sel       | mprj_io[26] |
 | vw     | mprj_io[18] | v_syn     | mprj_io[27] |
