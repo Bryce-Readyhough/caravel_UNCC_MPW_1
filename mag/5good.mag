@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1607993606
+timestamp 1608000372
 << metal1 >>
 rect 2106 8299 2213 8307
 rect 2106 8285 2216 8299
@@ -50,16 +50,16 @@ rect 479 5545 521 5732
 rect 479 5506 1641 5545
 rect 479 5503 521 5506
 rect 516 2943 1528 2982
-use 4good  4good_1
-timestamp 1607993606
-transform 1 0 48 0 1 5663
-box -1 2 2115 5105
-use 4good  4good_0
-timestamp 1607993606
-transform 1 0 48 0 1 614
-box -1 2 2115 5105
 use Sw-1  Sw-1_0
-timestamp 1607993606
+timestamp 1608000372
 transform 1 0 1336 0 1 5441
 box -70 45 891 509
+use 4good  4good_0
+timestamp 1608000372
+transform 1 0 48 0 1 614
+box -1 2 2115 5105
+use 4good  4good_1
+timestamp 1608000372
+transform 1 0 48 0 1 5663
+box -1 2 2115 5105
 << end >>
