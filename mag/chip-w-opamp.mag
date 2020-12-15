@@ -541,54 +541,54 @@ rect 16905 -2341 16910 -2175
 rect 17076 -2341 17943 -2175
 rect 16905 -2346 17081 -2341
 rect 17871 -3734 17943 -2341
-use inverter  inverter_0
-timestamp 1606603647
-transform 1 0 -1166 0 1 2098
-box -126 -478 242 448
-use neuron-labeled-extended-opamp  neuron-labeled-extended-opamp_0
+use neuron-labeled-extended-opamp  neuron-labeled-extended-opamp_2
 timestamp 1606535953
-transform 1 0 694 0 1 622
-box -1114 -638 10633 4416
-use one-way  one-way_0
-timestamp 1606105257
-transform 1 0 -618 0 1 1859
-box -37 0 183 688
-use pass-gate-inv-2  pass-gate-inv-2_2
-timestamp 1606604430
-transform 1 0 17165 0 1 28
-box -669 -156 899 1683
-use pass-gate-inv-2  pass-gate-inv-2_3
-timestamp 1606604430
-transform 1 0 17165 0 1 -1786
-box -669 -156 899 1683
-use pass-gate-inv-2  pass-gate-inv-2_1
-timestamp 1606604430
-transform 1 0 17167 0 1 1858
-box -669 -156 899 1683
-use pass-gate-inv-2  pass-gate-inv-2_0
-timestamp 1606604430
-transform 1 0 17167 0 1 3624
-box -669 -156 899 1683
-use 2x2-array  2x2-array_0
-timestamp 1608024784
-transform 1 0 -23516 0 1 6758
-box -968 -870 3024 2996
-use inverter  inverter_1
-timestamp 1606603647
-transform 1 0 -1150 0 1 7804
-box -126 -478 242 448
-use neuron-labeled-extended-opamp  neuron-labeled-extended-opamp_1
-timestamp 1606535953
-transform 1 0 694 0 1 6448
+transform 1 0 694 0 1 12268
 box -1114 -638 10633 4416
 use one-way  one-way_1
 timestamp 1606105257
 transform 1 0 -543 0 1 7572
 box -37 0 183 688
-use neuron-labeled-extended-opamp  neuron-labeled-extended-opamp_2
+use neuron-labeled-extended-opamp  neuron-labeled-extended-opamp_1
 timestamp 1606535953
-transform 1 0 694 0 1 12268
+transform 1 0 694 0 1 6448
 box -1114 -638 10633 4416
+use inverter  inverter_1
+timestamp 1606603647
+transform 1 0 -1150 0 1 7804
+box -126 -478 242 448
+use 2x2-array  2x2-array_0
+timestamp 1608024784
+transform 1 0 -23516 0 1 6758
+box -968 -870 3024 2996
+use pass-gate-inv-2  pass-gate-inv-2_0
+timestamp 1606604430
+transform 1 0 17167 0 1 3624
+box -669 -156 899 1683
+use pass-gate-inv-2  pass-gate-inv-2_1
+timestamp 1606604430
+transform 1 0 17167 0 1 1858
+box -669 -156 899 1683
+use pass-gate-inv-2  pass-gate-inv-2_3
+timestamp 1606604430
+transform 1 0 17165 0 1 -1786
+box -669 -156 899 1683
+use pass-gate-inv-2  pass-gate-inv-2_2
+timestamp 1606604430
+transform 1 0 17165 0 1 28
+box -669 -156 899 1683
+use one-way  one-way_0
+timestamp 1606105257
+transform 1 0 -618 0 1 1859
+box -37 0 183 688
+use neuron-labeled-extended-opamp  neuron-labeled-extended-opamp_0
+timestamp 1606535953
+transform 1 0 694 0 1 622
+box -1114 -638 10633 4416
+use inverter  inverter_0
+timestamp 1606603647
+transform 1 0 -1166 0 1 2098
+box -126 -478 242 448
 << labels >>
 flabel metal2 -8082 23014 -8034 23104 0 FreeSans 1600 0 0 0 i_bias
 port 0 nsew

@@ -20,12 +20,12 @@ rect 100 394 134 475
 rect 12 168 46 314
 rect 100 166 134 312
 rect 12 16 46 162
-use sky130_fd_pr__nfet_01v8_63vi9a  sky130_fd_pr__nfet_01v8_63vi9a_0
-timestamp 1606105257
-transform 1 0 73 0 1 99
-box -73 -99 73 99
 use sky130_fd_pr__pfet_01v8_owy61o  sky130_fd_pr__pfet_01v8_owy61o_0
 timestamp 1606105257
 transform 1 0 73 0 1 371
 box -109 -123 109 123
+use sky130_fd_pr__nfet_01v8_63vi9a  sky130_fd_pr__nfet_01v8_63vi9a_0
+timestamp 1606105257
+transform 1 0 73 0 1 99
+box -73 -99 73 99
 << end >>

@@ -995,66 +995,66 @@ rect 2978 -169 3055 -158
 rect 559 -319 1720 -285
 rect 3001 -392 3035 -169
 rect 257 -426 3035 -392
-use sky130_fd_pr__pfet_01v8_zt2j7p  M4
+use sky130_fd_pr__nfet_01v8_dlksd1  M10
 timestamp 1604306825
-transform 1 0 1065 0 1 1460
-box -134 -182 134 182
-use sky130_fd_pr__nfet_01v8_ckptud  M5
-timestamp 1604306825
-transform 1 0 1066 0 1 -64
+transform 1 0 2585 0 1 -155
 box -98 -68 98 68
-use sky130_fd_pr__nfet_01v8_h43ndc  M8
+use sky130_fd_pr__nfet_01v8_wpylm8  Cu
 timestamp 1604306825
-transform 0 1 703 -1 0 -148
-box -98 -68 98 68
-use sky130_fd_pr__nfet_01v8_s3efqo  M11
+transform 1 0 1617 0 1 661
+box -388 -426 388 426
+use sky130_fd_pr__nfet_01v8_tb02ql  Ca
 timestamp 1604306825
-transform 0 1 402 -1 0 -148
-box -98 -68 98 68
-use sky130_fd_pr__nfet_01v8_zgaw3c  Mk
+transform 1 0 2868 0 1 916
+box -618 -826 618 826
+use sky130_fd_pr__pfet_01v8_2vaynq  M6
 timestamp 1604306825
-transform 0 1 13 -1 0 -148
-box -98 -68 98 68
-use sky130_fd_pr__pfet_01v8_u061qr  M2
-timestamp 1604371879
-transform 0 1 335 -1 0 1537
-box -134 -142 134 142
-use sky130_fd_pr__nfet_01v8_lca7f7  M1
-timestamp 1604306825
-transform 0 1 728 -1 0 1448
-box -98 -68 98 68
-use sky130_fd_pr__nfet_01v8_9hqhhq  Cv
-timestamp 1604306825
-transform 1 0 378 0 1 688
-box -498 -526 498 526
-use sky130_fd_pr__pfet_01v8_h2n75u  M3
-timestamp 1604306825
-transform 0 1 -8 -1 0 1537
-box -134 -142 134 142
-use sky130_fd_pr__pfet_01v8_6z4qh8  M9
-timestamp 1604306825
-transform 1 0 1863 0 1 1432
+transform 1 0 1454 0 1 1432
 box -134 -142 134 142
 use sky130_fd_pr__nfet_01v8_9i6r5e  M7
 timestamp 1604306825
 transform 1 0 1414 0 1 -65
 box -98 -68 98 68
-use sky130_fd_pr__pfet_01v8_2vaynq  M6
+use sky130_fd_pr__pfet_01v8_6z4qh8  M9
 timestamp 1604306825
-transform 1 0 1454 0 1 1432
+transform 1 0 1863 0 1 1432
 box -134 -142 134 142
-use sky130_fd_pr__nfet_01v8_tb02ql  Ca
+use sky130_fd_pr__pfet_01v8_h2n75u  M3
 timestamp 1604306825
-transform 1 0 2868 0 1 916
-box -618 -826 618 826
-use sky130_fd_pr__nfet_01v8_wpylm8  Cu
+transform 0 1 -8 -1 0 1537
+box -134 -142 134 142
+use sky130_fd_pr__nfet_01v8_9hqhhq  Cv
 timestamp 1604306825
-transform 1 0 1617 0 1 661
-box -388 -426 388 426
-use sky130_fd_pr__nfet_01v8_dlksd1  M10
+transform 1 0 378 0 1 688
+box -498 -526 498 526
+use sky130_fd_pr__nfet_01v8_lca7f7  M1
 timestamp 1604306825
-transform 1 0 2585 0 1 -155
+transform 0 1 728 -1 0 1448
 box -98 -68 98 68
+use sky130_fd_pr__pfet_01v8_u061qr  M2
+timestamp 1604371879
+transform 0 1 335 -1 0 1537
+box -134 -142 134 142
+use sky130_fd_pr__nfet_01v8_zgaw3c  Mk
+timestamp 1604306825
+transform 0 1 13 -1 0 -148
+box -98 -68 98 68
+use sky130_fd_pr__nfet_01v8_s3efqo  M11
+timestamp 1604306825
+transform 0 1 402 -1 0 -148
+box -98 -68 98 68
+use sky130_fd_pr__nfet_01v8_h43ndc  M8
+timestamp 1604306825
+transform 0 1 703 -1 0 -148
+box -98 -68 98 68
+use sky130_fd_pr__nfet_01v8_ckptud  M5
+timestamp 1604306825
+transform 1 0 1066 0 1 -64
+box -98 -68 98 68
+use sky130_fd_pr__pfet_01v8_zt2j7p  M4
+timestamp 1604306825
+transform 1 0 1065 0 1 1460
+box -134 -182 134 182
 << labels >>
 flabel metal1 -210 2026 -128 2114 0 FreeSans 240 0 0 0 VPWR
 port 0 nsew
