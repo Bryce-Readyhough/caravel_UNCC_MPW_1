@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1607536219
+timestamp 1607993606
 << locali >>
 rect -180 1366 -114 1382
 rect -184 1324 -174 1366
@@ -119,32 +119,32 @@ rect 638 75 763 145
 rect 638 -224 708 75
 rect 633 -294 2671 -224
 rect 638 -1126 708 -294
-use Sw-1  Sw-1_0
-timestamp 1607536219
-transform 1 0 124 0 1 -86
-box -140 90 1782 1018
-use Sw-1  Sw-1_1
-timestamp 1607536219
-transform 1 0 110 0 1 -1292
-box -140 90 1782 1018
-use Sw-1  Sw-1_2
-timestamp 1607536219
-transform 1 0 2068 0 1 -460
-box -140 90 1782 1018
-use sky130_fd_pr__res_generic_po_abfehu  sky130_fd_pr__res_generic_po_abfehu_0
+use sky130_fd_pr__res_generic_po_0v6cx5  sky130_fd_pr__res_generic_po_0v6cx5_0
 timestamp 1606707439
-transform 1 0 -147 0 1 1176
-box -33 -244 33 244
-use sky130_fd_pr__res_generic_po_i65fu2  sky130_fd_pr__res_generic_po_i65fu2_0
-timestamp 1606707439
-transform 1 0 -147 0 1 -742
+transform 1 0 -67 0 1 -150
 box -33 -244 33 244
 use sky130_fd_pr__res_generic_po_kabjgr  sky130_fd_pr__res_generic_po_kabjgr_0
 timestamp 1606707439
 transform 1 0 -151 0 1 556
 box -33 -244 33 244
-use sky130_fd_pr__res_generic_po_0v6cx5  sky130_fd_pr__res_generic_po_0v6cx5_0
+use sky130_fd_pr__res_generic_po_i65fu2  sky130_fd_pr__res_generic_po_i65fu2_0
 timestamp 1606707439
-transform 1 0 -67 0 1 -150
+transform 1 0 -147 0 1 -742
 box -33 -244 33 244
+use sky130_fd_pr__res_generic_po_abfehu  sky130_fd_pr__res_generic_po_abfehu_0
+timestamp 1606707439
+transform 1 0 -147 0 1 1176
+box -33 -244 33 244
+use Sw-1  Sw-1_2
+timestamp 1607993606
+transform 1 0 2068 0 1 -460
+box -140 90 1782 1018
+use Sw-1  Sw-1_1
+timestamp 1607993606
+transform 1 0 110 0 1 -1292
+box -140 90 1782 1018
+use Sw-1  Sw-1_0
+timestamp 1607993606
+transform 1 0 124 0 1 -86
+box -140 90 1782 1018
 << end >>
