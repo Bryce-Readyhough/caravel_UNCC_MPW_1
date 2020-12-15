@@ -1,12 +1,9 @@
 * NGSPICE file created from user_project_wrapper.ext - technology: sky130A
 
-
 * Include SkyWater sky130 device models
 .include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical__lin.spice"
 .include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical.spice"
 .include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/tt.spice"
-
-
 
 * DC source for current measure
 Vdd vdda1 gnd DC 0.7V
@@ -36,6 +33,209 @@ Vsyn1 analog_io[14] gnd DC 0.426V
 * Vad vad gnd DC 0.25V
 
 Idc vdd analog_io[24] DC 10p
+
+.subckt sky130_fd_pr__nfet_01v8_j74adr VSUBS a_109_249# a_109_337# a_21_289#
+X0 a_109_337# a_21_289# a_109_249# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_htftno VSUBS w_n187_n133# a_n184_n57# a_n87_n9# a_n87_n97#
+X0 a_n87_n9# a_n184_n57# a_n87_n97# w_n187_n133# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_h5gdbm VSUBS a_n101_295# a_n13_343# a_n13_255#
+X0 a_n13_343# a_n101_295# a_n13_255# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_dma3uj VSUBS a_n57_109# a_31_157# a_31_69#
+X0 a_31_157# a_n57_109# a_31_69# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_hf7xew VSUBS w_n109_n123# a_n106_n47# a_n9_1# a_n9_n87#
+X0 a_n9_1# a_n106_n47# a_n9_n87# w_n109_n123# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_b4l3oq VSUBS a_n11_n3# a_n11_n91# w_n111_n127# a_n108_n51#
+X0 a_n11_n3# a_n108_n51# a_n11_n91# w_n111_n127# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_k0ujpa VSUBS a_n151_n105# a_n151_n17# w_n251_n141#
++ a_n248_n65#
+X0 a_n151_n17# a_n248_n65# a_n151_n105# w_n251_n141# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lz0viw VSUBS a_n55_313# a_n25_343# a_n25_255#
+X0 a_n25_343# a_n55_313# a_n25_255# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+.ends
+
+.subckt Sw-1 VSUBS li_402_584# w_10_596# w_6_312# li_762_210# w_928_594# w_1442_592#
+Xsky130_fd_pr__nfet_01v8_j74adr_0 VSUBS VSUBS li_29_719# li_402_584# sky130_fd_pr__nfet_01v8_j74adr
+Xsky130_fd_pr__pfet_01v8_htftno_0 VSUBS w_928_594# li_29_719# w_928_594# w_1442_592#
++ sky130_fd_pr__pfet_01v8_htftno
+Xsky130_fd_pr__nfet_01v8_h5gdbm_0 VSUBS li_29_719# w_1442_592# li_762_210# sky130_fd_pr__nfet_01v8_h5gdbm
+Xsky130_fd_pr__nfet_01v8_dma3uj_0 VSUBS li_29_719# li_126_470# VSUBS sky130_fd_pr__nfet_01v8_dma3uj
+Xsky130_fd_pr__pfet_01v8_hf7xew_0 VSUBS w_10_596# li_29_719# w_10_596# li_126_470#
++ sky130_fd_pr__pfet_01v8_hf7xew
+Xsky130_fd_pr__pfet_01v8_b4l3oq_0 VSUBS w_10_596# li_29_719# w_10_596# li_402_584#
++ sky130_fd_pr__pfet_01v8_b4l3oq
+Xsky130_fd_pr__pfet_01v8_k0ujpa_0 VSUBS li_762_210# w_1442_592# w_1442_592# li_126_470#
++ sky130_fd_pr__pfet_01v8_k0ujpa
+Xsky130_fd_pr__nfet_01v8_lz0viw_0 VSUBS li_126_470# w_928_594# w_1442_592# sky130_fd_pr__nfet_01v8_lz0viw
+.ends
+
+* .subckt sky130_fd_pr__res_generic_po_i65fu2 VSUBS a_n33_n244# a_n33_171#
+* R0 a_n33_n244# a_n33_171# sky130_fd_pr__res_generic_po w=330000u l=1.71e+06u
+* .ends
+* 
+* .subckt sky130_fd_pr__res_generic_po_kabjgr VSUBS a_n33_n244# a_n33_171#
+* R0 a_n33_n244# a_n33_171# sky130_fd_pr__res_generic_po w=330000u l=1.71e+06u
+* .ends
+* 
+* .subckt sky130_fd_pr__res_generic_po_abfehu VSUBS a_n33_n244# a_n33_171#
+* R0 a_n33_n244# a_n33_171# sky130_fd_pr__res_generic_po w=330000u l=1.71e+06u
+* .ends
+* 
+* .subckt sky130_fd_pr__res_generic_po_0v6cx5 VSUBS a_n33_n244# a_n33_171#
+* R0 a_n33_n244# a_n33_171# sky130_fd_pr__res_generic_po w=330000u l=1.71e+06u
+* .ends
+* 
+* .subckt good VSUBS m3_n30_n637# li_n184_n930# Sw-1_2/w_1442_592# m2_240_n362# li_n184_1324#
+* + m4_633_n294# m3_1916_186#
+* XSw-1_1 VSUBS m3_n30_n637# m2_240_n362# m4_633_n294# li_n184_n930# li_n184_n588# m1_1880_n536#
+* + Sw-1
+* XSw-1_0 VSUBS m3_n30_n637# m2_240_n362# m4_633_n294# li_n188_368# li_n188_700# m1_1892_666#
+* + Sw-1
+* XSw-1_2 VSUBS m3_1916_186# m2_240_n362# m4_633_n294# m1_1880_n536# m1_1892_666# Sw-1_2/w_1442_592#
+* + Sw-1
+* Xsky130_fd_pr__res_generic_po_i65fu2_0 VSUBS li_n184_n930# li_n184_n588# sky130_fd_pr__res_generic_po_i65fu2
+* Xsky130_fd_pr__res_generic_po_kabjgr_0 VSUBS li_n188_368# li_n188_700# sky130_fd_pr__res_generic_po_kabjgr
+* Xsky130_fd_pr__res_generic_po_abfehu_0 VSUBS li_n188_700# li_n184_1324# sky130_fd_pr__res_generic_po_abfehu
+* Xsky130_fd_pr__res_generic_po_0v6cx5_0 VSUBS li_n184_n588# li_n188_368# sky130_fd_pr__res_generic_po_0v6cx5
+* .ends
+* 
+* .subckt good m4_944_2166# VSUBS m2_426_2318# m3_162_2308# 2good_0/li_n184_n930# m3_1772_2124#
+* + m3_2194_2596# Sw-1_0/w_1442_592# 2good_1/li_n184_1324#
+* XSw-1_0 VSUBS m3_2194_2596# m2_426_2318# m4_944_2166# m1_3752_2110# m1_3532_3020#
+* + Sw-1_0/w_1442_592# Sw-1
+* X2good_0 VSUBS m3_162_2308# 2good_0/li_n184_n930# m1_3752_2110# m2_426_2318# 2good_0/li_n184_1324#
+* + m4_944_2166# m3_1772_2124# good
+* X2good_1 VSUBS m3_162_2308# 2good_0/li_n184_1324# m1_3532_3020# m2_426_2318# 2good_1/li_n184_1324#
+* + m4_944_2166# m3_1772_2124# good
+* .ends
+* 
+* .subckt good VSUBS m4_870_4802# Sw-1_0/li_402_584# m3_176_4822# m3_2006_4492# m2_444_4830#
+* + m3_1776_4796# 3good_0/2good_0/li_n184_n930# Sw-1_0/w_1442_592# Sw-1_0/w_6_312# Sw-1_0/w_10_596#
+* + 3good_1/2good_1/li_n184_1324#
+* XSw-1_0 VSUBS Sw-1_0/li_402_584# Sw-1_0/w_10_596# Sw-1_0/w_6_312# m1_3686_4442# m1_3500_5610#
+* + Sw-1_0/w_1442_592# Sw-1
+* X3good_1 m4_870_4802# VSUBS m2_444_4830# m3_176_4822# 3good_0/2good_1/li_n184_1324#
+* + m3_1776_4796# m3_2006_4492# m1_3500_5610# 3good_1/2good_1/li_n184_1324# good
+* X3good_0 m4_870_4802# VSUBS m2_444_4830# m3_176_4822# 3good_0/2good_0/li_n184_n930#
+* + m3_1776_4796# m3_2006_4492# m1_3686_4442# 3good_0/2good_1/li_n184_1324# good
+* .ends
+* 
+* .subckt good VSUBS Sw-1_0/li_402_584# m3_2200_11718# m3_1870_11066# m3_264_11074#
+* + 4good_0/3good_0/2good_0/li_n184_n930# Sw-1_0/w_1442_592# m2_556_6654# 4good_1/3good_1/2good_1/li_n184_1324#
+* + m4_958_11006# m3_2296_6328#
+* XSw-1_0 VSUBS Sw-1_0/li_402_584# m2_556_6654# m4_958_11006# m1_4054_10970# m1_3814_11892#
+* + Sw-1_0/w_1442_592# Sw-1
+* X4good_0 VSUBS m4_958_11006# m3_2296_6328# m3_264_11074# m3_2200_11718# m2_556_6654#
+* + m3_1870_11066# 4good_0/3good_0/2good_0/li_n184_n930# m1_4054_10970# m4_958_11006#
+* + m2_556_6654# 4good_0/3good_1/2good_1/li_n184_1324# good
+* X4good_1 VSUBS m4_958_11006# m3_2296_6328# m3_264_11074# m3_2200_11718# m2_556_6654#
+* + m3_1870_11066# 4good_0/3good_1/2good_1/li_n184_1324# m1_3814_11892# 4good_1/Sw-1_0/w_6_312#
+* + m2_556_6654# 4good_1/3good_1/2good_1/li_n184_1324# good
+* .ends
+* 
+* .subckt good m3_1774_19904# VSUBS m2_458_19930# Sw-1_0/li_402_584# m3_2124_19680#
+* + 5good_0/4good_0/3good_0/2good_0/li_n184_n930# m4_850_19908# Sw-1_0/w_1442_592# m3_188_19952#
+* + 5good_1/4good_1/3good_1/2good_1/li_n184_1324# m3_2310_19816# m3_1968_19534#
+* XSw-1_0 VSUBS Sw-1_0/li_402_584# m2_458_19930# m4_850_19908# m1_4002_19952# m1_3768_20868#
+* + Sw-1_0/w_1442_592# Sw-1
+* X5good_0 VSUBS m3_2310_19816# m3_1968_19534# m3_1774_19904# m3_188_19952# 5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + m1_4002_19952# m2_458_19930# m1_14_20144# m4_850_19908# m3_2124_19680# good
+* X5good_1 VSUBS m3_2310_19816# m3_1968_19534# m3_1774_19904# m3_188_19952# m1_14_20144#
+* + m1_3768_20868# m2_458_19930# 5good_1/4good_1/3good_1/2good_1/li_n184_1324# m4_850_19908#
+* + m3_2124_19680# good
+* .ends
+* 
+* .subckt good VSUBS Sw-1_0/li_402_584# 6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + 6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930# m1_3606_41048# 6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + m4_900_40048# m1_3108_40666# Sw-1_0/w_1442_592# m1_3906_40132# m1_3344_40882# m3_178_40374#
+* + m1_1758_40060# m2_448_40104# 6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* X6good_0 m1_1758_40060# VSUBS m2_448_40104# m1_3906_40132# m1_3344_40882# 6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + m4_900_40048# m1_4396_20620# m3_178_40374# 6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + m1_3606_41048# m1_3108_40666# good
+* XSw-1_0 VSUBS Sw-1_0/li_402_584# m2_448_40104# m4_900_40048# m1_8436_40544# m1_4396_20620#
+* + Sw-1_0/w_1442_592# Sw-1
+* X6good_1 m1_1758_40060# VSUBS m2_448_40104# m1_3906_40132# m1_3344_40882# 6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + m4_900_40048# m1_8436_40544# m3_178_40374# 6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + m1_3606_41048# m1_3108_40666# good
+* .ends
+* 
+* .subckt good VSUBS Sw-1_0/li_402_584# m4_7606_40582# m1_14280_42472# 7good_0/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + 7good_1/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324# m3_3892_42710# 7good_0/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + m1_13190_42260# m2_7304_41624# Sw-1_0/w_1442_592# m1_13882_42250# 7good_1/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + m1_12816_42246# 7good_0/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930# 7good_0/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + 7good_1/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930# 7good_1/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + m1_13522_42238# m1_12404_42242#
+* X7good_0 VSUBS m1_14280_42472# 7good_0/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + 7good_0/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930# m1_13882_42250# 7good_0/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + m4_7606_40582# m1_13190_42260# m1_8774_43264# m3_3892_42710# m1_13522_42238# m1_12404_42242#
+* + m1_12816_42246# m2_7304_41624# 7good_0/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + good
+* X7good_1 VSUBS m1_14280_42472# 7good_1/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + 7good_1/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930# m1_13882_42250# 7good_1/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + m4_7606_40582# m1_13190_42260# m1_18694_42308# m3_3892_42710# m1_13522_42238# m1_12404_42242#
+* + m1_12816_42246# m2_7304_41624# 7good_1/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + good
+* XSw-1_0 VSUBS Sw-1_0/li_402_584# m2_7304_41624# m4_7606_40582# m1_18694_42308# m1_8774_43264#
+* + Sw-1_0/w_1442_592# Sw-1
+* .ends
+* 
+* .subckt good 8good_1/7good_1/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + VSUBS m1_34870_45168# Sw-1_0/li_402_584# m1_33182_44672# 8good_0/m4_7606_40582#
+* + 8good_0/7good_1/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324# m3_15256_44922#
+* + m2_36872_44966# 8good_0/7good_0/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + 8good_1/7good_0/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324# 8good_0/7good_0/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + 8good_0/7good_1/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930# 8good_0/m2_7304_41624#
+* + 8good_1/7good_1/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324# m2_32394_46370#
+* + 8good_0/7good_1/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930# 8good_1/7good_0/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + m2_32742_46204# m4_37832_42440# Sw-1_0/w_1442_592# 8good_1/7good_1/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + m1_33960_44694# m1_33592_44702# 8good_1/7good_0/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + 8good_0/7good_0/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324# 8good_1/7good_0/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + 8good_0/7good_1/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324# 8good_1/7good_1/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + m1_34434_44684# 8good_0/7good_0/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* X8good_0 VSUBS m3_15256_44922# 8good_0/m4_7606_40582# m1_34870_45168# 8good_0/7good_0/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + 8good_0/7good_1/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324# m1_34434_44684#
+* + 8good_0/7good_0/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324# m1_33182_44672#
+* + 8good_0/m2_7304_41624# m1_19068_42976# m1_33960_44694# 8good_0/7good_1/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + m2_32742_46204# 8good_0/7good_0/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + 8good_0/7good_0/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930# 8good_0/7good_1/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + 8good_0/7good_1/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930# m1_33592_44702#
+* + m2_32394_46370# good
+* X8good_1 VSUBS m3_15256_44922# m4_37832_42440# m1_34870_45168# 8good_1/7good_0/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + 8good_1/7good_1/6good_0/5good_1/4good_1/3good_1/2good_1/li_n184_1324# m1_34434_44684#
+* + 8good_1/7good_0/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324# m1_33182_44672#
+* + m2_36872_44966# m1_38716_44140# m1_33960_44694# 8good_1/7good_1/6good_1/5good_1/4good_1/3good_1/2good_1/li_n184_1324#
+* + m1_32720_44664# 8good_1/7good_0/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + 8good_1/7good_0/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930# 8good_1/7good_1/6good_0/5good_0/4good_0/3good_0/2good_0/li_n184_n930#
+* + 8good_1/7good_1/6good_1/5good_0/4good_0/3good_0/2good_0/li_n184_n930# m1_33592_44702#
+* + m1_32342_44672# good
+* XSw-1_0 VSUBS Sw-1_0/li_402_584# m2_36872_44966# m4_37832_42440# m1_38716_44140# m1_19068_42976#
+* + Sw-1_0/w_1442_592# Sw-1
+* .ends
+* 
+* .subckt good VSUBS GND VDD D0 D1 D2 D3 D4 D5 D6 D7 D8 D9
+* X9good_0 m1_31884_48# VSUBS D6 D8 D2 GND m1_11882_62# D7 VDD m1_6754_8# m1_16966_2#
+* + m1_1684_72# m1_16966_2# VDD m1_26760_28# D0 m1_11882_62# m1_21660_68# D1 GND m1_39076_44800#
+* + m1_31884_48# D4 D3 m1_26760_28# VDD m1_21660_68# m1_6754_8# m1_36912_2# D5 m1_1684_72#
+* + good
+* X9good_1 m1_71736_52# VSUBS D6 D8 D2 GND m1_51780_62# D7 VDD m1_46616_8# m1_56844_12#
+* + m1_41532_78# m1_56844_12# VDD m1_66618_22# D0 m1_51780_62# m1_61528_92# D1 GND m1_78452_45530#
+* + m1_71736_52# D4 D3 m1_66618_22# m1_36912_2# m1_61528_92# m1_46616_8# m1_76798_18#
+* + D5 m1_41532_78# good
+* XSw-1_0 VSUBS D9 VDD GND m1_78452_45530# m1_39076_44800# Sw-1_0/w_1442_592# Sw-1
+* .ends
 
 .subckt sky130_fd_pr__pfet_01v8_owy61o VSUBS a_n73_n61# w_n109_n123# a_15_n61# a_n33_54#
 X0 a_15_n61# a_n33_54# a_n73_n61# w_n109_n123# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
@@ -74,11 +274,12 @@ Xsky130_fd_pr__pfet_01v8_ykwexw_0 vss vdd vdd in out sky130_fd_pr__pfet_01v8_ykw
 * + drain sky130_fd_bs_flash__special_sonosfet_star_ocehe0
 * .ends
 * 
-* .subckt x2-array WL0 WL1 BL0 SL0 BL1 SL1 body body BL1 BL0 SL0 SL1 BL1 SL0 BL0
-* X1T-cell_0[0|0] WL1 BL0 SL0 body dw_n430_n464# T-cell
-* X1T-cell_0[1|0] WL0 BL0 SL0 body dw_n430_n464# T-cell
-* X1T-cell_0[0|1] WL1 BL1 SL1 body dw_n430_n464# T-cell
-* X1T-cell_0[1|1] WL0 BL1 SL1 body dw_n430_n464# T-cell
+* .subckt x2-array WL0 WL1 BL0 SL0 BL1 SL1 body nwell body SL1 BL1 BL0 SL0 SL1 body
+* + BL1 SL0 body BL0
+* X1T-cell_0[0|0] WL1 BL0 SL0 body nwell T-cell
+* X1T-cell_0[1|0] WL0 BL0 SL0 body nwell T-cell
+* X1T-cell_0[0|1] WL1 BL1 SL1 body nwell T-cell
+* X1T-cell_0[1|1] WL0 BL1 SL1 body nwell T-cell
 * .ends
 
 .subckt sky130_fd_pr__nfet_01v8_r0atdz VSUBS a_n40_n107# a_n98_n81# a_40_n81#
@@ -203,8 +404,8 @@ Xsky130_fd_pr__nfet_01v8_5mkfxl_0 v_sub v_out v_in clk sky130_fd_pr__nfet_01v8_5
 Xsky130_fd_pr__pfet_01v8_pa2hmj_0 v_sub clk_bar v_out v_newll v_in sky130_fd_pr__pfet_01v8_pa2hmj
 .ends
 
-.subckt pass-gate-inv-2 in_1 in_2 clk clk_bar out vdd vss vss vdd out in_1 clk vss
-+ vss
+.subckt pass-gate-inv-2 in_1 in_2 clk clk_bar out vdd vss vss vdd clk out in_1 clk
++ vss vss
 Xinverter_0 clk clk_bar vdd vss inverter
 Xpass-gate_0 clk clk_bar in_1 out vdd vss out pass-gate
 Xpass-gate_1 clk_bar clk in_2 out vdd vss out pass-gate
@@ -212,12 +413,13 @@ Xpass-gate_1 clk_bar clk in_2 out vdd vss out pass-gate
 
 .subckt chip-w-opamp i_bias vad vr vk vth vw vau vsyn0 vsyn1 vdd vss vdd_aux sel v_syn
 + u_syn a_syn axon_syn v_buff u_buff a_buff axon_buff WL0 WL1 BL0 SL0 BL1 SL1 i_in
-+ vdd_aux vss BL0 BL1 SL0 vdd_aux BL0 vdd_aux BL1 WL0 BL0 SL0 BL1 SL1
++ nwell vdd_aux vss BL0 BL1 SL0 vdd_aux BL0 vdd_aux BL1 WL0 BL0 SL1 SL0 BL1 SL1
 Xone-way_0 vss inverter_0/out vdd neuron-labeled-extended-opamp_0/v one-way
 Xone-way_1 vss inverter_1/out vdd neuron-labeled-extended-opamp_1/v one-way
 Xinverter_0 vsyn0 inverter_0/out vdd vss inverter
 Xinverter_1 vsyn1 inverter_1/out vdd vss inverter
-* X2x2-array_0 WL0 WL1 BL0 SL0 BL1 SL1 vss vss BL1 BL0 SL0 SL1 BL1 SL0 BL0 x2-array
+* X2x2-array_0 WL0 WL1 BL0 SL0 BL1 SL1 vss nwell vss SL1 BL1 BL0 SL0 SL1 vss BL1 SL0
+* + vss BL0 x2-array
 Xneuron-labeled-extended-opamp_0 neuron-labeled-extended-opamp_0/v neuron-labeled-extended-opamp_0/u
 + neuron-labeled-extended-opamp_0/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_0/axon
 + i_bias pass-gate-inv-2_0/in_2 pass-gate-inv-2_1/in_2 pass-gate-inv-2_2/in_2 pass-gate-inv-2_3/in_2
@@ -230,13 +432,14 @@ Xneuron-labeled-extended-opamp_2 i_in neuron-labeled-extended-opamp_2/u neuron-l
 + vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_2/axon i_bias v_buff
 + u_buff a_buff axon_buff vdd_aux vss vdd i_in vss neuron-labeled-extended-opamp
 Xpass-gate-inv-2_0 pass-gate-inv-2_0/in_1 pass-gate-inv-2_0/in_2 sel pass-gate-inv-2_0/clk_bar
-+ v_syn vdd_aux vss vss vdd_aux v_syn pass-gate-inv-2_0/in_1 sel vss vss pass-gate-inv-2
++ v_syn vdd_aux vss vss vdd_aux sel v_syn pass-gate-inv-2_0/in_1 sel vss vss pass-gate-inv-2
 Xpass-gate-inv-2_1 pass-gate-inv-2_1/in_1 pass-gate-inv-2_1/in_2 sel pass-gate-inv-2_1/clk_bar
-+ u_syn vdd_aux vss vss vdd_aux u_syn pass-gate-inv-2_1/in_1 sel vss vss pass-gate-inv-2
++ u_syn vdd_aux vss vss vdd_aux sel u_syn pass-gate-inv-2_1/in_1 sel vss vss pass-gate-inv-2
 Xpass-gate-inv-2_2 pass-gate-inv-2_2/in_1 pass-gate-inv-2_2/in_2 sel pass-gate-inv-2_2/clk_bar
-+ a_syn vdd_aux vss vss vdd_aux a_syn pass-gate-inv-2_2/in_1 sel vss vss pass-gate-inv-2
++ a_syn vdd_aux vss vss vdd_aux sel a_syn pass-gate-inv-2_2/in_1 sel vss vss pass-gate-inv-2
 Xpass-gate-inv-2_3 pass-gate-inv-2_3/in_1 pass-gate-inv-2_3/in_2 sel pass-gate-inv-2_3/clk_bar
-+ axon_syn vdd_aux vss vss vdd_aux axon_syn pass-gate-inv-2_3/in_1 sel vss vss pass-gate-inv-2
++ axon_syn vdd_aux vss vss vdd_aux sel axon_syn pass-gate-inv-2_3/in_1 sel vss vss
++ pass-gate-inv-2
 .ends
 
 .subckt user_project_wrapper analog_io[0] analog_io[10] analog_io[11] analog_io[12]
@@ -338,13 +541,15 @@ Xpass-gate-inv-2_3 pass-gate-inv-2_3/in_1 pass-gate-inv-2_3/in_2 sel pass-gate-i
 + wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8]
 + wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
 + vccd1 vssd1 vccd2 vssd2 vdda1 vssa1 vdda2 vssa2
+* X10good_0 vssa1 vssa1 vdda1 io_in[0] io_in[1] io_in[2] io_in[3] io_in[4] io_in[5]
+* + io_in[6] io_in[7] io_in[8] io_in[9] good
 Xchip-w-opamp_0 analog_io[6] analog_io[7] analog_io[8] analog_io[9] analog_io[10]
 + analog_io[11] analog_io[12] analog_io[13] analog_io[14] vdda1 vssa1 vdda2 analog_io[19]
 + analog_io[20] analog_io[21] analog_io[22] analog_io[23] analog_io[15] analog_io[16]
 + analog_io[17] analog_io[18] analog_io[1] analog_io[0] analog_io[2] analog_io[3]
-+ analog_io[4] analog_io[5] analog_io[24] vdda2 vssa1 analog_io[2] analog_io[4] analog_io[3]
-+ vdda2 analog_io[2] vdda2 analog_io[4] analog_io[1] analog_io[2] analog_io[3] analog_io[4]
-+ analog_io[5] chip-w-opamp
++ analog_io[4] analog_io[5] analog_io[24] analog_io[26] vdda2 vssa1 analog_io[2] analog_io[4]
++ analog_io[3] vdda2 analog_io[2] vdda2 analog_io[4] analog_io[1] analog_io[2] analog_io[5]
++ analog_io[3] analog_io[4] analog_io[5] chip-w-opamp
 .ends
 
 
@@ -447,7 +652,6 @@ Xckt analog_io[0] analog_io[10] analog_io[11] analog_io[12]
 + wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8]
 + wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
 + vccd1 vssd1 vccd2 vssd2 vdda1 vssa1 vdda2 vssa2 user_project_wrapper
-
 
 .control
 * Sweep tran

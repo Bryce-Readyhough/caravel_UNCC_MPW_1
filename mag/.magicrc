@@ -23,7 +23,7 @@ tech load $PDKPATH/libs.tech/magic/current/sky130A.tech
 source $PDKPATH/libs.tech/magic/current/sky130A.tcl
 
 # load bind keys (optional)
-# source $PDKPATH/libs.tech/magic/current/sky130A-BindKeys
+ source $PDKPATH/libs.tech/magic/current/sky130A-BindKeys
 
 # set units to lambda grid 
 snap lambda

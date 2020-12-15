@@ -72,14 +72,14 @@ rect 34 -276 88 -234
 rect 128 -276 186 -234
 rect 226 -276 242 -234
 rect -32 -282 242 -276
-use sky130_fd_pr__pfet_01v8_ykwexw  sky130_fd_pr__pfet_01v8_ykwexw_0
-timestamp 1604286783
-transform 1 0 109 0 1 104
-box -109 -104 109 104
 use sky130_fd_pr__nfet_01v8_8mr83b  sky130_fd_pr__nfet_01v8_8mr83b_0
 timestamp 1604286783
 transform 1 0 109 0 1 -130
 box -73 -68 73 68
+use sky130_fd_pr__pfet_01v8_ykwexw  sky130_fd_pr__pfet_01v8_ykwexw_0
+timestamp 1604286783
+transform 1 0 109 0 1 104
+box -109 -104 109 104
 << labels >>
 flabel locali -120 -4 -114 2 0 FreeSans 800 0 0 0 in
 port 0 nsew
