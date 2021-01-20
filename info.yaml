@@ -7,7 +7,7 @@ project:
   organization_url: " "
   owner: "Bryce Readyhough, MD Munir Hasan, Michael Stetzler"
   process: "SKY130"
-  project_name: "Caravel"
+  project_name: "UNCCharlotte_IC_Project"
   tags: 
     - "Open MPW"
     - "Test Harness"
