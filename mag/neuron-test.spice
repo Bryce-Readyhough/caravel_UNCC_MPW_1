@@ -1,9 +1,12 @@
 * NGSPICE file created from neuron-test.ext - technology: sky130A
 
 * Include SkyWater sky130 device models
-.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical__lin.spice"
-.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical.spice"
-.include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/tt.spice"
+.include "/foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice" 
+.include "/foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice" 
+.include "/foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice"
+
+.param mc_mm_switch=0 
+.param mc_pr_switch=1  
 
 * DC source for current measure
 Vdd vpwr gnd DC 0.7V

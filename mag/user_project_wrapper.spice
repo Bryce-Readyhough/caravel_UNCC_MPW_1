@@ -1,12 +1,12 @@
 * NGSPICE file created from user_project_wrapper.ext - technology: sky130A
 
 * Include SkyWater sky130 device models
-* .include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical__lin.spice"
-.include "/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_var_hvt.model.spice"
-* .include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/r+c/res_typical__cap_typical.spice"
-.include "/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_var_lvt.model.spice"
-* .include "/home/mhasan13/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/tt.spice"
-.include "/foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.corner.spice"
+.include "/foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice" 
+.include "/foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice" 
+.include "/foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice"
+
+.param mc_mm_switch=0 
+.param mc_pr_switch=1  
 
 * DC source for current measure
 Vdd vdda1 gnd DC 0.7V
@@ -659,6 +659,7 @@ Xckt analog_io[0] analog_io[10] analog_io[11] analog_io[12]
 .control
 * Sweep tran
 tran 1u 20m uic
-plot v("analog_io[24]") v("analog_io[15]")
+plot v("analog_io[24]") 
+* comment this out for now: v("analog_io[15]")
 .endc
 .end
